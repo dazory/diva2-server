@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2/build/CMakeFiles /home/cvlab2/DIVA2/diva2/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/cvlab2/DIVA2/diva2/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2/build/CMakeFiles /home/cvlab2/DIVA2/diva2/build/test/Receiver_fromMobile/CMakeFiles/progress.marks
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,43 +97,32 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cvlab2/DIVA2/diva2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named diva2
+# Convenience name for target.
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule:
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule
 
-# Build rule for target.
-diva2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diva2
-.PHONY : diva2
+# Convenience name for target.
+receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule
 
-# fast build rule for target.
-diva2/fast:
-	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/build
-.PHONY : diva2/fast
-
-#=============================================================================
-# Target rules for targets named receiverFrommobile
-
-# Build rule for target.
-receiverFrommobile: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 receiverFrommobile
 .PHONY : receiverFrommobile
 
 # fast build rule for target.
 receiverFrommobile/fast:
-	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build
 .PHONY : receiverFrommobile/fast
 
 main.o: main.cpp.o
@@ -142,7 +131,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/main.cpp.o
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -151,7 +140,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/main.cpp.i
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -160,7 +149,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/main.cpp.s
+	cd /home/cvlab2/DIVA2/diva2/build && $(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -170,9 +159,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... diva2"
-	@echo "... edit_cache"
 	@echo "... receiverFrommobile"
+	@echo "... edit_cache"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -187,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cvlab2/DIVA2/diva2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
