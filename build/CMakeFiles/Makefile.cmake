@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.15.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.6/CMakeSystem.cmake"
+  "../test/Receiver_fromMobile/CMakeLists.txt"
   "/usr/local/share/cmake-3.15/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -20,6 +21,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/share/cmake-3.15/Modules/CheckCSourceCompiles.cmake"
+  "/usr/local/share/cmake-3.15/Modules/CheckIncludeFile.cmake"
+  "/usr/local/share/cmake-3.15/Modules/CheckLibraryExists.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/GNU-C.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/GNU-CXX.cmake"
@@ -27,6 +31,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/share/cmake-3.15/Modules/FindPackageMessage.cmake"
   "/usr/local/share/cmake-3.15/Modules/FindPkgConfig.cmake"
+  "/usr/local/share/cmake-3.15/Modules/FindThreads.cmake"
   "/usr/local/share/cmake-3.15/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Linux-GNU-CXX.cmake"
@@ -44,9 +49,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/Receiver_fromMobile/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/diva2.dir/DependInfo.cmake"
+  "test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/DependInfo.cmake"
   )

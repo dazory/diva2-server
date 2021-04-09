@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/cvlab2/DIVA2/diva2/build
 
 # The main recursive "clean" target.
 clean: CMakeFiles/diva2.dir/clean
+clean: test/Receiver_fromMobile/clean
 
 .PHONY : clean
 
@@ -98,6 +99,56 @@ diva2: CMakeFiles/diva2.dir/rule
 CMakeFiles/diva2.dir/clean:
 	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/clean
 .PHONY : CMakeFiles/diva2.dir/clean
+
+#=============================================================================
+# Directory level rules for directory test/Receiver_fromMobile
+
+# Recursive "all" directory target.
+test/Receiver_fromMobile/all: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/all
+
+.PHONY : test/Receiver_fromMobile/all
+
+# Recursive "preinstall" directory target.
+test/Receiver_fromMobile/preinstall:
+
+.PHONY : test/Receiver_fromMobile/preinstall
+
+# Recursive "clean" directory target.
+test/Receiver_fromMobile/clean: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean
+
+.PHONY : test/Receiver_fromMobile/clean
+
+#=============================================================================
+# Target rules for target test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir
+
+# All Build rule for target.
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/all:
+	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend
+	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2/build/CMakeFiles --progress-num=3,4 "Built target receiverFrommobile"
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/all
+
+# Include target in all.
+all: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2/build/CMakeFiles 0
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule
+
+# Convenience name for target.
+receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/rule
+
+.PHONY : receiverFrommobile
+
+# clean rule for target.
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean:
+	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

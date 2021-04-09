@@ -14,33 +14,33 @@ if(NOT PKG_CONFIG_FOUND)
     INCLUDE(FindPkgConfig)
 endif()
 PKG_CHECK_MODULES(PC_ZEROMQ "libzmq")
-# find_path(ZeroMQ_INCLUDE_DIR            # use the hint from above to find where 'zmq.hpp' is located
-#         NAMES zmq.hpp
-#         PATHS ${PC_ZeroMQ_INCLUDE_DIRS}
-# )
-# find_library(ZeroMQ_LIBRARY             # use the hint from about to find the location of libzmq
-#         NAMES zmq
-#         PATHS ${PC_ZeroMQ_LIBRARY_DIRS}
-# )
-FIND_PATH(ZEROMQ_INCLUDE_DIRS
-    NAMES zmq.hpp
-    HINTS ${PC_ZEROMQ_INCLUDE_DIR}
-    ${CMAKE_INSTALL_PREFIX}/include
-    PATHS
-    /usr/local/include
-    /usr/include
+find_path(ZeroMQ_INCLUDE_DIR            # use the hint from above to find where 'zmq.hpp' is located
+        NAMES zmq.hpp
+        PATHS ${PC_ZeroMQ_INCLUDE_DIRS}
 )
+find_library(ZeroMQ_LIBRARY             # use the hint from about to find the location of libzmq
+        NAMES zmq
+        PATHS ${PC_ZeroMQ_LIBRARY_DIRS}
+)
+# FIND_PATH(ZEROMQ_INCLUDE_DIRS
+#     NAMES zmq.hpp
+#     HINTS ${PC_ZEROMQ_INCLUDE_DIR}
+#     ${CMAKE_INSTALL_PREFIX}/include
+#     PATHS
+#     /usr/local/include
+#     /usr/include
+# )
 
-FIND_LIBRARY(ZEROMQ_LIBRARIES
-    NAMES zmq libzmq ${ZEROMQ_LIBRARY_NAME}
-    HINTS ${PC_ZEROMQ_LIBDIR}
-    ${CMAKE_INSTALL_PREFIX}/lib
-    ${CMAKE_INSTALL_PREFIX}/lib64
-    PATHS
-    ${ZEROMQ_INCLUDE_DIRS}/../lib
-    /usr/local/lib
-    /usr/lib
-)
+# FIND_LIBRARY(ZEROMQ_LIBRARIES
+#     NAMES zmq libzmq ${ZEROMQ_LIBRARY_NAME}
+#     HINTS ${PC_ZEROMQ_LIBDIR}
+#     ${CMAKE_INSTALL_PREFIX}/lib
+#     ${CMAKE_INSTALL_PREFIX}/lib64
+#     PATHS
+#     ${ZEROMQ_INCLUDE_DIRS}/../lib
+#     /usr/local/lib
+#     /usr/lib
+# )
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(ZeroMQ DEFAULT_MSG ZEROMQ_LIBRARIES ZEROMQ_INCLUDE_DIRS)
 MARK_AS_ADVANCED(ZEROMQ_LIBRARIES ZEROMQ_INCLUDE_DIRS)
@@ -53,6 +53,10 @@ if (ZEROMQ_FOUND AND NOT TARGET ZEROMQ::ZEROMQ)
   )
 endif()
 
+
+## use thread
+find_package( Threads )
+link_libraries(pthread)
 
 ## use mscl
 find_library(MSCL_LIB_PATH NAMES libmscl.so PATHS "/usr/share/c++-mscl" DOC "MSCL Library" NO_DEFAULT_PATH)
@@ -72,8 +76,6 @@ add_definitions(-DBOOST_ERROR_CODE_HEADER_ONLY)
 # set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules)
 
 
-
-
 # 실행파일 만들기
 set(SOURCE_MAIN main.cpp)
 add_executable(diva2 ${SOURCE_MAIN})                           # 생성할 실행파일 이름 지정
@@ -81,7 +83,7 @@ target_include_directories(diva2 PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the includ
 target_link_libraries(diva2 PUBLIC ${ZeroMQ_LIBRARY} /usr/share/c++-mscl/libmscl.so)           # at the 0mq library to our link directive
 
 # 서브 디렉토리에 있는 cmakeFiles을 실행시켜줌
-#add_subdirectory(test)
+add_subdirectory(test/Receiver_fromMobile)
 # add_subdirectory(test/openCv)
 # add_subdirectory(test/openCv2)
 #add_subdirectory(test/zmq_imgtransfer)
