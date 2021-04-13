@@ -1,4 +1,4 @@
-# Install script for directory: /home/cvlab2/DIVA2/diva2/test/Receiver_fromMobile
+# Install script for directory: /home/dahye/diva2-server/test/Receiver_fromMobile
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
