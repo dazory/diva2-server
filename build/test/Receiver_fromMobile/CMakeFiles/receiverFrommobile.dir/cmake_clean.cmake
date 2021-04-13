@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/receiverFrommobile.dir/main.cpp.o"
-  "receiverFrommobile"
   "receiverFrommobile.pdb"
+  "receiverFrommobile"
 )
 
 # Per-language clean rules from dependency scanning.
