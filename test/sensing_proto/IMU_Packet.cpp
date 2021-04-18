@@ -1,26 +1,6 @@
-#include <iostream>
-#include <sstream>
-#include <time.h>
-#include <sys/timeb.h>
-#include <map>
-#include <string>
-using namespace std;
+//multiple 오류 -> service에서 IMUpacket 헤더랑 분리 -> service에 CMakeLists없어서 정의를 못찾음...ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ지저분 하지만 일단 옮김
+#include "../service/IMU_Packet.h"
 
-class ImuPacket {
-public:
-    ImuPacket();
-
-    /* DATA */
-    time_t time;
-    float scaledAccelX, scaledAccelY, scaledAccelZ;
-    float scaledGyroX, scaledGyroY, scaledGyroZ;
-    float scaledMagX, scaledMagY, scaledMagZ;
-    float estRoll, estPitch, estYaw;
-    float estRollUncert, estPitchUncert, estYawUncert;
-
-    /* FUNCTION */
-    void display();
-};
 
 ImuPacket::ImuPacket(){
     time = NULL;
@@ -31,10 +11,6 @@ ImuPacket::ImuPacket(){
     estRollUncert=NULL; estPitchUncert=NULL; estYawUncert=NULL;
 }
 
-enum IMU{IMU_EXCEPTION=0, IMU_ACCELX, IMU_ACCELY, IMU_ACCELZ, IMU_GYROX, IMU_GYROY, IMU_GYROZ, IMU_MAGX, IMU_MAGY, IMU_MAGZ,
-        IMU_ESTROLL, IMU_ESTPITCH, IMU_ESTYAW, IMU_ESTROLL_UNCERT, IMU_ESTPITCH_UNCERT, IMU_ESTYAW_UNCERT};
-
-static map<string, IMU> ImuMap;
 void Init(){
     ImuMap["scaledAccelX"] = IMU_ACCELX;
     ImuMap["scaledAccelY"] = IMU_ACCELY;

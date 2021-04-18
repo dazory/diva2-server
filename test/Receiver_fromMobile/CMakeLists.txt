@@ -40,11 +40,22 @@ set(PQXX /usr/local/include/pqxx)
 find_library(PQXX_LIB pqxx)
 find_library(PQ_LIB pq)
 
+## use protobuf
+find_package(Protobuf REQUIRED)
+if(PROTOBUF_FOUND)
+    message(STATUS "protobuf library found")
+else()
+    message(FATAL_ERROR "protobuf library is needed but cant be found")
+endif()
+include_directories(${PROTOBUF_INCLUDE_DIRS})
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
+PROTOBUF_GENERATE_CPP(PROTO_SRCS PROTO_HDRS "../protobuf/sensors.proto" )
+
 # 실행파일 만들기
-set(SOURCE_SENDER_FROMMOBILE main.cpp)
-add_executable(receiverFrommobile ${SOURCE_SENDER_FROMMOBILE} ${MSCL_INC_PATH} ${MSCL_LIB} ${MSCL_INC} ${PQXX_LIB} ${PQ_LIB} ) # ${OpenCV_INCLUDE_DIRS})                           # 생성할 실행파일 이름 지정
+set(SOURCE_SENDER_FROMMOBILE main.cpp IMU_receiver.cpp)
+add_executable(receiverFrommobile ${SOURCE_SENDER_FROMMOBILE} ${MSCL_INC_PATH} ${MSCL_LIB} ${MSCL_INC} ${PQXX_LIB} ${PQ_LIB} ${PROTO_SRCS} ${PROTO_HDRS}) # ${OpenCV_INCLUDE_DIRS})                           # 생성할 실행파일 이름 지정
 target_include_directories(receiverFrommobile PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the include directory to our compile directives
-target_link_libraries(receiverFrommobile PUBLIC ${ZeroMQ_LIBRARY} ${PQXX_LIB} ${PQ_LIB} 
+target_link_libraries(receiverFrommobile PUBLIC ${ZeroMQ_LIBRARY} ${PROTOBUF_LIBRARIES} ${PQXX_LIB} ${PQ_LIB} 
         /usr/share/c++-mscl/libmscl.so
         )           # at the 0mq library to our link directive
         # ${OpenCV_LIBS}

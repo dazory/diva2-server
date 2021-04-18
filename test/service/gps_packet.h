@@ -4,7 +4,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <string>
+#include <string.h>
+#include <ctime>
 using namespace std;
 
 class GpsPacket {

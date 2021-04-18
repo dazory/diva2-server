@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
+  "sensors.pb.cc"
+  "sensors.pb.h"
   "CMakeFiles/receiverFrommobile.dir/main.cpp.o"
+  "CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o"
+  "CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o"
   "receiverFrommobile.pdb"
   "receiverFrommobile"
 )

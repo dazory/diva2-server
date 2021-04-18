@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dahye/diva2-server
+CMAKE_SOURCE_DIR = /home/dahye/diva2-server-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dahye/diva2-server/build
+CMAKE_BINARY_DIR = /home/dahye/diva2-server-1/build
 
 # Include any dependencies generated for this target.
 include test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend.make
@@ -57,18 +57,26 @@ include test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/flags.make
 
+test/Receiver_fromMobile/sensors.pb.cc: ../test/protobuf/sensors.proto
+test/Receiver_fromMobile/sensors.pb.cc: /usr/local/bin/protoc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dahye/diva2-server-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running C++ protocol buffer compiler on ../protobuf/sensors.proto"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/local/bin/protoc --cpp_out=/home/dahye/diva2-server-1/build/test/Receiver_fromMobile -I /home/dahye/diva2-server-1/test/protobuf /home/dahye/diva2-server-1/test/protobuf/sensors.proto
+
+test/Receiver_fromMobile/sensors.pb.h: test/Receiver_fromMobile/sensors.pb.cc
+	@$(CMAKE_COMMAND) -E touch_nocreate test/Receiver_fromMobile/sensors.pb.h
+
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/flags.make
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o: ../test/Receiver_fromMobile/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahye/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o"
-	cd /home/dahye/diva2-server/build/test/Receiver_fromMobile && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/receiverFrommobile.dir/main.cpp.o -c /home/dahye/diva2-server/test/Receiver_fromMobile/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahye/diva2-server-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/receiverFrommobile.dir/main.cpp.o -c /home/dahye/diva2-server-1/test/Receiver_fromMobile/main.cpp
 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/receiverFrommobile.dir/main.cpp.i"
-	cd /home/dahye/diva2-server/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahye/diva2-server/test/Receiver_fromMobile/main.cpp > CMakeFiles/receiverFrommobile.dir/main.cpp.i
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahye/diva2-server-1/test/Receiver_fromMobile/main.cpp > CMakeFiles/receiverFrommobile.dir/main.cpp.i
 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/receiverFrommobile.dir/main.cpp.s"
-	cd /home/dahye/diva2-server/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahye/diva2-server/test/Receiver_fromMobile/main.cpp -o CMakeFiles/receiverFrommobile.dir/main.cpp.s
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahye/diva2-server-1/test/Receiver_fromMobile/main.cpp -o CMakeFiles/receiverFrommobile.dir/main.cpp.s
 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o.requires:
 
@@ -81,22 +89,75 @@ test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o.provides: 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o.provides.build: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o
 
 
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/flags.make
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o: ../test/Receiver_fromMobile/IMU_receiver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahye/diva2-server-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o -c /home/dahye/diva2-server-1/test/Receiver_fromMobile/IMU_receiver.cpp
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.i"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahye/diva2-server-1/test/Receiver_fromMobile/IMU_receiver.cpp > CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.i
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.s"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahye/diva2-server-1/test/Receiver_fromMobile/IMU_receiver.cpp -o CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.s
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.requires:
+
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.requires
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.provides: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.requires
+	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.provides.build
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.provides
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.provides.build: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o
+
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/flags.make
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o: test/Receiver_fromMobile/sensors.pb.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dahye/diva2-server-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o -c /home/dahye/diva2-server-1/build/test/Receiver_fromMobile/sensors.pb.cc
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.i"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dahye/diva2-server-1/build/test/Receiver_fromMobile/sensors.pb.cc > CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.i
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.s"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dahye/diva2-server-1/build/test/Receiver_fromMobile/sensors.pb.cc -o CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.s
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.requires:
+
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.requires
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.provides: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.requires
+	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.provides.build
+.PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.provides
+
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.provides.build: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o
+
+
 # Object files for target receiverFrommobile
 receiverFrommobile_OBJECTS = \
-"CMakeFiles/receiverFrommobile.dir/main.cpp.o"
+"CMakeFiles/receiverFrommobile.dir/main.cpp.o" \
+"CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o" \
+"CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o"
 
 # External object files for target receiverFrommobile
 receiverFrommobile_EXTERNAL_OBJECTS =
 
 test/Receiver_fromMobile/receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o
+test/Receiver_fromMobile/receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o
+test/Receiver_fromMobile/receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o
 test/Receiver_fromMobile/receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make
 test/Receiver_fromMobile/receiverFrommobile: /usr/local/lib/libzmq.so
+test/Receiver_fromMobile/receiverFrommobile: /usr/local/lib/libprotobuf.so
 test/Receiver_fromMobile/receiverFrommobile: /usr/lib/x86_64-linux-gnu/libpqxx.so
 test/Receiver_fromMobile/receiverFrommobile: /usr/lib/x86_64-linux-gnu/libpq.so
 test/Receiver_fromMobile/receiverFrommobile: /usr/share/c++-mscl/libmscl.so
 test/Receiver_fromMobile/receiverFrommobile: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dahye/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable receiverFrommobile"
-	cd /home/dahye/diva2-server/build/test/Receiver_fromMobile && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/receiverFrommobile.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dahye/diva2-server-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable receiverFrommobile"
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/receiverFrommobile.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build: test/Receiver_fromMobile/receiverFrommobile
@@ -104,14 +165,17 @@ test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build: test/Receiver_
 .PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build
 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/requires: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/main.cpp.o.requires
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/requires: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/IMU_receiver.cpp.o.requires
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/requires: test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/sensors.pb.cc.o.requires
 
 .PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/requires
 
 test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean:
-	cd /home/dahye/diva2-server/build/test/Receiver_fromMobile && $(CMAKE_COMMAND) -P CMakeFiles/receiverFrommobile.dir/cmake_clean.cmake
+	cd /home/dahye/diva2-server-1/build/test/Receiver_fromMobile && $(CMAKE_COMMAND) -P CMakeFiles/receiverFrommobile.dir/cmake_clean.cmake
 .PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/clean
 
-test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend:
-	cd /home/dahye/diva2-server/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dahye/diva2-server /home/dahye/diva2-server/test/Receiver_fromMobile /home/dahye/diva2-server/build /home/dahye/diva2-server/build/test/Receiver_fromMobile /home/dahye/diva2-server/build/test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/DependInfo.cmake --color=$(COLOR)
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend: test/Receiver_fromMobile/sensors.pb.cc
+test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend: test/Receiver_fromMobile/sensors.pb.h
+	cd /home/dahye/diva2-server-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dahye/diva2-server-1 /home/dahye/diva2-server-1/test/Receiver_fromMobile /home/dahye/diva2-server-1/build /home/dahye/diva2-server-1/build/test/Receiver_fromMobile /home/dahye/diva2-server-1/build/test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/depend
 

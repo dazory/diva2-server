@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dahye/diva2-server
+CMAKE_SOURCE_DIR = /home/dahye/diva2-server-1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dahye/diva2-server/build
+CMAKE_BINARY_DIR = /home/dahye/diva2-server-1/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dahye/diva2-server/build/CMakeFiles /home/dahye/diva2-server/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dahye/diva2-server-1/build/CMakeFiles /home/dahye/diva2-server-1/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dahye/diva2-server/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dahye/diva2-server-1/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,6 +136,45 @@ receiverFrommobile/fast:
 	$(MAKE) -f test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build.make test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/build
 .PHONY : receiverFrommobile/fast
 
+#=============================================================================
+# Target rules for targets named sensing_proto
+
+# Build rule for target.
+sensing_proto: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensing_proto
+.PHONY : sensing_proto
+
+# fast build rule for target.
+sensing_proto/fast:
+	$(MAKE) -f test/sensing_proto/CMakeFiles/sensing_proto.dir/build.make test/sensing_proto/CMakeFiles/sensing_proto.dir/build
+.PHONY : sensing_proto/fast
+
+#=============================================================================
+# Target rules for targets named ProtoLib
+
+# Build rule for target.
+ProtoLib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ProtoLib
+.PHONY : ProtoLib
+
+# fast build rule for target.
+ProtoLib/fast:
+	$(MAKE) -f test/sender_toCloud_protobuf/CMakeFiles/ProtoLib.dir/build.make test/sender_toCloud_protobuf/CMakeFiles/ProtoLib.dir/build
+.PHONY : ProtoLib/fast
+
+#=============================================================================
+# Target rules for targets named senderToCloud
+
+# Build rule for target.
+senderToCloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 senderToCloud
+.PHONY : senderToCloud
+
+# fast build rule for target.
+senderToCloud/fast:
+	$(MAKE) -f test/sender_toCloud_protobuf/CMakeFiles/senderToCloud.dir/build.make test/sender_toCloud_protobuf/CMakeFiles/senderToCloud.dir/build
+.PHONY : senderToCloud/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +212,9 @@ help:
 	@echo "... diva2"
 	@echo "... edit_cache"
 	@echo "... receiverFrommobile"
+	@echo "... sensing_proto"
+	@echo "... ProtoLib"
+	@echo "... senderToCloud"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

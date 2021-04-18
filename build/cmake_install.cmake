@@ -1,4 +1,4 @@
-# Install script for directory: /home/dahye/diva2-server
+# Install script for directory: /home/dahye/diva2-server-1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dahye/diva2-server/build/test/Receiver_fromMobile/cmake_install.cmake")
+  include("/home/dahye/diva2-server-1/build/test/Receiver_fromMobile/cmake_install.cmake")
+  include("/home/dahye/diva2-server-1/build/test/sensing_proto/cmake_install.cmake")
+  include("/home/dahye/diva2-server-1/build/test/sender_toCloud_protobuf/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dahye/diva2-server/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dahye/diva2-server-1/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

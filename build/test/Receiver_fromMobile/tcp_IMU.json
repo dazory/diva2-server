@@ -1,0 +1,513 @@
+{}
+{
+ "timestamp": "2021-04-18T21:57:50.305122Z",
+ "scaledAccelX": 0.02,
+ "scaledAccelY": 0.02,
+ "scaledAccelZ": 0.02,
+ "scaledGyroX": 0.02,
+ "scaledGyroY": 0.02,
+ "scaledGyroZ": 0.02,
+ "scaledMagX": 0.02,
+ "scaledMagY": 0.02,
+ "scaledMagZ": 0.02,
+ "estRoll": 0.02,
+ "estPitch": 0.02,
+ "estYaw": 0.02,
+ "estRollUncert": 0.02,
+ "estPitchUncert": 0.02,
+ "estYawUncert": 0.02
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:51.305437Z",
+ "scaledAccelX": 0.03,
+ "scaledAccelY": 0.03,
+ "scaledAccelZ": 0.03,
+ "scaledGyroX": 0.03,
+ "scaledGyroY": 0.03,
+ "scaledGyroZ": 0.03,
+ "scaledMagX": 0.03,
+ "scaledMagY": 0.03,
+ "scaledMagZ": 0.03,
+ "estRoll": 0.03,
+ "estPitch": 0.03,
+ "estYaw": 0.03,
+ "estRollUncert": 0.03,
+ "estPitchUncert": 0.03,
+ "estYawUncert": 0.03
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:52.306042Z",
+ "scaledAccelX": 0.04,
+ "scaledAccelY": 0.04,
+ "scaledAccelZ": 0.04,
+ "scaledGyroX": 0.04,
+ "scaledGyroY": 0.04,
+ "scaledGyroZ": 0.04,
+ "scaledMagX": 0.04,
+ "scaledMagY": 0.04,
+ "scaledMagZ": 0.04,
+ "estRoll": 0.04,
+ "estPitch": 0.04,
+ "estYaw": 0.04,
+ "estRollUncert": 0.04,
+ "estPitchUncert": 0.04,
+ "estYawUncert": 0.04
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:53.307009Z",
+ "scaledAccelX": 0.05,
+ "scaledAccelY": 0.05,
+ "scaledAccelZ": 0.05,
+ "scaledGyroX": 0.05,
+ "scaledGyroY": 0.05,
+ "scaledGyroZ": 0.05,
+ "scaledMagX": 0.05,
+ "scaledMagY": 0.05,
+ "scaledMagZ": 0.05,
+ "estRoll": 0.05,
+ "estPitch": 0.05,
+ "estYaw": 0.05,
+ "estRollUncert": 0.05,
+ "estPitchUncert": 0.05,
+ "estYawUncert": 0.05
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:54.307309Z",
+ "scaledAccelX": 0.0600000024,
+ "scaledAccelY": 0.0600000024,
+ "scaledAccelZ": 0.0600000024,
+ "scaledGyroX": 0.0600000024,
+ "scaledGyroY": 0.0600000024,
+ "scaledGyroZ": 0.0600000024,
+ "scaledMagX": 0.0600000024,
+ "scaledMagY": 0.0600000024,
+ "scaledMagZ": 0.0600000024,
+ "estRoll": 0.0600000024,
+ "estPitch": 0.0600000024,
+ "estYaw": 0.0600000024,
+ "estRollUncert": 0.0600000024,
+ "estPitchUncert": 0.0600000024,
+ "estYawUncert": 0.0600000024
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:55.307660Z",
+ "scaledAccelX": 0.07,
+ "scaledAccelY": 0.07,
+ "scaledAccelZ": 0.07,
+ "scaledGyroX": 0.07,
+ "scaledGyroY": 0.07,
+ "scaledGyroZ": 0.07,
+ "scaledMagX": 0.07,
+ "scaledMagY": 0.07,
+ "scaledMagZ": 0.07,
+ "estRoll": 0.07,
+ "estPitch": 0.07,
+ "estYaw": 0.07,
+ "estRollUncert": 0.07,
+ "estPitchUncert": 0.07,
+ "estYawUncert": 0.07
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:56.308052Z",
+ "scaledAccelX": 0.08,
+ "scaledAccelY": 0.08,
+ "scaledAccelZ": 0.08,
+ "scaledGyroX": 0.08,
+ "scaledGyroY": 0.08,
+ "scaledGyroZ": 0.08,
+ "scaledMagX": 0.08,
+ "scaledMagY": 0.08,
+ "scaledMagZ": 0.08,
+ "estRoll": 0.08,
+ "estPitch": 0.08,
+ "estYaw": 0.08,
+ "estRollUncert": 0.08,
+ "estPitchUncert": 0.08,
+ "estYawUncert": 0.08
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:57.308361Z",
+ "scaledAccelX": 0.0899999961,
+ "scaledAccelY": 0.0899999961,
+ "scaledAccelZ": 0.0899999961,
+ "scaledGyroX": 0.0899999961,
+ "scaledGyroY": 0.0899999961,
+ "scaledGyroZ": 0.0899999961,
+ "scaledMagX": 0.0899999961,
+ "scaledMagY": 0.0899999961,
+ "scaledMagZ": 0.0899999961,
+ "estRoll": 0.0899999961,
+ "estPitch": 0.0899999961,
+ "estYaw": 0.0899999961,
+ "estRollUncert": 0.0899999961,
+ "estPitchUncert": 0.0899999961,
+ "estYawUncert": 0.0899999961
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:58.308801Z",
+ "scaledAccelX": 0.099999994,
+ "scaledAccelY": 0.099999994,
+ "scaledAccelZ": 0.099999994,
+ "scaledGyroX": 0.099999994,
+ "scaledGyroY": 0.099999994,
+ "scaledGyroZ": 0.099999994,
+ "scaledMagX": 0.099999994,
+ "scaledMagY": 0.099999994,
+ "scaledMagZ": 0.099999994,
+ "estRoll": 0.099999994,
+ "estPitch": 0.099999994,
+ "estYaw": 0.099999994,
+ "estRollUncert": 0.099999994,
+ "estPitchUncert": 0.099999994,
+ "estYawUncert": 0.099999994
+}
+{}
+{
+ "timestamp": "2021-04-18T21:57:59.309119Z",
+ "scaledAccelX": 0.109999992,
+ "scaledAccelY": 0.109999992,
+ "scaledAccelZ": 0.109999992,
+ "scaledGyroX": 0.109999992,
+ "scaledGyroY": 0.109999992,
+ "scaledGyroZ": 0.109999992,
+ "scaledMagX": 0.109999992,
+ "scaledMagY": 0.109999992,
+ "scaledMagZ": 0.109999992,
+ "estRoll": 0.109999992,
+ "estPitch": 0.109999992,
+ "estYaw": 0.109999992,
+ "estRollUncert": 0.109999992,
+ "estPitchUncert": 0.109999992,
+ "estYawUncert": 0.109999992
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:00.309776Z",
+ "scaledAccelX": 0.11999999,
+ "scaledAccelY": 0.11999999,
+ "scaledAccelZ": 0.11999999,
+ "scaledGyroX": 0.11999999,
+ "scaledGyroY": 0.11999999,
+ "scaledGyroZ": 0.11999999,
+ "scaledMagX": 0.11999999,
+ "scaledMagY": 0.11999999,
+ "scaledMagZ": 0.11999999,
+ "estRoll": 0.11999999,
+ "estPitch": 0.11999999,
+ "estYaw": 0.11999999,
+ "estRollUncert": 0.11999999,
+ "estPitchUncert": 0.11999999,
+ "estYawUncert": 0.11999999
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:01.310283Z",
+ "scaledAccelX": 0.13,
+ "scaledAccelY": 0.13,
+ "scaledAccelZ": 0.13,
+ "scaledGyroX": 0.13,
+ "scaledGyroY": 0.13,
+ "scaledGyroZ": 0.13,
+ "scaledMagX": 0.13,
+ "scaledMagY": 0.13,
+ "scaledMagZ": 0.13,
+ "estRoll": 0.13,
+ "estPitch": 0.13,
+ "estYaw": 0.13,
+ "estRollUncert": 0.13,
+ "estPitchUncert": 0.13,
+ "estYawUncert": 0.13
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:02.310578Z",
+ "scaledAccelX": 0.14,
+ "scaledAccelY": 0.14,
+ "scaledAccelZ": 0.14,
+ "scaledGyroX": 0.14,
+ "scaledGyroY": 0.14,
+ "scaledGyroZ": 0.14,
+ "scaledMagX": 0.14,
+ "scaledMagY": 0.14,
+ "scaledMagZ": 0.14,
+ "estRoll": 0.14,
+ "estPitch": 0.14,
+ "estYaw": 0.14,
+ "estRollUncert": 0.14,
+ "estPitchUncert": 0.14,
+ "estYawUncert": 0.14
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:03.311458Z",
+ "scaledAccelX": 0.15,
+ "scaledAccelY": 0.15,
+ "scaledAccelZ": 0.15,
+ "scaledGyroX": 0.15,
+ "scaledGyroY": 0.15,
+ "scaledGyroZ": 0.15,
+ "scaledMagX": 0.15,
+ "scaledMagY": 0.15,
+ "scaledMagZ": 0.15,
+ "estRoll": 0.15,
+ "estPitch": 0.15,
+ "estYaw": 0.15,
+ "estRollUncert": 0.15,
+ "estPitchUncert": 0.15,
+ "estYawUncert": 0.15
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:04.311776Z",
+ "scaledAccelX": 0.160000011,
+ "scaledAccelY": 0.160000011,
+ "scaledAccelZ": 0.160000011,
+ "scaledGyroX": 0.160000011,
+ "scaledGyroY": 0.160000011,
+ "scaledGyroZ": 0.160000011,
+ "scaledMagX": 0.160000011,
+ "scaledMagY": 0.160000011,
+ "scaledMagZ": 0.160000011,
+ "estRoll": 0.160000011,
+ "estPitch": 0.160000011,
+ "estYaw": 0.160000011,
+ "estRollUncert": 0.160000011,
+ "estPitchUncert": 0.160000011,
+ "estYawUncert": 0.160000011
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:05.312256Z",
+ "scaledAccelX": 0.170000017,
+ "scaledAccelY": 0.170000017,
+ "scaledAccelZ": 0.170000017,
+ "scaledGyroX": 0.170000017,
+ "scaledGyroY": 0.170000017,
+ "scaledGyroZ": 0.170000017,
+ "scaledMagX": 0.170000017,
+ "scaledMagY": 0.170000017,
+ "scaledMagZ": 0.170000017,
+ "estRoll": 0.170000017,
+ "estPitch": 0.170000017,
+ "estYaw": 0.170000017,
+ "estRollUncert": 0.170000017,
+ "estPitchUncert": 0.170000017,
+ "estYawUncert": 0.170000017
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:06.312732Z",
+ "scaledAccelX": 0.180000022,
+ "scaledAccelY": 0.180000022,
+ "scaledAccelZ": 0.180000022,
+ "scaledGyroX": 0.180000022,
+ "scaledGyroY": 0.180000022,
+ "scaledGyroZ": 0.180000022,
+ "scaledMagX": 0.180000022,
+ "scaledMagY": 0.180000022,
+ "scaledMagZ": 0.180000022,
+ "estRoll": 0.180000022,
+ "estPitch": 0.180000022,
+ "estYaw": 0.180000022,
+ "estRollUncert": 0.180000022,
+ "estPitchUncert": 0.180000022,
+ "estYawUncert": 0.180000022
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:07.313333Z",
+ "scaledAccelX": 0.190000027,
+ "scaledAccelY": 0.190000027,
+ "scaledAccelZ": 0.190000027,
+ "scaledGyroX": 0.190000027,
+ "scaledGyroY": 0.190000027,
+ "scaledGyroZ": 0.190000027,
+ "scaledMagX": 0.190000027,
+ "scaledMagY": 0.190000027,
+ "scaledMagZ": 0.190000027,
+ "estRoll": 0.190000027,
+ "estPitch": 0.190000027,
+ "estYaw": 0.190000027,
+ "estRollUncert": 0.190000027,
+ "estPitchUncert": 0.190000027,
+ "estYawUncert": 0.190000027
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:08.314181Z",
+ "scaledAccelX": 0.200000033,
+ "scaledAccelY": 0.200000033,
+ "scaledAccelZ": 0.200000033,
+ "scaledGyroX": 0.200000033,
+ "scaledGyroY": 0.200000033,
+ "scaledGyroZ": 0.200000033,
+ "scaledMagX": 0.200000033,
+ "scaledMagY": 0.200000033,
+ "scaledMagZ": 0.200000033,
+ "estRoll": 0.200000033,
+ "estPitch": 0.200000033,
+ "estYaw": 0.200000033,
+ "estRollUncert": 0.200000033,
+ "estPitchUncert": 0.200000033,
+ "estYawUncert": 0.200000033
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:09.314714Z",
+ "scaledAccelX": 0.210000038,
+ "scaledAccelY": 0.210000038,
+ "scaledAccelZ": 0.210000038,
+ "scaledGyroX": 0.210000038,
+ "scaledGyroY": 0.210000038,
+ "scaledGyroZ": 0.210000038,
+ "scaledMagX": 0.210000038,
+ "scaledMagY": 0.210000038,
+ "scaledMagZ": 0.210000038,
+ "estRoll": 0.210000038,
+ "estPitch": 0.210000038,
+ "estYaw": 0.210000038,
+ "estRollUncert": 0.210000038,
+ "estPitchUncert": 0.210000038,
+ "estYawUncert": 0.210000038
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:10.315252Z",
+ "scaledAccelX": 0.220000044,
+ "scaledAccelY": 0.220000044,
+ "scaledAccelZ": 0.220000044,
+ "scaledGyroX": 0.220000044,
+ "scaledGyroY": 0.220000044,
+ "scaledGyroZ": 0.220000044,
+ "scaledMagX": 0.220000044,
+ "scaledMagY": 0.220000044,
+ "scaledMagZ": 0.220000044,
+ "estRoll": 0.220000044,
+ "estPitch": 0.220000044,
+ "estYaw": 0.220000044,
+ "estRollUncert": 0.220000044,
+ "estPitchUncert": 0.220000044,
+ "estYawUncert": 0.220000044
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:11.315852Z",
+ "scaledAccelX": 0.230000049,
+ "scaledAccelY": 0.230000049,
+ "scaledAccelZ": 0.230000049,
+ "scaledGyroX": 0.230000049,
+ "scaledGyroY": 0.230000049,
+ "scaledGyroZ": 0.230000049,
+ "scaledMagX": 0.230000049,
+ "scaledMagY": 0.230000049,
+ "scaledMagZ": 0.230000049,
+ "estRoll": 0.230000049,
+ "estPitch": 0.230000049,
+ "estYaw": 0.230000049,
+ "estRollUncert": 0.230000049,
+ "estPitchUncert": 0.230000049,
+ "estYawUncert": 0.230000049
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:12.316157Z",
+ "scaledAccelX": 0.240000054,
+ "scaledAccelY": 0.240000054,
+ "scaledAccelZ": 0.240000054,
+ "scaledGyroX": 0.240000054,
+ "scaledGyroY": 0.240000054,
+ "scaledGyroZ": 0.240000054,
+ "scaledMagX": 0.240000054,
+ "scaledMagY": 0.240000054,
+ "scaledMagZ": 0.240000054,
+ "estRoll": 0.240000054,
+ "estPitch": 0.240000054,
+ "estYaw": 0.240000054,
+ "estRollUncert": 0.240000054,
+ "estPitchUncert": 0.240000054,
+ "estYawUncert": 0.240000054
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:13.316504Z",
+ "scaledAccelX": 0.25000006,
+ "scaledAccelY": 0.25000006,
+ "scaledAccelZ": 0.25000006,
+ "scaledGyroX": 0.25000006,
+ "scaledGyroY": 0.25000006,
+ "scaledGyroZ": 0.25000006,
+ "scaledMagX": 0.25000006,
+ "scaledMagY": 0.25000006,
+ "scaledMagZ": 0.25000006,
+ "estRoll": 0.25000006,
+ "estPitch": 0.25000006,
+ "estYaw": 0.25000006,
+ "estRollUncert": 0.25000006,
+ "estPitchUncert": 0.25000006,
+ "estYawUncert": 0.25000006
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:14.317064Z",
+ "scaledAccelX": 0.26000005,
+ "scaledAccelY": 0.26000005,
+ "scaledAccelZ": 0.26000005,
+ "scaledGyroX": 0.26000005,
+ "scaledGyroY": 0.26000005,
+ "scaledGyroZ": 0.26000005,
+ "scaledMagX": 0.26000005,
+ "scaledMagY": 0.26000005,
+ "scaledMagZ": 0.26000005,
+ "estRoll": 0.26000005,
+ "estPitch": 0.26000005,
+ "estYaw": 0.26000005,
+ "estRollUncert": 0.26000005,
+ "estPitchUncert": 0.26000005,
+ "estYawUncert": 0.26000005
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:15.317753Z",
+ "scaledAccelX": 0.270000041,
+ "scaledAccelY": 0.270000041,
+ "scaledAccelZ": 0.270000041,
+ "scaledGyroX": 0.270000041,
+ "scaledGyroY": 0.270000041,
+ "scaledGyroZ": 0.270000041,
+ "scaledMagX": 0.270000041,
+ "scaledMagY": 0.270000041,
+ "scaledMagZ": 0.270000041,
+ "estRoll": 0.270000041,
+ "estPitch": 0.270000041,
+ "estYaw": 0.270000041,
+ "estRollUncert": 0.270000041,
+ "estPitchUncert": 0.270000041,
+ "estYawUncert": 0.270000041
+}
+{}
+{
+ "timestamp": "2021-04-18T21:58:16.318059Z",
+ "scaledAccelX": 0.280000031,
+ "scaledAccelY": 0.280000031,
+ "scaledAccelZ": 0.280000031,
+ "scaledGyroX": 0.280000031,
+ "scaledGyroY": 0.280000031,
+ "scaledGyroZ": 0.280000031,
+ "scaledMagX": 0.280000031,
+ "scaledMagY": 0.280000031,
+ "scaledMagZ": 0.280000031,
+ "estRoll": 0.280000031,
+ "estPitch": 0.280000031,
+ "estYaw": 0.280000031,
+ "estRollUncert": 0.280000031,
+ "estPitchUncert": 0.280000031,
+ "estYawUncert": 0.280000031
+}

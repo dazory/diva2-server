@@ -9,8 +9,10 @@ using namespace std;
 
 namespace protocol
 {
-    const string SENSING_PUB = "tcp://*:5563";
-    const string SENSING_SUB = "tcp://localhost:5563";
+    const string SENSING_PUB = "tcp://*:9158"; //5563 = already in use
+    const string SENSING_SUB = "tcp://localhost:9158";
+    // const string SENSING_PUB = "ipc:///tmp/pubsub.zmq"; //ipc
+    // const string SENSING_SUB = "ipc:///tmp/pubsub.zmq";
     const string SENDER_TOCLOUD_REQ_TEST = "tcp://localhost:5564"; //tcp://13.125.216.169:5555
     const string SENDER_TOCLOUD_REQ = "tcp://165.246.39.124:5564";//"54.180.155.160:22"; // ubuntu@
     const string RECEIVER_FROMMOBILE_REP_TEST = "tcp://*:5564";
@@ -41,4 +43,4 @@ namespace protocol
 // }
 
 
-#endif __GLOBAL_NAME_H__
+#endif //_GLOBAL_NAME_H__
