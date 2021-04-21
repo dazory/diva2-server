@@ -17,8 +17,8 @@ find_library(ZeroMQ_LIBRARY             # use the hint from about to find the lo
 find_package( Threads )
 
 ##use opencv
-# find_package(OpenCV REQUIRED)
-# include_directories(${OpenCV_INCLUDE_DIRS}) 
+find_package(OpenCV REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS}) 
 
 ## use mscl
 find_library(MSCL_LIB_PATH NAMES libmscl.so PATHS "/usr/share/c++-mscl" DOC "MSCL Library" NO_DEFAULT_PATH)
@@ -32,19 +32,11 @@ link_directories(/usr/share/c++-mscl)
 link_libraries(mscl pthread GL GLU glut GLEW glfw X11 Xxf86vm Xrandr pthread Xi dl Xinerama Xcursor m)
 add_definitions(-DBOOST_ERROR_CODE_HEADER_ONLY)
 
-## use postgresql
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpqxx -lpq")
-
-set(PQXX /usr/local/include/pqxx)
-
-find_library(PQXX_LIB pqxx)
-find_library(PQ_LIB pq)
 
 # 실행파일 만들기
-set(SOURCE_SENDER_FROMMOBILE main.cpp)
-add_executable(receiverFrommobile ${SOURCE_SENDER_FROMMOBILE} ${MSCL_INC_PATH} ${MSCL_LIB} ${MSCL_INC} ${PQXX_LIB} ${PQ_LIB} ) # ${OpenCV_INCLUDE_DIRS})                           # 생성할 실행파일 이름 지정
+set(SOURCE_SENDER_FROMMOBILE main.cpp GpsReceiverThread.cpp)
+add_executable(receiverFrommobile ${SOURCE_SENDER_FROMMOBILE} ${MSCL_INC_PATH} ${MSCL_LIB} ${MSCL_INC} ${OpenCV_INCLUDE_DIRS})                           # 생성할 실행파일 이름 지정
 target_include_directories(receiverFrommobile PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the include directory to our compile directives
-target_link_libraries(receiverFrommobile PUBLIC ${ZeroMQ_LIBRARY} ${PQXX_LIB} ${PQ_LIB} 
+target_link_libraries(receiverFrommobile PUBLIC ${ZeroMQ_LIBRARY} ${OpenCV_LIBS} 
         /usr/share/c++-mscl/libmscl.so
         )           # at the 0mq library to our link directive
-        # ${OpenCV_LIBS}
