@@ -11,7 +11,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
-  "../test/Receiver_fromMobile/CMakeLists.txt"
+  "../test/receiver_fromMobile_proto/CMakeLists.txt"
+  "../test/sender_toCloud_protobuf/CMakeLists.txt"
+  "../test/sensing_proto/CMakeLists.txt"
+  "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
+  "/usr/local/share/OpenCV/OpenCVConfig.cmake"
+  "/usr/local/share/OpenCV/OpenCVModules-release.cmake"
+  "/usr/local/share/OpenCV/OpenCVModules.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"
@@ -29,12 +35,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.10/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.10/Modules/FindPkgConfig.cmake"
+  "/usr/share/cmake-3.10/Modules/FindProtobuf.cmake"
   "/usr/share/cmake-3.10/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.10/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.10/Modules/SelectLibraryConfigurations.cmake"
   )
 
 # The corresponding makefile is:
@@ -46,11 +54,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/Receiver_fromMobile/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/receiver_fromMobile_proto/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/sender_toCloud_protobuf/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/sensing_proto/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/diva2.dir/DependInfo.cmake"
-  "test/Receiver_fromMobile/CMakeFiles/receiverFrommobile.dir/DependInfo.cmake"
+  "test/receiver_fromMobile_proto/CMakeFiles/receiverFromMobile.dir/DependInfo.cmake"
+  "test/sender_toCloud_protobuf/CMakeFiles/ProtoLib.dir/DependInfo.cmake"
+  "test/sender_toCloud_protobuf/CMakeFiles/senderToCloud.dir/DependInfo.cmake"
+  "test/sensing_proto/CMakeFiles/sensing_proto.dir/DependInfo.cmake"
   )
