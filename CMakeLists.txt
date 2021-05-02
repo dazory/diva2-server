@@ -75,6 +75,11 @@ link_libraries(pthread)
 # include_directories(${OpenCV_INCLUDE_DIRS}) 
 # set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules)
 
+## use libpqxx
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpqxx -lpq")
+set(PQXX /usr/local/include/pqxx)
+find_library(PQXX_LIB pqxx)
+find_library(PQ_LIB pq)
 
 # 실행파일 만들기
 set(SOURCE_MAIN main.cpp)
@@ -83,9 +88,10 @@ target_include_directories(diva2 PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the includ
 target_link_libraries(diva2 PUBLIC ${ZeroMQ_LIBRARY} )           # at the 0mq library to our link directive
 
 # 서브 디렉토리에 있는 cmakeFiles을 실행시켜줌
-add_subdirectory(test/receiver_fromMobile_proto)
-add_subdirectory(test/sender_toCloud_protobuf)
-add_subdirectory(test/sensing_proto)
+# add_subdirectory(test/receiver_fromMobile_proto)
+# add_subdirectory(test/sender_toCloud_protobuf)
+# add_subdirectory(test/sensing_proto)
+add_subdirectory(test/storing_raw)
 # add_subdirectory(test/openCv)
 # add_subdirectory(test/openCv2)
 #add_subdirectory(test/zmq_imgtransfer)

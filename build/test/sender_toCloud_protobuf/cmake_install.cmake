@@ -1,4 +1,4 @@
-# Install script for directory: /home/kayeon/diva2-server/test/sender_toCloud_protobuf
+# Install script for directory: /home/cvlab2/DIVA2/diva2-server/test/sender_toCloud_protobuf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
