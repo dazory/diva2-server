@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ProtoLib.dir/__/protobuf/sensors.pb.cc.o"
-  "libProtoLib.pdb"
   "libProtoLib.a"
+  "libProtoLib.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

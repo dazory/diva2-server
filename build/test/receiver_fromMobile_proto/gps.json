@@ -46,53 +46,5 @@
       "isNorth" : true,
       "latitude" : 3458.1799700000001,
       "longitude" : 12728.74791
-   },
-   {
-      "AntennaAltitudeMeters" : 39.899999999999999,
-      "GeoidalSeparationMeters" : 21.100000000000001,
-      "HorizontalDilutionOfPrecision" : 6.6699999999999999,
-      "NumberOfSatellitesInUse" : 4,
-      "gpgga" : "$GNGGA,015442.01,3458.17997,N,12728.74791,E,1,04,6.67,39.9,M,21.1,M,,,*61",
-      "gpsQuality" : 1,
-      "isEast" : true,
-      "isNorth" : true,
-      "latitude" : 3458.1799700000001,
-      "longitude" : 12728.74791
-   },
-   {
-      "AntennaAltitudeMeters" : 39.899999999999999,
-      "GeoidalSeparationMeters" : 21.100000000000001,
-      "HorizontalDilutionOfPrecision" : 6.6699999999999999,
-      "NumberOfSatellitesInUse" : 4,
-      "gpgga" : "$GNGGA,015442.01,3458.17997,N,12728.74791,E,1,04,6.67,39.9,M,21.1,M,,,*61",
-      "gpsQuality" : 1,
-      "isEast" : true,
-      "isNorth" : true,
-      "latitude" : 3458.1799700000001,
-      "longitude" : 12728.74791
-   },
-   {
-      "AntennaAltitudeMeters" : 39.899999999999999,
-      "GeoidalSeparationMeters" : 21.100000000000001,
-      "HorizontalDilutionOfPrecision" : 6.6699999999999999,
-      "NumberOfSatellitesInUse" : 4,
-      "gpgga" : "$GNGGA,015442.01,3458.17997,N,12728.74791,E,1,04,6.67,39.9,M,21.1,M,,,*61",
-      "gpsQuality" : 1,
-      "isEast" : true,
-      "isNorth" : true,
-      "latitude" : 3458.1799700000001,
-      "longitude" : 12728.74791
-   },
-   {
-      "AntennaAltitudeMeters" : 39.899999999999999,
-      "GeoidalSeparationMeters" : 21.100000000000001,
-      "HorizontalDilutionOfPrecision" : 6.6699999999999999,
-      "NumberOfSatellitesInUse" : 4,
-      "gpgga" : "$GNGGA,015442.01,3458.17997,N,12728.74791,E,1,04,6.67,39.9,M,21.1,M,,,*61",
-      "gpsQuality" : 1,
-      "isEast" : true,
-      "isNorth" : true,
-      "latitude" : 3458.1799700000001,
-      "longitude" : 12728.74791
    }
 ]

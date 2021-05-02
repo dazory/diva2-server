@@ -446,7 +446,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // double latitude = 3;
+      // optional double latitude = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 25)) {
           _Internal::set_has_latitude(&has_bits);
@@ -454,7 +454,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // bool isNorth = 4;
+      // optional bool isNorth = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_isnorth(&has_bits);
@@ -462,7 +462,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // double longitude = 5;
+      // optional double longitude = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 41)) {
           _Internal::set_has_longitude(&has_bits);
@@ -470,7 +470,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // bool isEast = 6;
+      // optional bool isEast = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           _Internal::set_has_iseast(&has_bits);
@@ -478,7 +478,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 gpsQuality = 7;
+      // optional int32 gpsQuality = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           _Internal::set_has_gpsquality(&has_bits);
@@ -486,7 +486,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 numberOfSatellitesInUse = 8;
+      // optional int32 numberOfSatellitesInUse = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           _Internal::set_has_numberofsatellitesinuse(&has_bits);
@@ -494,7 +494,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // double horizontalDilutionOfPrecision = 9;
+      // optional double horizontalDilutionOfPrecision = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 73)) {
           _Internal::set_has_horizontaldilutionofprecision(&has_bits);
@@ -502,7 +502,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // double antennaAltitudeMeters = 10;
+      // optional double antennaAltitudeMeters = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 81)) {
           _Internal::set_has_antennaaltitudemeters(&has_bits);
@@ -510,7 +510,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // double geoidalSeparationMeters = 11;
+      // optional double geoidalSeparationMeters = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 89)) {
           _Internal::set_has_geoidalseparationmeters(&has_bits);
@@ -518,7 +518,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // double ageOfDifferentialGPSDataSeconds = 12;
+      // optional double ageOfDifferentialGPSDataSeconds = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 97)) {
           _Internal::set_has_ageofdifferentialgpsdataseconds(&has_bits);
@@ -526,7 +526,7 @@ const char* Gps::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(double);
         } else goto handle_unusual;
         continue;
-      // int32 differentialReferenceStationID = 13;
+      // optional int32 differentialReferenceStationID = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
           _Internal::set_has_differentialreferencestationid(&has_bits);
@@ -582,67 +582,67 @@ failure:
         2, this->_internal_gpgga(), target);
   }
 
-  // double latitude = 3;
+  // optional double latitude = 3;
   if (_internal_has_latitude()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_latitude(), target);
   }
 
-  // bool isNorth = 4;
+  // optional bool isNorth = 4;
   if (_internal_has_isnorth()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_isnorth(), target);
   }
 
-  // double longitude = 5;
+  // optional double longitude = 5;
   if (_internal_has_longitude()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_longitude(), target);
   }
 
-  // bool isEast = 6;
+  // optional bool isEast = 6;
   if (_internal_has_iseast()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_iseast(), target);
   }
 
-  // int32 gpsQuality = 7;
+  // optional int32 gpsQuality = 7;
   if (_internal_has_gpsquality()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_gpsquality(), target);
   }
 
-  // int32 numberOfSatellitesInUse = 8;
+  // optional int32 numberOfSatellitesInUse = 8;
   if (_internal_has_numberofsatellitesinuse()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_numberofsatellitesinuse(), target);
   }
 
-  // double horizontalDilutionOfPrecision = 9;
+  // optional double horizontalDilutionOfPrecision = 9;
   if (_internal_has_horizontaldilutionofprecision()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(9, this->_internal_horizontaldilutionofprecision(), target);
   }
 
-  // double antennaAltitudeMeters = 10;
+  // optional double antennaAltitudeMeters = 10;
   if (_internal_has_antennaaltitudemeters()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(10, this->_internal_antennaaltitudemeters(), target);
   }
 
-  // double geoidalSeparationMeters = 11;
+  // optional double geoidalSeparationMeters = 11;
   if (_internal_has_geoidalseparationmeters()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(11, this->_internal_geoidalseparationmeters(), target);
   }
 
-  // double ageOfDifferentialGPSDataSeconds = 12;
+  // optional double ageOfDifferentialGPSDataSeconds = 12;
   if (_internal_has_ageofdifferentialgpsdataseconds()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(12, this->_internal_ageofdifferentialgpsdataseconds(), target);
   }
 
-  // int32 differentialReferenceStationID = 13;
+  // optional int32 differentialReferenceStationID = 13;
   if (_internal_has_differentialreferencestationid()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(13, this->_internal_differentialreferencestationid(), target);
@@ -680,44 +680,44 @@ size_t Gps::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // double latitude = 3;
+    // optional double latitude = 3;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 8;
     }
 
-    // double longitude = 5;
+    // optional double longitude = 5;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 8;
     }
 
-    // bool isNorth = 4;
+    // optional bool isNorth = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 1;
     }
 
-    // bool isEast = 6;
+    // optional bool isEast = 6;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 1;
     }
 
-    // int32 gpsQuality = 7;
+    // optional int32 gpsQuality = 7;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
           this->_internal_gpsquality());
     }
 
-    // double horizontalDilutionOfPrecision = 9;
+    // optional double horizontalDilutionOfPrecision = 9;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 8;
     }
 
-    // double antennaAltitudeMeters = 10;
+    // optional double antennaAltitudeMeters = 10;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 8;
     }
 
-    // int32 numberOfSatellitesInUse = 8;
+    // optional int32 numberOfSatellitesInUse = 8;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -726,19 +726,19 @@ size_t Gps::ByteSizeLong() const {
 
   }
   if (cached_has_bits & 0x00000700u) {
-    // int32 differentialReferenceStationID = 13;
+    // optional int32 differentialReferenceStationID = 13;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
           this->_internal_differentialreferencestationid());
     }
 
-    // double geoidalSeparationMeters = 11;
+    // optional double geoidalSeparationMeters = 11;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 8;
     }
 
-    // double ageOfDifferentialGPSDataSeconds = 12;
+    // optional double ageOfDifferentialGPSDataSeconds = 12;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 8;
     }
@@ -843,7 +843,7 @@ bool Gps::IsInitialized() const {
 
 void Gps::InternalSwap(Gps* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   gpgga_.Swap(&other->gpgga_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
@@ -1011,7 +1011,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // float scaledAccelX = 2;
+      // optional float scaledAccelX = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 21)) {
           _Internal::set_has_scaledaccelx(&has_bits);
@@ -1019,7 +1019,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledAccelY = 3;
+      // optional float scaledAccelY = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 29)) {
           _Internal::set_has_scaledaccely(&has_bits);
@@ -1027,7 +1027,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledAccelZ = 4;
+      // optional float scaledAccelZ = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 37)) {
           _Internal::set_has_scaledaccelz(&has_bits);
@@ -1035,7 +1035,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledGyroX = 5;
+      // optional float scaledGyroX = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 45)) {
           _Internal::set_has_scaledgyrox(&has_bits);
@@ -1043,7 +1043,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledGyroY = 6;
+      // optional float scaledGyroY = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 53)) {
           _Internal::set_has_scaledgyroy(&has_bits);
@@ -1051,7 +1051,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledGyroZ = 7;
+      // optional float scaledGyroZ = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 61)) {
           _Internal::set_has_scaledgyroz(&has_bits);
@@ -1059,7 +1059,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledMagX = 8;
+      // optional float scaledMagX = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 69)) {
           _Internal::set_has_scaledmagx(&has_bits);
@@ -1067,7 +1067,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledMagY = 9;
+      // optional float scaledMagY = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 77)) {
           _Internal::set_has_scaledmagy(&has_bits);
@@ -1075,7 +1075,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float scaledMagZ = 10;
+      // optional float scaledMagZ = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 85)) {
           _Internal::set_has_scaledmagz(&has_bits);
@@ -1083,7 +1083,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estRoll = 11;
+      // optional float estRoll = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 93)) {
           _Internal::set_has_estroll(&has_bits);
@@ -1091,7 +1091,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estPitch = 12;
+      // optional float estPitch = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 101)) {
           _Internal::set_has_estpitch(&has_bits);
@@ -1099,7 +1099,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estYaw = 13;
+      // optional float estYaw = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 109)) {
           _Internal::set_has_estyaw(&has_bits);
@@ -1107,7 +1107,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estRollUncert = 14;
+      // optional float estRollUncert = 14;
       case 14:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 117)) {
           _Internal::set_has_estrolluncert(&has_bits);
@@ -1115,7 +1115,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estPitchUncert = 15;
+      // optional float estPitchUncert = 15;
       case 15:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 125)) {
           _Internal::set_has_estpitchuncert(&has_bits);
@@ -1123,7 +1123,7 @@ const char* Imu::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::intern
           ptr += sizeof(float);
         } else goto handle_unusual;
         continue;
-      // float estYawUncert = 16;
+      // optional float estYawUncert = 16;
       case 16:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 133)) {
           _Internal::set_has_estyawuncert(&has_bits);
@@ -1169,91 +1169,91 @@ failure:
         1, _Internal::timestamp(this), target, stream);
   }
 
-  // float scaledAccelX = 2;
+  // optional float scaledAccelX = 2;
   if (_internal_has_scaledaccelx()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_scaledaccelx(), target);
   }
 
-  // float scaledAccelY = 3;
+  // optional float scaledAccelY = 3;
   if (_internal_has_scaledaccely()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_scaledaccely(), target);
   }
 
-  // float scaledAccelZ = 4;
+  // optional float scaledAccelZ = 4;
   if (_internal_has_scaledaccelz()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_scaledaccelz(), target);
   }
 
-  // float scaledGyroX = 5;
+  // optional float scaledGyroX = 5;
   if (_internal_has_scaledgyrox()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_scaledgyrox(), target);
   }
 
-  // float scaledGyroY = 6;
+  // optional float scaledGyroY = 6;
   if (_internal_has_scaledgyroy()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_scaledgyroy(), target);
   }
 
-  // float scaledGyroZ = 7;
+  // optional float scaledGyroZ = 7;
   if (_internal_has_scaledgyroz()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_scaledgyroz(), target);
   }
 
-  // float scaledMagX = 8;
+  // optional float scaledMagX = 8;
   if (_internal_has_scaledmagx()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(8, this->_internal_scaledmagx(), target);
   }
 
-  // float scaledMagY = 9;
+  // optional float scaledMagY = 9;
   if (_internal_has_scaledmagy()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(9, this->_internal_scaledmagy(), target);
   }
 
-  // float scaledMagZ = 10;
+  // optional float scaledMagZ = 10;
   if (_internal_has_scaledmagz()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(10, this->_internal_scaledmagz(), target);
   }
 
-  // float estRoll = 11;
+  // optional float estRoll = 11;
   if (_internal_has_estroll()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(11, this->_internal_estroll(), target);
   }
 
-  // float estPitch = 12;
+  // optional float estPitch = 12;
   if (_internal_has_estpitch()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(12, this->_internal_estpitch(), target);
   }
 
-  // float estYaw = 13;
+  // optional float estYaw = 13;
   if (_internal_has_estyaw()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(13, this->_internal_estyaw(), target);
   }
 
-  // float estRollUncert = 14;
+  // optional float estRollUncert = 14;
   if (_internal_has_estrolluncert()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(14, this->_internal_estrolluncert(), target);
   }
 
-  // float estPitchUncert = 15;
+  // optional float estPitchUncert = 15;
   if (_internal_has_estpitchuncert()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(15, this->_internal_estpitchuncert(), target);
   }
 
-  // float estYawUncert = 16;
+  // optional float estYawUncert = 16;
   if (_internal_has_estyawuncert()) {
     target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(16, this->_internal_estyawuncert(), target);
@@ -1284,79 +1284,79 @@ size_t Imu::ByteSizeLong() const {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
-    // float scaledAccelX = 2;
+    // optional float scaledAccelX = 2;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 + 4;
     }
 
-    // float scaledAccelY = 3;
+    // optional float scaledAccelY = 3;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 + 4;
     }
 
-    // float scaledAccelZ = 4;
+    // optional float scaledAccelZ = 4;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 + 4;
     }
 
-    // float scaledGyroX = 5;
+    // optional float scaledGyroX = 5;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 + 4;
     }
 
-    // float scaledGyroY = 6;
+    // optional float scaledGyroY = 6;
     if (cached_has_bits & 0x00000010u) {
       total_size += 1 + 4;
     }
 
-    // float scaledGyroZ = 7;
+    // optional float scaledGyroZ = 7;
     if (cached_has_bits & 0x00000020u) {
       total_size += 1 + 4;
     }
 
-    // float scaledMagX = 8;
+    // optional float scaledMagX = 8;
     if (cached_has_bits & 0x00000040u) {
       total_size += 1 + 4;
     }
 
-    // float scaledMagY = 9;
+    // optional float scaledMagY = 9;
     if (cached_has_bits & 0x00000080u) {
       total_size += 1 + 4;
     }
 
   }
   if (cached_has_bits & 0x00007f00u) {
-    // float scaledMagZ = 10;
+    // optional float scaledMagZ = 10;
     if (cached_has_bits & 0x00000100u) {
       total_size += 1 + 4;
     }
 
-    // float estRoll = 11;
+    // optional float estRoll = 11;
     if (cached_has_bits & 0x00000200u) {
       total_size += 1 + 4;
     }
 
-    // float estPitch = 12;
+    // optional float estPitch = 12;
     if (cached_has_bits & 0x00000400u) {
       total_size += 1 + 4;
     }
 
-    // float estYaw = 13;
+    // optional float estYaw = 13;
     if (cached_has_bits & 0x00000800u) {
       total_size += 1 + 4;
     }
 
-    // float estRollUncert = 14;
+    // optional float estRollUncert = 14;
     if (cached_has_bits & 0x00001000u) {
       total_size += 1 + 4;
     }
 
-    // float estPitchUncert = 15;
+    // optional float estPitchUncert = 15;
     if (cached_has_bits & 0x00002000u) {
       total_size += 1 + 4;
     }
 
-    // float estYawUncert = 16;
+    // optional float estYawUncert = 16;
     if (cached_has_bits & 0x00004000u) {
       total_size += 2 + 4;
     }
@@ -1470,7 +1470,7 @@ bool Imu::IsInitialized() const {
 
 void Imu::InternalSwap(Imu* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(Imu, estyawuncert_)
@@ -1893,7 +1893,7 @@ bool Cam::IsInitialized() const {
 
 void Cam::InternalSwap(Cam* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   red_data_.Swap(&other->red_data_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   green_data_.Swap(&other->green_data_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
   blue_data_.Swap(&other->blue_data_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
@@ -2113,7 +2113,7 @@ bool Lidar::IsInitialized() const {
 
 void Lidar::InternalSwap(Lidar* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(timestamp_, other->timestamp_);
 }
 
@@ -2324,7 +2324,7 @@ bool Can::IsInitialized() const {
 
 void Can::InternalSwap(Can* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   swap(timestamp_, other->timestamp_);
 }
 

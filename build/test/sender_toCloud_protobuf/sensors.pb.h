@@ -224,7 +224,7 @@ class Gps PROTOBUF_FINAL :
   public:
   void clear_timestamp();
   const PROTOBUF_NAMESPACE_ID::Timestamp& timestamp() const;
-  PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
+  PROTOBUF_FUTURE_MUST_USE_RESULT PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
   PROTOBUF_NAMESPACE_ID::Timestamp* mutable_timestamp();
   void set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   private:
@@ -235,7 +235,7 @@ class Gps PROTOBUF_FINAL :
       PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   PROTOBUF_NAMESPACE_ID::Timestamp* unsafe_arena_release_timestamp();
 
-  // double latitude = 3;
+  // optional double latitude = 3;
   bool has_latitude() const;
   private:
   bool _internal_has_latitude() const;
@@ -248,7 +248,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_latitude(double value);
   public:
 
-  // double longitude = 5;
+  // optional double longitude = 5;
   bool has_longitude() const;
   private:
   bool _internal_has_longitude() const;
@@ -261,7 +261,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_longitude(double value);
   public:
 
-  // bool isNorth = 4;
+  // optional bool isNorth = 4;
   bool has_isnorth() const;
   private:
   bool _internal_has_isnorth() const;
@@ -274,7 +274,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_isnorth(bool value);
   public:
 
-  // bool isEast = 6;
+  // optional bool isEast = 6;
   bool has_iseast() const;
   private:
   bool _internal_has_iseast() const;
@@ -287,7 +287,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_iseast(bool value);
   public:
 
-  // int32 gpsQuality = 7;
+  // optional int32 gpsQuality = 7;
   bool has_gpsquality() const;
   private:
   bool _internal_has_gpsquality() const;
@@ -300,7 +300,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_gpsquality(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // double horizontalDilutionOfPrecision = 9;
+  // optional double horizontalDilutionOfPrecision = 9;
   bool has_horizontaldilutionofprecision() const;
   private:
   bool _internal_has_horizontaldilutionofprecision() const;
@@ -313,7 +313,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_horizontaldilutionofprecision(double value);
   public:
 
-  // double antennaAltitudeMeters = 10;
+  // optional double antennaAltitudeMeters = 10;
   bool has_antennaaltitudemeters() const;
   private:
   bool _internal_has_antennaaltitudemeters() const;
@@ -326,7 +326,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_antennaaltitudemeters(double value);
   public:
 
-  // int32 numberOfSatellitesInUse = 8;
+  // optional int32 numberOfSatellitesInUse = 8;
   bool has_numberofsatellitesinuse() const;
   private:
   bool _internal_has_numberofsatellitesinuse() const;
@@ -339,7 +339,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_numberofsatellitesinuse(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // int32 differentialReferenceStationID = 13;
+  // optional int32 differentialReferenceStationID = 13;
   bool has_differentialreferencestationid() const;
   private:
   bool _internal_has_differentialreferencestationid() const;
@@ -352,7 +352,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_differentialreferencestationid(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
-  // double geoidalSeparationMeters = 11;
+  // optional double geoidalSeparationMeters = 11;
   bool has_geoidalseparationmeters() const;
   private:
   bool _internal_has_geoidalseparationmeters() const;
@@ -365,7 +365,7 @@ class Gps PROTOBUF_FINAL :
   void _internal_set_geoidalseparationmeters(double value);
   public:
 
-  // double ageOfDifferentialGPSDataSeconds = 12;
+  // optional double ageOfDifferentialGPSDataSeconds = 12;
   bool has_ageofdifferentialgpsdataseconds() const;
   private:
   bool _internal_has_ageofdifferentialgpsdataseconds() const;
@@ -535,7 +535,7 @@ class Imu PROTOBUF_FINAL :
   public:
   void clear_timestamp();
   const PROTOBUF_NAMESPACE_ID::Timestamp& timestamp() const;
-  PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
+  PROTOBUF_FUTURE_MUST_USE_RESULT PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
   PROTOBUF_NAMESPACE_ID::Timestamp* mutable_timestamp();
   void set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   private:
@@ -546,7 +546,7 @@ class Imu PROTOBUF_FINAL :
       PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   PROTOBUF_NAMESPACE_ID::Timestamp* unsafe_arena_release_timestamp();
 
-  // float scaledAccelX = 2;
+  // optional float scaledAccelX = 2;
   bool has_scaledaccelx() const;
   private:
   bool _internal_has_scaledaccelx() const;
@@ -559,7 +559,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledaccelx(float value);
   public:
 
-  // float scaledAccelY = 3;
+  // optional float scaledAccelY = 3;
   bool has_scaledaccely() const;
   private:
   bool _internal_has_scaledaccely() const;
@@ -572,7 +572,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledaccely(float value);
   public:
 
-  // float scaledAccelZ = 4;
+  // optional float scaledAccelZ = 4;
   bool has_scaledaccelz() const;
   private:
   bool _internal_has_scaledaccelz() const;
@@ -585,7 +585,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledaccelz(float value);
   public:
 
-  // float scaledGyroX = 5;
+  // optional float scaledGyroX = 5;
   bool has_scaledgyrox() const;
   private:
   bool _internal_has_scaledgyrox() const;
@@ -598,7 +598,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledgyrox(float value);
   public:
 
-  // float scaledGyroY = 6;
+  // optional float scaledGyroY = 6;
   bool has_scaledgyroy() const;
   private:
   bool _internal_has_scaledgyroy() const;
@@ -611,7 +611,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledgyroy(float value);
   public:
 
-  // float scaledGyroZ = 7;
+  // optional float scaledGyroZ = 7;
   bool has_scaledgyroz() const;
   private:
   bool _internal_has_scaledgyroz() const;
@@ -624,7 +624,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledgyroz(float value);
   public:
 
-  // float scaledMagX = 8;
+  // optional float scaledMagX = 8;
   bool has_scaledmagx() const;
   private:
   bool _internal_has_scaledmagx() const;
@@ -637,7 +637,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledmagx(float value);
   public:
 
-  // float scaledMagY = 9;
+  // optional float scaledMagY = 9;
   bool has_scaledmagy() const;
   private:
   bool _internal_has_scaledmagy() const;
@@ -650,7 +650,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledmagy(float value);
   public:
 
-  // float scaledMagZ = 10;
+  // optional float scaledMagZ = 10;
   bool has_scaledmagz() const;
   private:
   bool _internal_has_scaledmagz() const;
@@ -663,7 +663,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_scaledmagz(float value);
   public:
 
-  // float estRoll = 11;
+  // optional float estRoll = 11;
   bool has_estroll() const;
   private:
   bool _internal_has_estroll() const;
@@ -676,7 +676,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_estroll(float value);
   public:
 
-  // float estPitch = 12;
+  // optional float estPitch = 12;
   bool has_estpitch() const;
   private:
   bool _internal_has_estpitch() const;
@@ -689,7 +689,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_estpitch(float value);
   public:
 
-  // float estYaw = 13;
+  // optional float estYaw = 13;
   bool has_estyaw() const;
   private:
   bool _internal_has_estyaw() const;
@@ -702,7 +702,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_estyaw(float value);
   public:
 
-  // float estRollUncert = 14;
+  // optional float estRollUncert = 14;
   bool has_estrolluncert() const;
   private:
   bool _internal_has_estrolluncert() const;
@@ -715,7 +715,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_estrolluncert(float value);
   public:
 
-  // float estPitchUncert = 15;
+  // optional float estPitchUncert = 15;
   bool has_estpitchuncert() const;
   private:
   bool _internal_has_estpitchuncert() const;
@@ -728,7 +728,7 @@ class Imu PROTOBUF_FINAL :
   void _internal_set_estpitchuncert(float value);
   public:
 
-  // float estYawUncert = 16;
+  // optional float estYawUncert = 16;
   bool has_estyawuncert() const;
   private:
   bool _internal_has_estyawuncert() const;
@@ -949,7 +949,7 @@ class Cam PROTOBUF_FINAL :
   public:
   void clear_timestamp();
   const PROTOBUF_NAMESPACE_ID::Timestamp& timestamp() const;
-  PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
+  PROTOBUF_FUTURE_MUST_USE_RESULT PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
   PROTOBUF_NAMESPACE_ID::Timestamp* mutable_timestamp();
   void set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   private:
@@ -1123,7 +1123,7 @@ class Lidar PROTOBUF_FINAL :
   public:
   void clear_timestamp();
   const PROTOBUF_NAMESPACE_ID::Timestamp& timestamp() const;
-  PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
+  PROTOBUF_FUTURE_MUST_USE_RESULT PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
   PROTOBUF_NAMESPACE_ID::Timestamp* mutable_timestamp();
   void set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   private:
@@ -1263,7 +1263,7 @@ class Can PROTOBUF_FINAL :
   public:
   void clear_timestamp();
   const PROTOBUF_NAMESPACE_ID::Timestamp& timestamp() const;
-  PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
+  PROTOBUF_FUTURE_MUST_USE_RESULT PROTOBUF_NAMESPACE_ID::Timestamp* release_timestamp();
   PROTOBUF_NAMESPACE_ID::Timestamp* mutable_timestamp();
   void set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* timestamp);
   private:
@@ -1418,7 +1418,7 @@ inline void Gps::set_allocated_gpgga(std::string* gpgga) {
   // @@protoc_insertion_point(field_set_allocated:sensors.Gps.gpgga)
 }
 
-// double latitude = 3;
+// optional double latitude = 3;
 inline bool Gps::_internal_has_latitude() const {
   bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
@@ -1446,7 +1446,7 @@ inline void Gps::set_latitude(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.latitude)
 }
 
-// bool isNorth = 4;
+// optional bool isNorth = 4;
 inline bool Gps::_internal_has_isnorth() const {
   bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
@@ -1474,7 +1474,7 @@ inline void Gps::set_isnorth(bool value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.isNorth)
 }
 
-// double longitude = 5;
+// optional double longitude = 5;
 inline bool Gps::_internal_has_longitude() const {
   bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
@@ -1502,7 +1502,7 @@ inline void Gps::set_longitude(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.longitude)
 }
 
-// bool isEast = 6;
+// optional bool isEast = 6;
 inline bool Gps::_internal_has_iseast() const {
   bool value = (_has_bits_[0] & 0x00000008u) != 0;
   return value;
@@ -1530,7 +1530,7 @@ inline void Gps::set_iseast(bool value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.isEast)
 }
 
-// int32 gpsQuality = 7;
+// optional int32 gpsQuality = 7;
 inline bool Gps::_internal_has_gpsquality() const {
   bool value = (_has_bits_[0] & 0x00000010u) != 0;
   return value;
@@ -1558,7 +1558,7 @@ inline void Gps::set_gpsquality(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.gpsQuality)
 }
 
-// int32 numberOfSatellitesInUse = 8;
+// optional int32 numberOfSatellitesInUse = 8;
 inline bool Gps::_internal_has_numberofsatellitesinuse() const {
   bool value = (_has_bits_[0] & 0x00000080u) != 0;
   return value;
@@ -1586,7 +1586,7 @@ inline void Gps::set_numberofsatellitesinuse(::PROTOBUF_NAMESPACE_ID::int32 valu
   // @@protoc_insertion_point(field_set:sensors.Gps.numberOfSatellitesInUse)
 }
 
-// double horizontalDilutionOfPrecision = 9;
+// optional double horizontalDilutionOfPrecision = 9;
 inline bool Gps::_internal_has_horizontaldilutionofprecision() const {
   bool value = (_has_bits_[0] & 0x00000020u) != 0;
   return value;
@@ -1614,7 +1614,7 @@ inline void Gps::set_horizontaldilutionofprecision(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.horizontalDilutionOfPrecision)
 }
 
-// double antennaAltitudeMeters = 10;
+// optional double antennaAltitudeMeters = 10;
 inline bool Gps::_internal_has_antennaaltitudemeters() const {
   bool value = (_has_bits_[0] & 0x00000040u) != 0;
   return value;
@@ -1642,7 +1642,7 @@ inline void Gps::set_antennaaltitudemeters(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.antennaAltitudeMeters)
 }
 
-// double geoidalSeparationMeters = 11;
+// optional double geoidalSeparationMeters = 11;
 inline bool Gps::_internal_has_geoidalseparationmeters() const {
   bool value = (_has_bits_[0] & 0x00000200u) != 0;
   return value;
@@ -1670,7 +1670,7 @@ inline void Gps::set_geoidalseparationmeters(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.geoidalSeparationMeters)
 }
 
-// double ageOfDifferentialGPSDataSeconds = 12;
+// optional double ageOfDifferentialGPSDataSeconds = 12;
 inline bool Gps::_internal_has_ageofdifferentialgpsdataseconds() const {
   bool value = (_has_bits_[0] & 0x00000400u) != 0;
   return value;
@@ -1698,7 +1698,7 @@ inline void Gps::set_ageofdifferentialgpsdataseconds(double value) {
   // @@protoc_insertion_point(field_set:sensors.Gps.ageOfDifferentialGPSDataSeconds)
 }
 
-// int32 differentialReferenceStationID = 13;
+// optional int32 differentialReferenceStationID = 13;
 inline bool Gps::_internal_has_differentialreferencestationid() const {
   bool value = (_has_bits_[0] & 0x00000100u) != 0;
   return value;
@@ -1807,7 +1807,7 @@ inline void Imu::set_allocated_timestamp(PROTOBUF_NAMESPACE_ID::Timestamp* times
   // @@protoc_insertion_point(field_set_allocated:sensors.Imu.timestamp)
 }
 
-// float scaledAccelX = 2;
+// optional float scaledAccelX = 2;
 inline bool Imu::_internal_has_scaledaccelx() const {
   bool value = (_has_bits_[0] & 0x00000001u) != 0;
   return value;
@@ -1835,7 +1835,7 @@ inline void Imu::set_scaledaccelx(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledAccelX)
 }
 
-// float scaledAccelY = 3;
+// optional float scaledAccelY = 3;
 inline bool Imu::_internal_has_scaledaccely() const {
   bool value = (_has_bits_[0] & 0x00000002u) != 0;
   return value;
@@ -1863,7 +1863,7 @@ inline void Imu::set_scaledaccely(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledAccelY)
 }
 
-// float scaledAccelZ = 4;
+// optional float scaledAccelZ = 4;
 inline bool Imu::_internal_has_scaledaccelz() const {
   bool value = (_has_bits_[0] & 0x00000004u) != 0;
   return value;
@@ -1891,7 +1891,7 @@ inline void Imu::set_scaledaccelz(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledAccelZ)
 }
 
-// float scaledGyroX = 5;
+// optional float scaledGyroX = 5;
 inline bool Imu::_internal_has_scaledgyrox() const {
   bool value = (_has_bits_[0] & 0x00000008u) != 0;
   return value;
@@ -1919,7 +1919,7 @@ inline void Imu::set_scaledgyrox(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledGyroX)
 }
 
-// float scaledGyroY = 6;
+// optional float scaledGyroY = 6;
 inline bool Imu::_internal_has_scaledgyroy() const {
   bool value = (_has_bits_[0] & 0x00000010u) != 0;
   return value;
@@ -1947,7 +1947,7 @@ inline void Imu::set_scaledgyroy(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledGyroY)
 }
 
-// float scaledGyroZ = 7;
+// optional float scaledGyroZ = 7;
 inline bool Imu::_internal_has_scaledgyroz() const {
   bool value = (_has_bits_[0] & 0x00000020u) != 0;
   return value;
@@ -1975,7 +1975,7 @@ inline void Imu::set_scaledgyroz(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledGyroZ)
 }
 
-// float scaledMagX = 8;
+// optional float scaledMagX = 8;
 inline bool Imu::_internal_has_scaledmagx() const {
   bool value = (_has_bits_[0] & 0x00000040u) != 0;
   return value;
@@ -2003,7 +2003,7 @@ inline void Imu::set_scaledmagx(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledMagX)
 }
 
-// float scaledMagY = 9;
+// optional float scaledMagY = 9;
 inline bool Imu::_internal_has_scaledmagy() const {
   bool value = (_has_bits_[0] & 0x00000080u) != 0;
   return value;
@@ -2031,7 +2031,7 @@ inline void Imu::set_scaledmagy(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledMagY)
 }
 
-// float scaledMagZ = 10;
+// optional float scaledMagZ = 10;
 inline bool Imu::_internal_has_scaledmagz() const {
   bool value = (_has_bits_[0] & 0x00000100u) != 0;
   return value;
@@ -2059,7 +2059,7 @@ inline void Imu::set_scaledmagz(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.scaledMagZ)
 }
 
-// float estRoll = 11;
+// optional float estRoll = 11;
 inline bool Imu::_internal_has_estroll() const {
   bool value = (_has_bits_[0] & 0x00000200u) != 0;
   return value;
@@ -2087,7 +2087,7 @@ inline void Imu::set_estroll(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.estRoll)
 }
 
-// float estPitch = 12;
+// optional float estPitch = 12;
 inline bool Imu::_internal_has_estpitch() const {
   bool value = (_has_bits_[0] & 0x00000400u) != 0;
   return value;
@@ -2115,7 +2115,7 @@ inline void Imu::set_estpitch(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.estPitch)
 }
 
-// float estYaw = 13;
+// optional float estYaw = 13;
 inline bool Imu::_internal_has_estyaw() const {
   bool value = (_has_bits_[0] & 0x00000800u) != 0;
   return value;
@@ -2143,7 +2143,7 @@ inline void Imu::set_estyaw(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.estYaw)
 }
 
-// float estRollUncert = 14;
+// optional float estRollUncert = 14;
 inline bool Imu::_internal_has_estrolluncert() const {
   bool value = (_has_bits_[0] & 0x00001000u) != 0;
   return value;
@@ -2171,7 +2171,7 @@ inline void Imu::set_estrolluncert(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.estRollUncert)
 }
 
-// float estPitchUncert = 15;
+// optional float estPitchUncert = 15;
 inline bool Imu::_internal_has_estpitchuncert() const {
   bool value = (_has_bits_[0] & 0x00002000u) != 0;
   return value;
@@ -2199,7 +2199,7 @@ inline void Imu::set_estpitchuncert(float value) {
   // @@protoc_insertion_point(field_set:sensors.Imu.estPitchUncert)
 }
 
-// float estYawUncert = 16;
+// optional float estYawUncert = 16;
 inline bool Imu::_internal_has_estyawuncert() const {
   bool value = (_has_bits_[0] & 0x00004000u) != 0;
   return value;

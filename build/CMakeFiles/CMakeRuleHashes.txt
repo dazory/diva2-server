@@ -1,4 +1,4 @@
 # Hashes of file build rules.
-05e144e708898170ebae8b2cd4b9eacc test/receiver_fromMobile_proto/sensors.pb.cc
-5ad9f1cbf44fc9f90055345fe8a57eb2 test/sender_toCloud_protobuf/sensors.pb.cc
-d665e168e974a045c9207b4c12eefa38 test/sensing_proto/sensors.pb.cc
+6038dce5e9467729478aa71653b7d438 test/receiver_fromMobile_proto/sensors.pb.h
+69792c1610a87e22eb311064d5fb1a36 test/sender_toCloud_protobuf/sensors.pb.h
+16c58be8774f18812a9c2fd6c7909ae0 test/sensing_proto/sensors.pb.h
