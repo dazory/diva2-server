@@ -49,33 +49,37 @@ void GpsReceiverThread::run(void *contextRep){
         s_send(socketRep, zmqData);
         
         /* CONVERT PROTO TO JSON */
-        /* ========== 가연이 것 ==================*/
-        // string json_string;
-        // Json::Value gps_json;
-        // gps_json["latitude"] = gps.latitude();
-        // gps_json["longtitude"] = gps.longitude();
-        // Json::Value data_json;
-        // data_json.append(gps_json);
+        Json::Value Gps_data;
+        string path = "gps.json";
+        ifstream in(path.c_str());
+        if(in.is_open()) in >> Gps_data;
 
-        // Json::StyledWriter writer;
-        // json_string = writer.write(gps_json);
-        // cout << json_string << endl;
-        
-        //json storing//
         string json_string;
-        google::protobuf::util::JsonPrintOptions options;
-        options.add_whitespace = true;
-        options.always_print_primitive_fields = true;
-        options.preserve_proto_field_names = true;
-        google::protobuf::util::MessageToJsonString(gps, &json_string, options);
-        cout<<json_string<<endl;
-        
-        std::ofstream ost;
-        ost.open("gps.json",std::ios_base::out | std::ios_base::app);
-        ost << json_string;
+        Json::Value gps_json;
 
-        
-        /* OPTIONS */
+        gps_json["gpgga"] = gps.gpgga();
+        gps_json["latitude"] = gps.latitude();
+        gps_json["isNorth"] = gps.isnorth();
+        gps_json["longitude"] = gps.longitude();
+        gps_json["isEast"] = gps.iseast();
+        gps_json["gpsQuality"] = gps.gpsquality();
+        gps_json["NumberOfSatellitesInUse"] = gps.numberofsatellitesinuse();
+        gps_json["HorizontalDilutionOfPrecision"] = gps.horizontaldilutionofprecision();
+        gps_json["AntennaAltitudeMeters"] = gps.antennaaltitudemeters();
+        gps_json["GeoidalSeparationMeters"] = gps.geoidalseparationmeters();        
+
+        Gps_data.append(gps_json);
+
+        Json::StyledWriter writer;
+        ofstream out(path.c_str());
+        out<<writer.write(Gps_data);
+        out.close();
+
+        // google::protobuf::util::JsonPrintOptions options;
+        // options.add_whitespace = true;
+        // options.always_print_primitive_fields = true;
+        // options.preserve_proto_field_names = true;
+        // google::protobuf::util::MessageToJsonString(gps, &json_string, options);
 
     }
 
