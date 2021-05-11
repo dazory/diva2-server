@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/storingraw.dir/main.cpp.o"
-  "CMakeFiles/storingraw.dir/readfiles.cpp.o"
-  "CMakeFiles/storingraw.dir/indexandtimes.cpp.o"
-  "CMakeFiles/storingraw.dir/makejson.cpp.o"
+  "CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o"
   "storingraw.pdb"
   "storingraw"
 )

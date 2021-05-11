@@ -81,98 +81,46 @@ test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.o.provides: test/storing_raw
 test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.o.provides.build: test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.o
 
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o: test/storing_raw/CMakeFiles/storingraw.dir/flags.make
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o: ../test/storing_raw/readfiles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/readfiles.cpp.o -c /home/kayeon/diva2-server/test/storing_raw/readfiles.cpp
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o: test/storing_raw/CMakeFiles/storingraw.dir/flags.make
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o: ../test/storing_raw/GpscsvRawStoringThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o"
+	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o -c /home/kayeon/diva2-server/test/storing_raw/GpscsvRawStoringThread.cpp
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/readfiles.cpp.i"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kayeon/diva2-server/test/storing_raw/readfiles.cpp > CMakeFiles/storingraw.dir/readfiles.cpp.i
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.i"
+	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kayeon/diva2-server/test/storing_raw/GpscsvRawStoringThread.cpp > CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.i
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/readfiles.cpp.s"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kayeon/diva2-server/test/storing_raw/readfiles.cpp -o CMakeFiles/storingraw.dir/readfiles.cpp.s
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.s"
+	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kayeon/diva2-server/test/storing_raw/GpscsvRawStoringThread.cpp -o CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.s
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.requires:
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.requires:
 
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.requires
+.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.requires
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.provides: test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.requires
-	$(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.provides.build
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.provides
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.provides: test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.requires
+	$(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.provides.build
+.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.provides
 
-test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.provides.build: test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o
-
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o: test/storing_raw/CMakeFiles/storingraw.dir/flags.make
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o: ../test/storing_raw/indexandtimes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/indexandtimes.cpp.o -c /home/kayeon/diva2-server/test/storing_raw/indexandtimes.cpp
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/indexandtimes.cpp.i"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kayeon/diva2-server/test/storing_raw/indexandtimes.cpp > CMakeFiles/storingraw.dir/indexandtimes.cpp.i
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/indexandtimes.cpp.s"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kayeon/diva2-server/test/storing_raw/indexandtimes.cpp -o CMakeFiles/storingraw.dir/indexandtimes.cpp.s
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.requires:
-
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.requires
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.provides: test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.requires
-	$(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.provides.build
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.provides
-
-test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.provides.build: test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o
-
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o: test/storing_raw/CMakeFiles/storingraw.dir/flags.make
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o: ../test/storing_raw/makejson.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/makejson.cpp.o -c /home/kayeon/diva2-server/test/storing_raw/makejson.cpp
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/makejson.cpp.i"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kayeon/diva2-server/test/storing_raw/makejson.cpp > CMakeFiles/storingraw.dir/makejson.cpp.i
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/makejson.cpp.s"
-	cd /home/kayeon/diva2-server/build/test/storing_raw && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kayeon/diva2-server/test/storing_raw/makejson.cpp -o CMakeFiles/storingraw.dir/makejson.cpp.s
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.requires:
-
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.requires
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.provides: test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.requires
-	$(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.provides.build
-.PHONY : test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.provides
-
-test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.provides.build: test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o
+test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.provides.build: test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o
 
 
 # Object files for target storingraw
 storingraw_OBJECTS = \
 "CMakeFiles/storingraw.dir/main.cpp.o" \
-"CMakeFiles/storingraw.dir/readfiles.cpp.o" \
-"CMakeFiles/storingraw.dir/indexandtimes.cpp.o" \
-"CMakeFiles/storingraw.dir/makejson.cpp.o"
+"CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o"
 
 # External object files for target storingraw
 storingraw_EXTERNAL_OBJECTS =
 
 test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.o
-test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o
-test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o
-test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o
+test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o
 test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/build.make
 test/storing_raw/storingraw: /usr/local/lib/libzmq.so
 test/storing_raw/storingraw: /usr/lib/x86_64-linux-gnu/libpqxx.so
 test/storing_raw/storingraw: /usr/lib/x86_64-linux-gnu/libpq.so
 test/storing_raw/storingraw: test/storing_raw/CMakeFiles/storingraw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable storingraw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kayeon/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable storingraw"
 	cd /home/kayeon/diva2-server/build/test/storing_raw && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/storingraw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -181,9 +129,7 @@ test/storing_raw/CMakeFiles/storingraw.dir/build: test/storing_raw/storingraw
 .PHONY : test/storing_raw/CMakeFiles/storingraw.dir/build
 
 test/storing_raw/CMakeFiles/storingraw.dir/requires: test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.o.requires
-test/storing_raw/CMakeFiles/storingraw.dir/requires: test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o.requires
-test/storing_raw/CMakeFiles/storingraw.dir/requires: test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o.requires
-test/storing_raw/CMakeFiles/storingraw.dir/requires: test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o.requires
+test/storing_raw/CMakeFiles/storingraw.dir/requires: test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o.requires
 
 .PHONY : test/storing_raw/CMakeFiles/storingraw.dir/requires
 

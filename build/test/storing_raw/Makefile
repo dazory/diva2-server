@@ -125,32 +125,32 @@ storingraw/fast:
 	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/build
 .PHONY : storingraw/fast
 
-indexandtimes.o: indexandtimes.cpp.o
+GpscsvRawStoringThread.o: GpscsvRawStoringThread.cpp.o
 
-.PHONY : indexandtimes.o
+.PHONY : GpscsvRawStoringThread.o
 
 # target to build an object file
-indexandtimes.cpp.o:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.o
-.PHONY : indexandtimes.cpp.o
+GpscsvRawStoringThread.cpp.o:
+	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.o
+.PHONY : GpscsvRawStoringThread.cpp.o
 
-indexandtimes.i: indexandtimes.cpp.i
+GpscsvRawStoringThread.i: GpscsvRawStoringThread.cpp.i
 
-.PHONY : indexandtimes.i
+.PHONY : GpscsvRawStoringThread.i
 
 # target to preprocess a source file
-indexandtimes.cpp.i:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.i
-.PHONY : indexandtimes.cpp.i
+GpscsvRawStoringThread.cpp.i:
+	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.i
+.PHONY : GpscsvRawStoringThread.cpp.i
 
-indexandtimes.s: indexandtimes.cpp.s
+GpscsvRawStoringThread.s: GpscsvRawStoringThread.cpp.s
 
-.PHONY : indexandtimes.s
+.PHONY : GpscsvRawStoringThread.s
 
 # target to generate assembly for a file
-indexandtimes.cpp.s:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/indexandtimes.cpp.s
-.PHONY : indexandtimes.cpp.s
+GpscsvRawStoringThread.cpp.s:
+	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/GpscsvRawStoringThread.cpp.s
+.PHONY : GpscsvRawStoringThread.cpp.s
 
 main.o: main.cpp.o
 
@@ -179,60 +179,6 @@ main.cpp.s:
 	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-makejson.o: makejson.cpp.o
-
-.PHONY : makejson.o
-
-# target to build an object file
-makejson.cpp.o:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.o
-.PHONY : makejson.cpp.o
-
-makejson.i: makejson.cpp.i
-
-.PHONY : makejson.i
-
-# target to preprocess a source file
-makejson.cpp.i:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.i
-.PHONY : makejson.cpp.i
-
-makejson.s: makejson.cpp.s
-
-.PHONY : makejson.s
-
-# target to generate assembly for a file
-makejson.cpp.s:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/makejson.cpp.s
-.PHONY : makejson.cpp.s
-
-readfiles.o: readfiles.cpp.o
-
-.PHONY : readfiles.o
-
-# target to build an object file
-readfiles.cpp.o:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.o
-.PHONY : readfiles.cpp.o
-
-readfiles.i: readfiles.cpp.i
-
-.PHONY : readfiles.i
-
-# target to preprocess a source file
-readfiles.cpp.i:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.i
-.PHONY : readfiles.cpp.i
-
-readfiles.s: readfiles.cpp.s
-
-.PHONY : readfiles.s
-
-# target to generate assembly for a file
-readfiles.cpp.s:
-	cd /home/kayeon/diva2-server/build && $(MAKE) -f test/storing_raw/CMakeFiles/storingraw.dir/build.make test/storing_raw/CMakeFiles/storingraw.dir/readfiles.cpp.s
-.PHONY : readfiles.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -242,18 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... storingraw"
 	@echo "... edit_cache"
-	@echo "... indexandtimes.o"
-	@echo "... indexandtimes.i"
-	@echo "... indexandtimes.s"
+	@echo "... GpscsvRawStoringThread.o"
+	@echo "... GpscsvRawStoringThread.i"
+	@echo "... GpscsvRawStoringThread.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... makejson.o"
-	@echo "... makejson.i"
-	@echo "... makejson.s"
-	@echo "... readfiles.o"
-	@echo "... readfiles.i"
-	@echo "... readfiles.s"
 .PHONY : help
 
 
