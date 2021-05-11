@@ -1,4 +1,4 @@
-# Install script for directory: /home/cvlab2/DIVA2/diva2-server
+# Install script for directory: /home/kayeon/diva2-server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cvlab2/DIVA2/diva2-server/build/test/storing_raw/cmake_install.cmake")
+  include("/home/kayeon/diva2-server/build/test/storing_raw/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cvlab2/DIVA2/diva2-server/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kayeon/diva2-server/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

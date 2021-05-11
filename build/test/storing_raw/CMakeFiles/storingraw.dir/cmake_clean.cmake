@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/storingraw.dir/GpsRawStoringThread.cpp.o"
   "CMakeFiles/storingraw.dir/main.cpp.o"
-  "storingraw"
+  "CMakeFiles/storingraw.dir/readfiles.cpp.o"
+  "CMakeFiles/storingraw.dir/indexandtimes.cpp.o"
+  "CMakeFiles/storingraw.dir/makejson.cpp.o"
   "storingraw.pdb"
+  "storingraw"
 )
 
 # Per-language clean rules from dependency scanning.
