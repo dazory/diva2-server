@@ -87,11 +87,13 @@ add_executable(diva2 ${SOURCE_MAIN})                           # 생성할 실�
 target_include_directories(diva2 PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the include directory to our compile directives
 target_link_libraries(diva2 PUBLIC ${ZeroMQ_LIBRARY} )           # at the 0mq library to our link directive
 
+add_subdirectory(DBStoring)
+
 # 서브 디렉토리에 있는 cmakeFiles을 실행시켜줌
 # add_subdirectory(test/receiver_fromMobile_proto)
 # add_subdirectory(test/sender_toCloud_protobuf)
 # add_subdirectory(test/sensing_proto)
-add_subdirectory(test/storing_raw)
+# add_subdirectory(test/storing_raw)
 # add_subdirectory(test/openCv)
 # add_subdirectory(test/openCv2)
 #add_subdirectory(test/zmq_imgtransfer)
