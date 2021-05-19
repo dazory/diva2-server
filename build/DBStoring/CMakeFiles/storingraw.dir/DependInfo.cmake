@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/GpsStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir/GpsStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/ImuStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir/ImuStoringThread.cpp.o"
+  "/home/cvlab2/DIVA2/diva2-server/DBStoring/LogStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/main.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

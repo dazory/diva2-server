@@ -125,7 +125,7 @@ DBStoring/clean: DBStoring/CMakeFiles/storingraw.dir/clean
 DBStoring/CMakeFiles/storingraw.dir/all:
 	$(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/depend
 	$(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=3,4,5,6 "Built target storingraw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target storingraw"
 .PHONY : DBStoring/CMakeFiles/storingraw.dir/all
 
 # Include target in all.
@@ -135,7 +135,7 @@ all: DBStoring/CMakeFiles/storingraw.dir/all
 
 # Build rule for subdir invocation for target.
 DBStoring/CMakeFiles/storingraw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 DBStoring/CMakeFiles/storingraw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 0
 .PHONY : DBStoring/CMakeFiles/storingraw.dir/rule
