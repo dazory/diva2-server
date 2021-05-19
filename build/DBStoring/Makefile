@@ -125,6 +125,33 @@ storingraw/fast:
 	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/build
 .PHONY : storingraw/fast
 
+CanStoringThread.o: CanStoringThread.cpp.o
+
+.PHONY : CanStoringThread.o
+
+# target to build an object file
+CanStoringThread.cpp.o:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o
+.PHONY : CanStoringThread.cpp.o
+
+CanStoringThread.i: CanStoringThread.cpp.i
+
+.PHONY : CanStoringThread.i
+
+# target to preprocess a source file
+CanStoringThread.cpp.i:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.i
+.PHONY : CanStoringThread.cpp.i
+
+CanStoringThread.s: CanStoringThread.cpp.s
+
+.PHONY : CanStoringThread.s
+
+# target to generate assembly for a file
+CanStoringThread.cpp.s:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.s
+.PHONY : CanStoringThread.cpp.s
+
 GpsStoringThread.o: GpsStoringThread.cpp.o
 
 .PHONY : GpsStoringThread.o
@@ -179,6 +206,33 @@ ImuStoringThread.cpp.s:
 	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/ImuStoringThread.cpp.s
 .PHONY : ImuStoringThread.cpp.s
 
+LogStoringThread.o: LogStoringThread.cpp.o
+
+.PHONY : LogStoringThread.o
+
+# target to build an object file
+LogStoringThread.cpp.o:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o
+.PHONY : LogStoringThread.cpp.o
+
+LogStoringThread.i: LogStoringThread.cpp.i
+
+.PHONY : LogStoringThread.i
+
+# target to preprocess a source file
+LogStoringThread.cpp.i:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.i
+.PHONY : LogStoringThread.cpp.i
+
+LogStoringThread.s: LogStoringThread.cpp.s
+
+.PHONY : LogStoringThread.s
+
+# target to generate assembly for a file
+LogStoringThread.cpp.s:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.s
+.PHONY : LogStoringThread.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -215,12 +269,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... storingraw"
 	@echo "... edit_cache"
+	@echo "... CanStoringThread.o"
+	@echo "... CanStoringThread.i"
+	@echo "... CanStoringThread.s"
 	@echo "... GpsStoringThread.o"
 	@echo "... GpsStoringThread.i"
 	@echo "... GpsStoringThread.s"
 	@echo "... ImuStoringThread.o"
 	@echo "... ImuStoringThread.i"
 	@echo "... ImuStoringThread.s"
+	@echo "... LogStoringThread.o"
+	@echo "... LogStoringThread.i"
+	@echo "... LogStoringThread.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

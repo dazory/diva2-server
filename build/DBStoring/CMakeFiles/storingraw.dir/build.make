@@ -96,11 +96,39 @@ DBStoring/CMakeFiles/storingraw.dir/ImuStoringThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/ImuStoringThread.cpp.s"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/ImuStoringThread.cpp -o CMakeFiles/storingraw.dir/ImuStoringThread.cpp.s
 
+DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o: DBStoring/CMakeFiles/storingraw.dir/flags.make
+DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o: ../DBStoring/CanStoringThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/CanStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp
+
+DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/CanStoringThread.cpp.i"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp > CMakeFiles/storingraw.dir/CanStoringThread.cpp.i
+
+DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/CanStoringThread.cpp.s"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp -o CMakeFiles/storingraw.dir/CanStoringThread.cpp.s
+
+DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o: DBStoring/CMakeFiles/storingraw.dir/flags.make
+DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o: ../DBStoring/LogStoringThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/storingraw.dir/LogStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/LogStoringThread.cpp
+
+DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/storingraw.dir/LogStoringThread.cpp.i"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvlab2/DIVA2/diva2-server/DBStoring/LogStoringThread.cpp > CMakeFiles/storingraw.dir/LogStoringThread.cpp.i
+
+DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/storingraw.dir/LogStoringThread.cpp.s"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/LogStoringThread.cpp -o CMakeFiles/storingraw.dir/LogStoringThread.cpp.s
+
 # Object files for target storingraw
 storingraw_OBJECTS = \
 "CMakeFiles/storingraw.dir/main.cpp.o" \
 "CMakeFiles/storingraw.dir/GpsStoringThread.cpp.o" \
-"CMakeFiles/storingraw.dir/ImuStoringThread.cpp.o"
+"CMakeFiles/storingraw.dir/ImuStoringThread.cpp.o" \
+"CMakeFiles/storingraw.dir/CanStoringThread.cpp.o" \
+"CMakeFiles/storingraw.dir/LogStoringThread.cpp.o"
 
 # External object files for target storingraw
 storingraw_EXTERNAL_OBJECTS =
@@ -108,12 +136,14 @@ storingraw_EXTERNAL_OBJECTS =
 DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/main.cpp.o
 DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/GpsStoringThread.cpp.o
 DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/ImuStoringThread.cpp.o
+DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/CanStoringThread.cpp.o
+DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/LogStoringThread.cpp.o
 DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/build.make
 DBStoring/storingraw: /usr/local/lib/libzmq.so
 DBStoring/storingraw: /usr/lib/x86_64-linux-gnu/libpqxx.so
 DBStoring/storingraw: /usr/lib/x86_64-linux-gnu/libpq.so
 DBStoring/storingraw: DBStoring/CMakeFiles/storingraw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable storingraw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable storingraw"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/storingraw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
