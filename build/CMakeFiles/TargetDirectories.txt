@@ -2,5 +2,5 @@
 /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/diva2.dir
 /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/edit_cache.dir
 /home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/rebuild_cache.dir
-/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/storingraw.dir
+/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir
 /home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/edit_cache.dir
