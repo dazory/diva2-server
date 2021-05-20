@@ -124,17 +124,17 @@ diva2/fast:
 .PHONY : diva2/fast
 
 #=============================================================================
-# Target rules for targets named storingraw
+# Target rules for targets named dbstoring
 
 # Build rule for target.
-storingraw: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 storingraw
-.PHONY : storingraw
+dbstoring: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dbstoring
+.PHONY : dbstoring
 
 # fast build rule for target.
-storingraw/fast:
-	$(MAKE) -f DBStoring/CMakeFiles/storingraw.dir/build.make DBStoring/CMakeFiles/storingraw.dir/build
-.PHONY : storingraw/fast
+dbstoring/fast:
+	$(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/build
+.PHONY : dbstoring/fast
 
 main.o: main.cpp.o
 
@@ -172,7 +172,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... diva2"
 	@echo "... edit_cache"
-	@echo "... storingraw"
+	@echo "... dbstoring"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

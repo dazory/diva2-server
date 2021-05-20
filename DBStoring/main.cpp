@@ -1,14 +1,38 @@
 #pragma once
+#include "LogStoringThread.h"
+#include "FrameStoringThread.h"
+#include "SceneStoringThread.h"
+#include "FramedataStoringThread.h"
 #include "GpsStoringThread.h"
 #include "ImuStoringThread.h"
 #include "CanStoringThread.h"
-#include "LogStoringThread.h"
 
 #include <thread> 
 #include <string>
 using namespace std;
 
 int main(int argc, char *argv[]){
+
+    // LOG
+    LogStoringThread mLogStoringThread;
+    thread logSenderThread(&LogStoringThread::run, &mLogStoringThread);
+    logSenderThread.join();
+
+    // FRAME
+    FrameStoringThread mFrameRawStoringThread;
+    thread frameSenderThread(&FrameStoringThread::run, &mFrameRawStoringThread);
+    frameSenderThread.join();
+
+    // SCENE
+    SceneStoringThread mSceneStoringThread;
+    thread SceneSenderThread(&SceneStoringThread::run, &mSceneStoringThread);
+    SceneSenderThread.join();
+
+    // FRAMEdata
+    FramedataStoringThread mFramedataStoringThread;
+    thread framedataSenderThread(&FramedataStoringThread::run, &mFramedataStoringThread);
+    framedataSenderThread.join();
+
     // GPS
     GpsStoringThread mGpsStoringThread;
     thread gpsSenderThread(&GpsStoringThread::run, &mGpsStoringThread);
@@ -23,14 +47,5 @@ int main(int argc, char *argv[]){
     CanStoringThread mCanStoringThread;
     thread canSenderThread(&CanStoringThread::run, &mCanStoringThread);
     canSenderThread.join();
-
-    // LOG
-    LogStoringThread mLogStoringThread;
-    thread logSenderThread(&LogStoringThread::run, &mLogStoringThread);
-    logSenderThread.join();
-
-
-    
-
         
 }

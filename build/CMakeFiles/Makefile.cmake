@@ -128,5 +128,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/diva2.dir/DependInfo.cmake"
-  "DBStoring/CMakeFiles/storingraw.dir/DependInfo.cmake"
+  "DBStoring/CMakeFiles/dbstoring.dir/DependInfo.cmake"
   )

@@ -45,9 +45,9 @@ find_library(PQXX_LIB pqxx)
 find_library(PQ_LIB pq)
 
 # ADD_EXECUTABLE(storingraw ${CLIENT_SRC_LIST} ${PROTO_SRCS} ${PROTO_HDRS}  )
-SET(CLIENT_SRC_LIST main.cpp GpsStoringThread.cpp ImuStoringThread.cpp CanStoringThread.cpp LogStoringThread.cpp)
-add_executable(storingraw ${CLIENT_SRC_LIST} ${PROTO_SRCS} ${PROTO_HDRS}  )
+SET(CLIENT_SRC_LIST main.cpp LogStoringThread.cpp FrameStoringThread.cpp SceneStoringThread.cpp FramedataStoringThread.cpp GpsStoringThread.cpp ImuStoringThread.cpp CanStoringThread.cpp)
+add_executable(dbstoring ${CLIENT_SRC_LIST} ${PROTO_SRCS} ${PROTO_HDRS}  )
 
-target_include_directories(storingraw PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the include directory to our compile directives
-target_link_libraries(storingraw ${PROTOBUF_LIBRARIES} ${ZeroMQ_LIBRARY} ${PQXX_LIB} ${PQ_LIB}
+target_include_directories(dbstoring PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the include directory to our compile directives
+target_link_libraries(dbstoring ${PROTOBUF_LIBRARIES} ${ZeroMQ_LIBRARY} ${PQXX_LIB} ${PQ_LIB}
      ) 
