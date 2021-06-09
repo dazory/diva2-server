@@ -260,7 +260,7 @@ bool MakeJson::Scene()
 Json::Value Frame_data;
 bool MakeJson::Frame_Data()
 {
-    string path =dir+"/JSON/frame_data.json";
+    string path =dir+"/JSON2/frame_data.json";
     ifstream in(path.c_str());
     if(in.is_open()) in >> Frame_data;
     Json::Value frame_datum;
