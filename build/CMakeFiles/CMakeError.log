@@ -1,63 +1,55 @@
-Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_1e5a1/fast && /usr/bin/make -f CMakeFiles/cmTC_1e5a1.dir/build.make CMakeFiles/cmTC_1e5a1.dir/build
-make[1]: Entering directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_1e5a1.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1e5a1.dir/src.c.o   -c /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_1e5a1
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1e5a1.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_1e5a1.dir/src.c.o  -o cmTC_1e5a1 
-CMakeFiles/cmTC_1e5a1.dir/src.c.o: In function `main':
-src.c:(.text+0x3e): undefined reference to `pthread_create'
-src.c:(.text+0x4a): undefined reference to `pthread_detach'
-src.c:(.text+0x5b): undefined reference to `pthread_join'
-src.c:(.text+0x6f): undefined reference to `pthread_atfork'
+Run Build Command:"/usr/bin/make" "cmTC_f8761/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8761.dir/build.make CMakeFiles/cmTC_f8761.dir/build
+make[1]: Entering directory '/home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f8761.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f8761.dir/CheckSymbolExists.c.o   -c /home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f8761
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8761.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_f8761.dir/CheckSymbolExists.c.o  -o cmTC_f8761 
+CMakeFiles/cmTC_f8761.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_1e5a1.dir/build.make:86: recipe for target 'cmTC_1e5a1' failed
-make[1]: *** [cmTC_1e5a1] Error 1
-make[1]: Leaving directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_1e5a1/fast' failed
-make: *** [cmTC_1e5a1/fast] Error 2
+CMakeFiles/cmTC_f8761.dir/build.make:97: recipe for target 'cmTC_f8761' failed
+make[1]: *** [cmTC_f8761] Error 1
+make[1]: Leaving directory '/home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f8761/fast' failed
+make: *** [cmTC_f8761/fast] Error 2
 
-
-Source file was:
+File /home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
 #include <pthread.h>
 
-void* test_func(void* data)
+int main(int argc, char** argv)
 {
-  return data;
-}
-
-int main(void)
-{
-  pthread_t thread;
-  pthread_create(&thread, NULL, test_func, NULL);
-  pthread_detach(thread);
-  pthread_join(thread, NULL);
-  pthread_atfork(NULL, NULL, NULL);
-  pthread_exit(NULL);
-
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
   return 0;
+#endif
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp
+Change Dir: /home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_af701/fast && /usr/bin/make -f CMakeFiles/cmTC_af701.dir/build.make CMakeFiles/cmTC_af701.dir/build
-make[1]: Entering directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_af701.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_af701.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.15/Modules/CheckFunctionExists.c
-Linking C executable cmTC_af701
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af701.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_af701.dir/CheckFunctionExists.c.o  -o cmTC_af701 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_2582e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2582e.dir/build.make CMakeFiles/cmTC_2582e.dir/build
+make[1]: Entering directory '/home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2582e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2582e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2582e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2582e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2582e.dir/CheckFunctionExists.c.o  -o cmTC_2582e -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_af701.dir/build.make:86: recipe for target 'cmTC_af701' failed
-make[1]: *** [cmTC_af701] Error 1
-make[1]: Leaving directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_af701/fast' failed
-make: *** [cmTC_af701/fast] Error 2
-
+CMakeFiles/cmTC_2582e.dir/build.make:97: recipe for target 'cmTC_2582e' failed
+make[1]: *** [cmTC_2582e] Error 1
+make[1]: Leaving directory '/home/kayeon/diva2-server/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2582e/fast' failed
+make: *** [cmTC_2582e/fast] Error 2
 
 
