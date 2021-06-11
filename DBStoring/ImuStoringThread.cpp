@@ -22,7 +22,7 @@ void ImuStoringThread::run(){
       //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
 
       /* Create SQL statement */
-      sql = "create table IMU_DATA(token text,gyx text, gyy text,gyz text, acx text, acy text,acz text, max text, may text,maz text);";
+      sql = "create table IMU_DATA(token text,scaledaccelx text, scaledaccely text, scaledaccelz text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -39,12 +39,6 @@ void ImuStoringThread::run(){
       std::string temp2;
       std::string temp3;
       std::string temp4;
-      std::string temp5;
-      std::string temp6;
-      std::string temp7;
-      std::string temp8;
-      std::string temp9;
-      std::string temp10;
       cout <<"string"<<endl;
       
 
@@ -52,41 +46,23 @@ void ImuStoringThread::run(){
 
 	     cout<<"for start"<<endl;
 
-         temp1=std::string((Imu_datas[i]["gyroscope"][0].asString()).c_str());
-         temp2=std::string((Imu_datas[i]["gyroscope"][1].asString()).c_str());
-         temp3=std::string((Imu_datas[i]["gyroscope"][2].asString()).c_str());
-         temp4=std::string((Imu_datas[i]["acceleration"][0].asString()).c_str());
-         temp5=std::string((Imu_datas[i]["acceleration"][1].asString()).c_str());
-         temp6=std::string((Imu_datas[i]["acceleration"][2].asString()).c_str());
-         temp7=std::string((Imu_datas[i]["magnetic"][0].asString()).c_str());
-         temp8=std::string((Imu_datas[i]["magnetic"][1].asString()).c_str());
-         temp9=std::string((Imu_datas[i]["magnetic"][2].asString()).c_str());
-         temp10=std::string((Imu_datas[i]["token"].asString()).c_str());
+         temp1=std::string((Imu_datas[i]["scaledaccelx"].asString()).c_str());
+         temp2=std::string((Imu_datas[i]["scaledaccely"].asString()).c_str());
+         temp3=std::string((Imu_datas[i]["scaledaccelz"].asString()).c_str());
+         temp4=std::string((Imu_datas[i]["token"].asString()).c_str());
 
          /* Create a transactional object. */
          work W(C);
 	      std::string query_string;
          query_string.append("insert into IMU_DATA values('"); 
 	      // *****Set table*****
-         query_string.append(temp10);
+         query_string.append(temp4);
          query_string.append("','");
          query_string.append(temp1);
          query_string.append("','");
          query_string.append(temp2);
          query_string.append("','");
          query_string.append(temp3);
-         query_string.append("','");
-         query_string.append(temp4);
-         query_string.append("','");
-         query_string.append(temp5);
-         query_string.append("','");
-         query_string.append(temp6);
-         query_string.append("','");
-         query_string.append(temp7);
-         query_string.append("','");
-         query_string.append(temp8);
-         query_string.append("','");
-         query_string.append(temp9);
          query_string.append("');");
          /* Execute SQL query */
          W.exec(query_string);
