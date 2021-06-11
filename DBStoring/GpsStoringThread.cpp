@@ -22,7 +22,7 @@ void GpsStoringThread::run(){
       //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
 
       /* Create SQL statement */
-      sql = "create table GPS_DATA(token text,latitude text,longitude text);";
+      sql = "create table GPS_DATA(token text,latitude text,longitude text, HorizontalDilutionOfPrecision text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -38,16 +38,17 @@ void GpsStoringThread::run(){
       std::string temp1;
       std::string temp2;
       std::string temp3;
+      std::string temp4;
       cout <<"string"<<endl;
       
 
       for(int i=0; i<Gps_datas.size(); i++){
 
 	     cout<<"for start"<<endl;
-
+         temp1=std::string((Gps_datas[i]["token"].asString()).c_str());
          temp2=std::string((Gps_datas[i]["latitude"].asString()).c_str());
          temp3=std::string((Gps_datas[i]["longitude"].asString()).c_str());
-         temp1=std::string((Gps_datas[i]["token"].asString()).c_str());
+         temp4=std::string((Gps_datas[i]["HorizontalDilutionOfPrecision"].asString()).c_str());
 
          /* Create a transactional object. */
          work W(C);
@@ -59,6 +60,8 @@ void GpsStoringThread::run(){
          query_string.append(temp2);
          query_string.append("','");
          query_string.append(temp3);
+         query_string.append("','");
+         query_string.append(temp4);
          query_string.append("');");
          /* Execute SQL query */
          W.exec(query_string);

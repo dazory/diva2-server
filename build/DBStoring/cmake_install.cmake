@@ -1,4 +1,4 @@
-# Install script for directory: /home/kayeon/diva2-server/test/storing_raw
+# Install script for directory: /home/cvlab2/DIVA2/diva2-server/DBStoring
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

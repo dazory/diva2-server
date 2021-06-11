@@ -22,7 +22,7 @@ void CanStoringThread::run(){
       //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
 
       /* Create SQL statement */
-      sql = "create table CAN_DATA(token text,handle_angle text,handle_acc text,speed text, gear text, turn_indicator text);";
+      sql = "create table CAN_DATA(token text,handleAngle text,turnLight text,vehicleSpeed text, gear text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -40,7 +40,6 @@ void CanStoringThread::run(){
       std::string temp3;
       std::string temp4;
       std::string temp5;
-      std::string temp6;
       cout <<"string"<<endl;
       
 
@@ -49,12 +48,11 @@ void CanStoringThread::run(){
       //   {
 	     cout<<"for start"<<endl;
 
-         temp1=std::string((Can_datas[i]["Gear"].asString()).c_str());
-         temp2=std::string((Can_datas[i]["Handle_Angle"].asString()).c_str());
-         temp3=std::string((Can_datas[i]["Handle_accelaration"].asString()).c_str());
-         temp4=std::string((Can_datas[i]["Speed"].asString()).c_str());
+         temp1=std::string((Can_datas[i]["handleAngle"].asString()).c_str());
+         temp2=std::string((Can_datas[i]["turnLight"].asString()).c_str());
+         temp3=std::string((Can_datas[i]["vehicleSpeed"].asString()).c_str());
+         temp4=std::string((Can_datas[i]["gear"].asString()).c_str());
          temp5=std::string((Can_datas[i]["token"].asString()).c_str());
-         temp6=std::string((Can_datas[i]["Turn"].asString()).c_str());
 
 
          /* Create a transactional object. */
@@ -64,15 +62,13 @@ void CanStoringThread::run(){
 	      // *****Set table*****
          query_string.append(temp5);
          query_string.append("','");
+         query_string.append(temp1);
+         query_string.append("','");
          query_string.append(temp2);
          query_string.append("','");
          query_string.append(temp3);
          query_string.append("','");
          query_string.append(temp4);
-         query_string.append("','");
-         query_string.append(temp1);
-         query_string.append("','");
-         query_string.append(temp6);
          query_string.append("');");
          /* Execute SQL query */
          W.exec(query_string);
