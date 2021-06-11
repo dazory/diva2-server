@@ -60,18 +60,25 @@ public:
 
     //~GPS Datum~
     string latitude;
+    string isNorth;
     string longitude;
-    string altitude;
+    string isEast;
+    string gpsQuality;
+    string NumberOfSatellitesInUse;
+    string HorizontalDilutionOfPrecision;
+    string AntennaAltitudeMeters;
+    string GeoidalSeparationMeters;
     //~IMU Datum~
-    string gyro_x;string gyro_y; string gyro_z;
-    string accel_x;string accel_y;string accel_z;
-    string mag_x; string mag_y; string mag_z;
+    string scaledaccelx;
+    string scaledaccely; 
+    string scaledaccelz;
+    // string accel_x;string accel_y;string accel_z;
+    // string mag_x; string mag_y; string mag_z;
     //~CAN Datum~
-    string handle_angle;
-    string handle_accelaration;
-    string speed;
+    string handleAngle;
+    string turnLight;
+    string vehicleSpeed;
     string gear;
-    string turn;
 
     int num_of_scene = 0;
 

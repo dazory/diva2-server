@@ -260,7 +260,7 @@ bool MakeJson::Scene()
 Json::Value Frame_data;
 bool MakeJson::Frame_Data()
 {
-    string path =dir+"/JSON2/frame_data.json";
+    string path =dir+"/JSON/frame_data.json";
     ifstream in(path.c_str());
     if(in.is_open()) in >> Frame_data;
     Json::Value frame_datum;
@@ -278,15 +278,15 @@ bool MakeJson::Frame_Data()
     string ts_of_cam_by_idx;
     string ts_of_lidar_by_idx;
 
-    string cam_path =  dir+"/CAM/JPG/i30_CAM_";
-    string lidar_path = dir+"/LiDAR/PCD/i30_LiDAR_";
+    string cam_path =  dir+"/CAM/JPG/CAM_";
+    string lidar_path = dir+"/LiDAR/PCD/LiDAR_";
 
 
     for(int i=0; i<num_of_scene; i++){
         string token_prev1 = "";
-        string token_prev2 = "";
+        // string token_prev2 = "";
         string token_curr1 = generate_token_2();
-        string token_curr2 = generate_token_2();
+        // string token_curr2 = generate_token_2();
 
 
         while(1){
@@ -511,7 +511,8 @@ bool MakeJson::Gps_Data()
             this->Get_LLA(gps_data_idx);
             gpses["latitude"] = latitude;
             gpses["longitude"] = longitude;
-            gpses["altitude"] = altitude;
+            gpses["HorizontalDilutionOfPrecision"] = HorizontalDilutionOfPrecision;
+
 
             Gps_data.append(gpses);
             gpses.clear();
@@ -563,12 +564,10 @@ bool MakeJson::Imu_Data()
             imus["sensor_token"] = Sensors[4]["sensor_token"];
             imus["timestamp"] = iat->get_imu_timestamp(imu_data_idx);
             this->Get_GAM(imu_data_idx);
-            gyroscope.append(gyro_x); gyroscope.append(gyro_y); gyroscope.append(gyro_z);
-            imus["gyroscope"] = gyroscope;
-            acceleration.append(accel_x); acceleration.append(accel_y); acceleration.append(accel_z);
-            imus["acceleration"] = acceleration;
-            magnetic.append(mag_x); magnetic.append(mag_y); magnetic.append(mag_z);
-            imus["magnetic"] = magnetic;
+
+            imus["scaledaccelx"] = scaledaccelx;
+            imus["scaledaccely"] = scaledaccely;
+            imus["scaledaccelz"] = scaledaccelz;
 
             Imu_data.append(imus);
             gyroscope.clear();
@@ -622,11 +621,10 @@ bool MakeJson::Can_Data()
             cans["sensor_token"] = Sensors[5]["sensor_token"];
             cans["timestamp"] = iat->get_can_timestamp(can_data_idx);
             this->Get_HSGT(can_data_idx);
-            cans["Handle_Angle"] = handle_angle;
-            cans["Handle_accelaration"] = handle_accelaration;
-            cans["Speed"] = speed;
-            cans["Gear"] = gear;
-            cans["Turn"] = turn;
+            cans["handleAngle"] = handleAngle;
+            cans["turnLight"] = turnLight;
+            cans["vehicleSpeed"] = vehicleSpeed;
+            cans["gear"] = gear;
             Can_data.append(cans);
             cans.clear();
 
@@ -646,21 +644,30 @@ bool MakeJson::Can_Data()
 
 // bool MakeJson::Check_Directory()
 // {
-//     QDir root((QString::fromLocal8Bit(dir.c_str())).append("/JSON"));
+//     QDir root((QString::fromLocal8Bit(dir.c_str())).append("/JSON2"));
 //     if(root.exists()) return true;
 //     return false;
 // }
 
 void MakeJson::Get_LLA(int gps_idx){
-    latitude, longitude, altitude = "";
+    latitude, isNorth, longitude, isEast, gpsQuality, NumberOfSatellitesInUse, HorizontalDilutionOfPrecision, AntennaAltitudeMeters, GeoidalSeparationMeters = "";
 
     long double raw_latitude = stold(iat->gps_csv[gps_idx][1]); // latitude
     latitude = to_string(Convert_to_dd(raw_latitude));
 
-    long double raw_longitude = stold(iat->gps_csv[gps_idx][3]); // longitude
+    // isNorth = iat->gps_csv[gps_idx][2];//isNorth
+    // //altitude = iat->gps_csv[gps_idx][5];//altitude
+
+    long double raw_longitude = stold(iat->gps_csv[gps_idx][2]); // longitude
     longitude = to_string(Convert_to_dd(raw_longitude));
 
-    altitude = iat->gps_csv[gps_idx][5];
+    // isEast = iat->gps_csv[gps_idx][4];//isEast
+    // gpsQuality = iat->gps_csv[gps_idx][5];//gpsQuality
+    // NumberOfSatellitesInUse = iat->gps_csv[gps_idx][6];//NumberOfSatellitesInUse
+    HorizontalDilutionOfPrecision = iat->gps_csv[gps_idx][3];//HorizontalDilutionOfPrecision
+    // AntennaAltitudeMeters = iat->gps_csv[gps_idx][8];//AntennaAltitudeMeters
+    // GeoidalSeparationMeters = iat->gps_csv[gps_idx][9];//GeoidalSeparationMeters
+
 
 }
 
@@ -675,27 +682,26 @@ long double MakeJson::Convert_to_dd(long double raw){
 
 void MakeJson::Get_GAM(int imu_idx){ //get Zyro, Acceleration, Magnetic by index
 
-    gyro_x, gyro_y, gyro_z, accel_x, accel_y, accel_z, mag_x, mag_y, mag_z = "";
+    scaledaccelx, scaledaccely, scaledaccelz = "";
 
-    gyro_x = iat->imu_csv[imu_idx][1];
-    gyro_y = iat->imu_csv[imu_idx][2];
-    gyro_z = iat->imu_csv[imu_idx][3];
-    accel_x = iat->imu_csv[imu_idx][4];
-    accel_y = iat->imu_csv[imu_idx][5];
-    accel_z = iat->imu_csv[imu_idx][6];
-    mag_x = iat->imu_csv[imu_idx][7];
-    mag_y = iat->imu_csv[imu_idx][8];
-    mag_z = iat->imu_csv[imu_idx][9];
+    scaledaccelx = iat->imu_csv[imu_idx][1];
+    scaledaccely = iat->imu_csv[imu_idx][2];
+    scaledaccelz = iat->imu_csv[imu_idx][3];
+    // accel_x = iat->imu_csv[imu_idx][4];
+    // accel_y = iat->imu_csv[imu_idx][5];
+    // accel_z = iat->imu_csv[imu_idx][6];
+    // mag_x = iat->imu_csv[imu_idx][7];
+    // mag_y = iat->imu_csv[imu_idx][8];
+    // mag_z = iat->imu_csv[imu_idx][9];
 
 }
 
 void MakeJson::Get_HSGT(int can_idx){
 
-    handle_angle, handle_accelaration, speed, gear, turn = "";
+    handleAngle, turnLight, vehicleSpeed, gear = "";
 
-    handle_angle = iat->can_csv[can_idx][1];
-    handle_accelaration = iat->can_csv[can_idx][2];
-    speed = iat->can_csv[can_idx][3];
+    handleAngle = iat->can_csv[can_idx][1];
+    turnLight = iat->can_csv[can_idx][2];
+    vehicleSpeed = iat->can_csv[can_idx][3];
     gear = iat->can_csv[can_idx][4];
-    turn = iat->can_csv[can_idx][5];
 }

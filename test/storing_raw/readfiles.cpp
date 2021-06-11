@@ -46,7 +46,8 @@ string ReadFiles::get_path(int i){
 
 vector<vector<string>> ReadFiles::read_csv(string csv_file){
     ifstream in(csv_file.c_str());
-
+    int c=0;
+    // cout<<">"<<c++<<endl;
     string line, field;
     vector< vector<string> > arr;  // the 2D array
     vector<string> v;

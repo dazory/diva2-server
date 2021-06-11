@@ -6,13 +6,15 @@ IndexAndTimes::IndexAndTimes(string fpath)
     cout<<"-"<<c++<<endl;
     dir = fpath;
     rf = new ReadFiles(fpath);
-    cout<<"--"<<c++<<endl;
+    cout<<"-"<<c++<<endl;
     gps_csv = rf->read_csv(rf->get_path(is_GPS));
-    cout<<"--"<<c++<<endl;
+    cout<<"-"<<c++<<endl;
     cam_txt = rf->read_txt(rf->get_path(is_CAM));
+    cout<<"-"<<c++<<endl;
     lidar_txt = rf->read_txt(rf->get_path(is_LiDAR));
     imu_csv = rf->read_csv(rf->get_path(is_IMU));
     can_csv = rf->read_csv(rf->get_path(is_CAN));
+    cout<<"-"<<c++<<endl;
 }
 
 int IndexAndTimes::get_hhmmsssss(string str){ return stoi(str.substr(8,9));}
@@ -150,19 +152,19 @@ int IndexAndTimes::find_can_start_idx(){
 string IndexAndTimes::find_latest_started(){
     int c =0;
     int first_timestamps[number_of_sensors+1];
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
     latest_sensor = is_GPS;
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
 
     first_timestamps[is_GPS] =get_hhmmsssss(gps_csv[0][0]);
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
     first_timestamps[is_CAM] = get_hhmmsssss(cam_txt[0]);
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
     first_timestamps[is_LiDAR] = get_hhmmsssss(lidar_txt[0]);
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
     first_timestamps[is_IMU] =get_hhmmsssss(imu_csv[0][0]);
     first_timestamps[is_CAN] =get_hhmmsssss(can_csv[0][0]);
-    cout<<">"<<c++<<endl;
+    //cout<<">"<<c++<<endl;
 
     int max = first_timestamps[latest_sensor];
 
@@ -244,16 +246,16 @@ int IndexAndTimes::number_of_frames(){
 
 
 int* IndexAndTimes::get_start_indexes(){
-    int c;
+    //int c;
    static int idxes[number_of_sensors+1];
-   cout<<">"<<c<<endl;
+   //cout<<">"<<c<<endl;
    string start_timestamp = find_latest_started();
-   cout<<">"<<c<<endl;
+   //cout<<">"<<c<<endl;
    s_ts = get_hhmmsssss(start_timestamp);
-   cout<<">"<<c<<endl;
+   //cout<<">"<<c<<endl;
 
    idxes[is_GPS] = find_gps_start_idx();
-   cout<<">"<<c<<endl;
+   //cout<<">"<<c<<endl;
    idxes[is_CAM] = find_cam_start_idx();
    idxes[is_LiDAR] = find_lidar_start_idx();
    idxes[is_IMU] = find_imu_start_idx();
