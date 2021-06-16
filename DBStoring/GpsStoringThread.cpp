@@ -17,7 +17,7 @@ void GpsStoringThread::run(){
          cout << "Can't open database" << endl;
          //return 1;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/gps_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/2021615_0/JSON/gps_data.json";
       //string path = "/home/ubuntu/diva2-server/build/test/storing_raw/gps.json";
       //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
 

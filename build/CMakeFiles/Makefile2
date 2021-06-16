@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/cvlab2/DIVA2/diva2-server/build
 # The main recursive "clean" target.
 clean: CMakeFiles/diva2.dir/clean
 clean: DBStoring/clean
+clean: TimeSynchronization/clean
 
 .PHONY : clean
 
@@ -149,6 +150,56 @@ dbstoring: DBStoring/CMakeFiles/dbstoring.dir/rule
 DBStoring/CMakeFiles/dbstoring.dir/clean:
 	$(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/clean
 .PHONY : DBStoring/CMakeFiles/dbstoring.dir/clean
+
+#=============================================================================
+# Directory level rules for directory TimeSynchronization
+
+# Recursive "all" directory target.
+TimeSynchronization/all: TimeSynchronization/CMakeFiles/timesynchronization.dir/all
+
+.PHONY : TimeSynchronization/all
+
+# Recursive "preinstall" directory target.
+TimeSynchronization/preinstall:
+
+.PHONY : TimeSynchronization/preinstall
+
+# Recursive "clean" directory target.
+TimeSynchronization/clean: TimeSynchronization/CMakeFiles/timesynchronization.dir/clean
+
+.PHONY : TimeSynchronization/clean
+
+#=============================================================================
+# Target rules for target TimeSynchronization/CMakeFiles/timesynchronization.dir
+
+# All Build rule for target.
+TimeSynchronization/CMakeFiles/timesynchronization.dir/all:
+	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/depend
+	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target timesynchronization"
+.PHONY : TimeSynchronization/CMakeFiles/timesynchronization.dir/all
+
+# Include target in all.
+all: TimeSynchronization/CMakeFiles/timesynchronization.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+TimeSynchronization/CMakeFiles/timesynchronization.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 TimeSynchronization/CMakeFiles/timesynchronization.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 0
+.PHONY : TimeSynchronization/CMakeFiles/timesynchronization.dir/rule
+
+# Convenience name for target.
+timesynchronization: TimeSynchronization/CMakeFiles/timesynchronization.dir/rule
+
+.PHONY : timesynchronization
+
+# clean rule for target.
+TimeSynchronization/CMakeFiles/timesynchronization.dir/clean:
+	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/clean
+.PHONY : TimeSynchronization/CMakeFiles/timesynchronization.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

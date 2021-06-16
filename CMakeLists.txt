@@ -88,6 +88,7 @@ target_include_directories(diva2 PUBLIC ${ZeroMQ_INCLUDE_DIR})  # add the includ
 target_link_libraries(diva2 PUBLIC ${ZeroMQ_LIBRARY} )           # at the 0mq library to our link directive
 
 add_subdirectory(DBStoring)
+add_subdirectory(TimeSynchronization)
 
 # 서브 디렉토리에 있는 cmakeFiles을 실행시켜줌
 # add_subdirectory(test/receiver_fromMobile_proto)

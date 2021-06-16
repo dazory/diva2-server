@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/cvlab2/DIVA2/diva2-server/build/DBStoring/cmake_install.cmake")
+  include("/home/cvlab2/DIVA2/diva2-server/build/TimeSynchronization/cmake_install.cmake")
 
 endif()
 

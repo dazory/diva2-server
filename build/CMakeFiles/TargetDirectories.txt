@@ -4,3 +4,6 @@
 /home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/rebuild_cache.dir
 /home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir
 /home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/edit_cache.dir
+/home/cvlab2/DIVA2/diva2-server/build/TimeSynchronization/CMakeFiles/rebuild_cache.dir
+/home/cvlab2/DIVA2/diva2-server/build/TimeSynchronization/CMakeFiles/timesynchronization.dir
+/home/cvlab2/DIVA2/diva2-server/build/TimeSynchronization/CMakeFiles/edit_cache.dir

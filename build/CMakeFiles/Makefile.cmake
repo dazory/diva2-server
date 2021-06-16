@@ -9,6 +9,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
   "../DBStoring/CMakeLists.txt"
+  "../TimeSynchronization/CMakeLists.txt"
   "CMakeFiles/3.15.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.6/CMakeSystem.cmake"
@@ -123,10 +124,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.15.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "DBStoring/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "TimeSynchronization/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/diva2.dir/DependInfo.cmake"
   "DBStoring/CMakeFiles/dbstoring.dir/DependInfo.cmake"
+  "TimeSynchronization/CMakeFiles/timesynchronization.dir/DependInfo.cmake"
   )

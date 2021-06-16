@@ -136,6 +136,19 @@ dbstoring/fast:
 	$(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/build
 .PHONY : dbstoring/fast
 
+#=============================================================================
+# Target rules for targets named timesynchronization
+
+# Build rule for target.
+timesynchronization: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 timesynchronization
+.PHONY : timesynchronization
+
+# fast build rule for target.
+timesynchronization/fast:
+	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/build
+.PHONY : timesynchronization/fast
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -173,6 +186,7 @@ help:
 	@echo "... diva2"
 	@echo "... edit_cache"
 	@echo "... dbstoring"
+	@echo "... timesynchronization"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
