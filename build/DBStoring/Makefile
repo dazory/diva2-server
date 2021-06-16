@@ -125,6 +125,33 @@ dbstoring/fast:
 	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/build
 .PHONY : dbstoring/fast
 
+CamStoringThread.o: CamStoringThread.cpp.o
+
+.PHONY : CamStoringThread.o
+
+# target to build an object file
+CamStoringThread.cpp.o:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o
+.PHONY : CamStoringThread.cpp.o
+
+CamStoringThread.i: CamStoringThread.cpp.i
+
+.PHONY : CamStoringThread.i
+
+# target to preprocess a source file
+CamStoringThread.cpp.i:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.i
+.PHONY : CamStoringThread.cpp.i
+
+CamStoringThread.s: CamStoringThread.cpp.s
+
+.PHONY : CamStoringThread.s
+
+# target to generate assembly for a file
+CamStoringThread.cpp.s:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.s
+.PHONY : CamStoringThread.cpp.s
+
 CanStoringThread.o: CanStoringThread.cpp.o
 
 .PHONY : CanStoringThread.o
@@ -179,33 +206,6 @@ FrameStoringThread.cpp.s:
 	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/FrameStoringThread.cpp.s
 .PHONY : FrameStoringThread.cpp.s
 
-FramedataStoringThread.o: FramedataStoringThread.cpp.o
-
-.PHONY : FramedataStoringThread.o
-
-# target to build an object file
-FramedataStoringThread.cpp.o:
-	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o
-.PHONY : FramedataStoringThread.cpp.o
-
-FramedataStoringThread.i: FramedataStoringThread.cpp.i
-
-.PHONY : FramedataStoringThread.i
-
-# target to preprocess a source file
-FramedataStoringThread.cpp.i:
-	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.i
-.PHONY : FramedataStoringThread.cpp.i
-
-FramedataStoringThread.s: FramedataStoringThread.cpp.s
-
-.PHONY : FramedataStoringThread.s
-
-# target to generate assembly for a file
-FramedataStoringThread.cpp.s:
-	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.s
-.PHONY : FramedataStoringThread.cpp.s
-
 GpsStoringThread.o: GpsStoringThread.cpp.o
 
 .PHONY : GpsStoringThread.o
@@ -259,6 +259,33 @@ ImuStoringThread.s: ImuStoringThread.cpp.s
 ImuStoringThread.cpp.s:
 	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.s
 .PHONY : ImuStoringThread.cpp.s
+
+LidarStoringThread.o: LidarStoringThread.cpp.o
+
+.PHONY : LidarStoringThread.o
+
+# target to build an object file
+LidarStoringThread.cpp.o:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o
+.PHONY : LidarStoringThread.cpp.o
+
+LidarStoringThread.i: LidarStoringThread.cpp.i
+
+.PHONY : LidarStoringThread.i
+
+# target to preprocess a source file
+LidarStoringThread.cpp.i:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.i
+.PHONY : LidarStoringThread.cpp.i
+
+LidarStoringThread.s: LidarStoringThread.cpp.s
+
+.PHONY : LidarStoringThread.s
+
+# target to generate assembly for a file
+LidarStoringThread.cpp.s:
+	cd /home/cvlab2/DIVA2/diva2-server/build && $(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.s
+.PHONY : LidarStoringThread.cpp.s
 
 LogStoringThread.o: LogStoringThread.cpp.o
 
@@ -350,21 +377,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dbstoring"
 	@echo "... edit_cache"
+	@echo "... CamStoringThread.o"
+	@echo "... CamStoringThread.i"
+	@echo "... CamStoringThread.s"
 	@echo "... CanStoringThread.o"
 	@echo "... CanStoringThread.i"
 	@echo "... CanStoringThread.s"
 	@echo "... FrameStoringThread.o"
 	@echo "... FrameStoringThread.i"
 	@echo "... FrameStoringThread.s"
-	@echo "... FramedataStoringThread.o"
-	@echo "... FramedataStoringThread.i"
-	@echo "... FramedataStoringThread.s"
 	@echo "... GpsStoringThread.o"
 	@echo "... GpsStoringThread.i"
 	@echo "... GpsStoringThread.s"
 	@echo "... ImuStoringThread.o"
 	@echo "... ImuStoringThread.i"
 	@echo "... ImuStoringThread.s"
+	@echo "... LidarStoringThread.o"
+	@echo "... LidarStoringThread.i"
+	@echo "... LidarStoringThread.s"
 	@echo "... LogStoringThread.o"
 	@echo "... LogStoringThread.i"
 	@echo "... LogStoringThread.s"

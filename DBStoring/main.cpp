@@ -30,20 +30,20 @@ int main(int argc, char *argv[]){
     thread SceneSenderThread(&SceneStoringThread::run, &mSceneStoringThread);
     SceneSenderThread.join();
 
-    // FRAMEdata
-    FramedataStoringThread mFramedataStoringThread;
-    thread framedataSenderThread(&FramedataStoringThread::run, &mFramedataStoringThread);
-    framedataSenderThread.join();
+    // // FRAMEdata
+    // FramedataStoringThread mFramedataStoringThread;
+    // thread framedataSenderThread(&FramedataStoringThread::run, &mFramedataStoringThread);
+    // framedataSenderThread.join();
 
-    // // Lidar
-    // LidarStoringThread mLidarStoringThread;
-    // thread lidarSenderThread(&LidarStoringThread::run, &mLidarStoringThread);
-    // lidarSenderThread.join();
+    // Lidar
+    LidarStoringThread mLidarStoringThread;
+    thread lidarSenderThread(&LidarStoringThread::run, &mLidarStoringThread);
+    lidarSenderThread.join();
 
-    // // CAM
-    // CamStoringThread mCamStoringThread;
-    // thread camSenderThread(&CamStoringThread::run, &mCamStoringThread);
-    // camSenderThread.join();
+    // CAM
+    CamStoringThread mCamStoringThread;
+    thread camSenderThread(&CamStoringThread::run, &mCamStoringThread);
+    camSenderThread.join();
 
     // GPS
     GpsStoringThread mGpsStoringThread;

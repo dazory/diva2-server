@@ -109,22 +109,35 @@ DBStoring/CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.s"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/SceneStoringThread.cpp -o CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.s
 
-DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
-DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o: ../DBStoring/FramedataStoringThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o"
-	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/FramedataStoringThread.cpp
+DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
+DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o: ../DBStoring/LidarStoringThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/LidarStoringThread.cpp
 
-DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.i"
-	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvlab2/DIVA2/diva2-server/DBStoring/FramedataStoringThread.cpp > CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.i
+DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.i"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvlab2/DIVA2/diva2-server/DBStoring/LidarStoringThread.cpp > CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.i
 
-DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.s"
-	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/FramedataStoringThread.cpp -o CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.s
+DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.s"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/LidarStoringThread.cpp -o CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.s
+
+DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
+DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o: ../DBStoring/CamStoringThread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/CamStoringThread.cpp
+
+DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dbstoring.dir/CamStoringThread.cpp.i"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvlab2/DIVA2/diva2-server/DBStoring/CamStoringThread.cpp > CMakeFiles/dbstoring.dir/CamStoringThread.cpp.i
+
+DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dbstoring.dir/CamStoringThread.cpp.s"
+	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvlab2/DIVA2/diva2-server/DBStoring/CamStoringThread.cpp -o CMakeFiles/dbstoring.dir/CamStoringThread.cpp.s
 
 DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
 DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o: ../DBStoring/GpsStoringThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/GpsStoringThread.cpp
 
 DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.i: cmake_force
@@ -137,7 +150,7 @@ DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.s: cmake_force
 
 DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
 DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o: ../DBStoring/ImuStoringThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/ImuStoringThread.cpp
 
 DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.i: cmake_force
@@ -150,7 +163,7 @@ DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.s: cmake_force
 
 DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o: DBStoring/CMakeFiles/dbstoring.dir/flags.make
 DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o: ../DBStoring/CanStoringThread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o -c /home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp
 
 DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.i: cmake_force
@@ -167,7 +180,8 @@ dbstoring_OBJECTS = \
 "CMakeFiles/dbstoring.dir/LogStoringThread.cpp.o" \
 "CMakeFiles/dbstoring.dir/FrameStoringThread.cpp.o" \
 "CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.o" \
-"CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o" \
+"CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o" \
+"CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o" \
 "CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o" \
 "CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o" \
 "CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o"
@@ -179,7 +193,8 @@ DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/LogStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/FrameStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.o
-DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o
+DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o
+DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o
@@ -188,7 +203,7 @@ DBStoring/dbstoring: /usr/local/lib/libzmq.so
 DBStoring/dbstoring: /usr/lib/x86_64-linux-gnu/libpqxx.so
 DBStoring/dbstoring: /usr/lib/x86_64-linux-gnu/libpq.so
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable dbstoring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable dbstoring"
 	cd /home/cvlab2/DIVA2/diva2-server/build/DBStoring && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dbstoring.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

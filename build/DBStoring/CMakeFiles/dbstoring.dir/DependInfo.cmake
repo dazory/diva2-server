@@ -4,11 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cvlab2/DIVA2/diva2-server/DBStoring/CamStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/CanStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/FrameStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/FrameStoringThread.cpp.o"
-  "/home/cvlab2/DIVA2/diva2-server/DBStoring/FramedataStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/GpsStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/ImuStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o"
+  "/home/cvlab2/DIVA2/diva2-server/DBStoring/LidarStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/LogStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/LogStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/SceneStoringThread.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.o"
   "/home/cvlab2/DIVA2/diva2-server/DBStoring/main.cpp" "/home/cvlab2/DIVA2/diva2-server/build/DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o"

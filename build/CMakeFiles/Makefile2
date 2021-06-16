@@ -76,7 +76,7 @@ clean: TimeSynchronization/clean
 CMakeFiles/diva2.dir/all:
 	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/depend
 	$(MAKE) -f CMakeFiles/diva2.dir/build.make CMakeFiles/diva2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=10,11 "Built target diva2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=11,12 "Built target diva2"
 .PHONY : CMakeFiles/diva2.dir/all
 
 # Include target in all.
@@ -126,7 +126,7 @@ DBStoring/clean: DBStoring/CMakeFiles/dbstoring.dir/clean
 DBStoring/CMakeFiles/dbstoring.dir/all:
 	$(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/depend
 	$(MAKE) -f DBStoring/CMakeFiles/dbstoring.dir/build.make DBStoring/CMakeFiles/dbstoring.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target dbstoring"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target dbstoring"
 .PHONY : DBStoring/CMakeFiles/dbstoring.dir/all
 
 # Include target in all.
@@ -136,7 +136,7 @@ all: DBStoring/CMakeFiles/dbstoring.dir/all
 
 # Build rule for subdir invocation for target.
 DBStoring/CMakeFiles/dbstoring.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 DBStoring/CMakeFiles/dbstoring.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles 0
 .PHONY : DBStoring/CMakeFiles/dbstoring.dir/rule
@@ -176,7 +176,7 @@ TimeSynchronization/clean: TimeSynchronization/CMakeFiles/timesynchronization.di
 TimeSynchronization/CMakeFiles/timesynchronization.dir/all:
 	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/depend
 	$(MAKE) -f TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make TimeSynchronization/CMakeFiles/timesynchronization.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target timesynchronization"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target timesynchronization"
 .PHONY : TimeSynchronization/CMakeFiles/timesynchronization.dir/all
 
 # Include target in all.

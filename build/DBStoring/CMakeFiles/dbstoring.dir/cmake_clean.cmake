@@ -1,9 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/dbstoring.dir/CamStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/FrameStoringThread.cpp.o"
-  "CMakeFiles/dbstoring.dir/FramedataStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o"
+  "CMakeFiles/dbstoring.dir/LidarStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/LogStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.o"
   "CMakeFiles/dbstoring.dir/main.cpp.o"
