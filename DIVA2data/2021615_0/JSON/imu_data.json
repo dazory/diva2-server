@@ -1,0 +1,1650 @@
+[
+   {
+      "scaledaccelx" : "-0.0377607",
+      "scaledaccely" : "0.0631972",
+      "scaledaccelz" : "-0.998006",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153849675",
+      "token" : "d88f945b96fb68f3"
+   },
+   {
+      "scaledaccelx" : "-0.048036",
+      "scaledaccely" : "0.0940696",
+      "scaledaccelz" : "-1.00737",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153849879",
+      "token" : "0fb215631a9e7444"
+   },
+   {
+      "scaledaccelx" : "-0.0564241",
+      "scaledaccely" : "0.103109",
+      "scaledaccelz" : "-0.987892",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850077",
+      "token" : "cc45190aff668598"
+   },
+   {
+      "scaledaccelx" : "-0.05279",
+      "scaledaccely" : "0.0847308",
+      "scaledaccelz" : "-1.0044",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850277",
+      "token" : "44a5908ab1825c71"
+   },
+   {
+      "scaledaccelx" : "-0.061331",
+      "scaledaccely" : "0.130868",
+      "scaledaccelz" : "-0.993145",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850473",
+      "token" : "9b6a47446aaef363"
+   },
+   {
+      "scaledaccelx" : "-0.0558769",
+      "scaledaccely" : "0.143871",
+      "scaledaccelz" : "-1.00791",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850577",
+      "token" : "809111cc34e815aa"
+   },
+   {
+      "scaledaccelx" : "-0.0540333",
+      "scaledaccely" : "0.155177",
+      "scaledaccelz" : "-1.00333",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850677",
+      "token" : "0045789e33c2636e"
+   },
+   {
+      "scaledaccelx" : "-0.0494875",
+      "scaledaccely" : "0.162603",
+      "scaledaccelz" : "-0.992152",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850774",
+      "token" : "3f040c030fc146b5"
+   },
+   {
+      "scaledaccelx" : "-0.0370299",
+      "scaledaccely" : "0.17058",
+      "scaledaccelz" : "-0.983004",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153850878",
+      "token" : "6fae83cb68dcb3bf"
+   },
+   {
+      "scaledaccelx" : "-0.0269706",
+      "scaledaccely" : "0.169618",
+      "scaledaccelz" : "-0.993911",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851073",
+      "token" : "2b337467329784cf"
+   },
+   {
+      "scaledaccelx" : "0.00724146",
+      "scaledaccely" : "0.124411",
+      "scaledaccelz" : "-0.98901",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851278",
+      "token" : "46dc997f14cd87ca"
+   },
+   {
+      "scaledaccelx" : "0.0220914",
+      "scaledaccely" : "0.127677",
+      "scaledaccelz" : "-0.99384",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851475",
+      "token" : "2fd9340669efeae2"
+   },
+   {
+      "scaledaccelx" : "0.0220914",
+      "scaledaccely" : "0.127677",
+      "scaledaccelz" : "-0.99384",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851475",
+      "token" : "1bea45a59621decf"
+   },
+   {
+      "scaledaccelx" : "0.0221722",
+      "scaledaccely" : "0.183987",
+      "scaledaccelz" : "-0.971998",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851673",
+      "token" : "e981d88426300121"
+   },
+   {
+      "scaledaccelx" : "0.0205057",
+      "scaledaccely" : "0.176872",
+      "scaledaccelz" : "-0.963522",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851775",
+      "token" : "c0c0565ec8096c84"
+   },
+   {
+      "scaledaccelx" : "0.0223133",
+      "scaledaccely" : "0.141762",
+      "scaledaccelz" : "-0.994016",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153851973",
+      "token" : "50638e7a4aa4bc67"
+   },
+   {
+      "scaledaccelx" : "0.00701543",
+      "scaledaccely" : "0.133269",
+      "scaledaccelz" : "-0.996588",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852075",
+      "token" : "c2718c0440dbc5f1"
+   },
+   {
+      "scaledaccelx" : "0.0187484",
+      "scaledaccely" : "0.144331",
+      "scaledaccelz" : "-1.00189",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852177",
+      "token" : "554d3b8752c0f27b"
+   },
+   {
+      "scaledaccelx" : "0.0287528",
+      "scaledaccely" : "0.153227",
+      "scaledaccelz" : "-1.00254",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852273",
+      "token" : "4edcbd0fdda92aa7"
+   },
+   {
+      "scaledaccelx" : "0.0228799",
+      "scaledaccely" : "0.150324",
+      "scaledaccelz" : "-0.975195",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852375",
+      "token" : "ff43aca0f60e889c"
+   },
+   {
+      "scaledaccelx" : "-0.00414566",
+      "scaledaccely" : "0.148345",
+      "scaledaccelz" : "-0.961272",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852573",
+      "token" : "668138105b9754e5"
+   },
+   {
+      "scaledaccelx" : "-0.00414566",
+      "scaledaccely" : "0.148345",
+      "scaledaccelz" : "-0.961272",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852573",
+      "token" : "338df2de9ec166ec"
+   },
+   {
+      "scaledaccelx" : "0.0187529",
+      "scaledaccely" : "0.147113",
+      "scaledaccelz" : "-1.00748",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852675",
+      "token" : "c6e0ff04aac0ea51"
+   },
+   {
+      "scaledaccelx" : "0.0374082",
+      "scaledaccely" : "0.159364",
+      "scaledaccelz" : "-1.05415",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852777",
+      "token" : "ddedfcb8a8a0e8ca"
+   },
+   {
+      "scaledaccelx" : "0.0430266",
+      "scaledaccely" : "0.132188",
+      "scaledaccelz" : "-1.02674",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153852873",
+      "token" : "eaad9b245e438946"
+   },
+   {
+      "scaledaccelx" : "0.0413196",
+      "scaledaccely" : "0.111532",
+      "scaledaccelz" : "-0.949178",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853077",
+      "token" : "6235eee8688405fe"
+   },
+   {
+      "scaledaccelx" : "0.0413196",
+      "scaledaccely" : "0.111532",
+      "scaledaccelz" : "-0.949178",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853077",
+      "token" : "f9c94ed9c1c4a0a0"
+   },
+   {
+      "scaledaccelx" : "0.0423243",
+      "scaledaccely" : "0.118861",
+      "scaledaccelz" : "-0.966479",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853173",
+      "token" : "3d51c3a2b27b76a7"
+   },
+   {
+      "scaledaccelx" : "0.0419358",
+      "scaledaccely" : "0.138575",
+      "scaledaccelz" : "-1.03348",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853276",
+      "token" : "f6044dd0ea48af8d"
+   },
+   {
+      "scaledaccelx" : "0.0332049",
+      "scaledaccely" : "0.150289",
+      "scaledaccelz" : "-1.03144",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853377",
+      "token" : "cdf819bcb28382a7"
+   },
+   {
+      "scaledaccelx" : "0.0422196",
+      "scaledaccely" : "0.131596",
+      "scaledaccelz" : "-0.994733",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853473",
+      "token" : "8abc79c530ddf5bc"
+   },
+   {
+      "scaledaccelx" : "0.0600887",
+      "scaledaccely" : "0.136426",
+      "scaledaccelz" : "-0.985011",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853575",
+      "token" : "2a433f0e1819ab12"
+   },
+   {
+      "scaledaccelx" : "0.0595492",
+      "scaledaccely" : "0.123802",
+      "scaledaccelz" : "-0.975052",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853677",
+      "token" : "5cec5a18ae6a3166"
+   },
+   {
+      "scaledaccelx" : "0.0584448",
+      "scaledaccely" : "0.137778",
+      "scaledaccelz" : "-0.983657",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853779",
+      "token" : "ba9ea9cb1e5b96df"
+   },
+   {
+      "scaledaccelx" : "0.0783424",
+      "scaledaccely" : "0.148842",
+      "scaledaccelz" : "-0.990265",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153853875",
+      "token" : "2bb85d00b6af7052"
+   },
+   {
+      "scaledaccelx" : "0.0984683",
+      "scaledaccely" : "0.158203",
+      "scaledaccelz" : "-0.981312",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854079",
+      "token" : "ae048d09b554b23d"
+   },
+   {
+      "scaledaccelx" : "0.0948226",
+      "scaledaccely" : "0.140885",
+      "scaledaccelz" : "-0.989476",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854175",
+      "token" : "ef53c637cd64db68"
+   },
+   {
+      "scaledaccelx" : "0.100871",
+      "scaledaccely" : "0.135366",
+      "scaledaccelz" : "-0.98364",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854277",
+      "token" : "a7c24cbf103c37a1"
+   },
+   {
+      "scaledaccelx" : "0.109891",
+      "scaledaccely" : "0.141838",
+      "scaledaccelz" : "-0.990945",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854379",
+      "token" : "6f4258925063bcb5"
+   },
+   {
+      "scaledaccelx" : "0.103809",
+      "scaledaccely" : "0.148706",
+      "scaledaccelz" : "-0.986468",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854479",
+      "token" : "377743653a261c77"
+   },
+   {
+      "scaledaccelx" : "0.100872",
+      "scaledaccely" : "0.167613",
+      "scaledaccelz" : "-0.984387",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854577",
+      "token" : "bc91423929ce5739"
+   },
+   {
+      "scaledaccelx" : "0.109101",
+      "scaledaccely" : "0.172537",
+      "scaledaccelz" : "-0.99762",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854679",
+      "token" : "fb03e7811a826f92"
+   },
+   {
+      "scaledaccelx" : "0.108825",
+      "scaledaccely" : "0.177174",
+      "scaledaccelz" : "-0.979675",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854776",
+      "token" : "b23f4697f554d8dc"
+   },
+   {
+      "scaledaccelx" : "0.100796",
+      "scaledaccely" : "0.179741",
+      "scaledaccelz" : "-0.967228",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854878",
+      "token" : "3ef157362b88a1a6"
+   },
+   {
+      "scaledaccelx" : "0.0903291",
+      "scaledaccely" : "0.183352",
+      "scaledaccelz" : "-0.963104",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153854985",
+      "token" : "3d573ee24371c4df"
+   },
+   {
+      "scaledaccelx" : "0.0793872",
+      "scaledaccely" : "0.197001",
+      "scaledaccelz" : "-0.97619",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855075",
+      "token" : "2c1734d5f5e968f9"
+   },
+   {
+      "scaledaccelx" : "0.0645758",
+      "scaledaccely" : "0.214022",
+      "scaledaccelz" : "-0.988287",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855177",
+      "token" : "65193fc7338f75ea"
+   },
+   {
+      "scaledaccelx" : "0.0481134",
+      "scaledaccely" : "0.221797",
+      "scaledaccelz" : "-0.991805",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855279",
+      "token" : "1f153fa248cb1b47"
+   },
+   {
+      "scaledaccelx" : "0.0333504",
+      "scaledaccely" : "0.203619",
+      "scaledaccelz" : "-0.972471",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855375",
+      "token" : "05045cb8f477951b"
+   },
+   {
+      "scaledaccelx" : "0.035669",
+      "scaledaccely" : "0.187206",
+      "scaledaccelz" : "-0.973651",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855477",
+      "token" : "52081ab6371425b3"
+   },
+   {
+      "scaledaccelx" : "0.0415928",
+      "scaledaccely" : "0.190681",
+      "scaledaccelz" : "-0.993399",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855580",
+      "token" : "bb7082876fe04fb9"
+   },
+   {
+      "scaledaccelx" : "0.0397897",
+      "scaledaccely" : "0.192453",
+      "scaledaccelz" : "-0.977508",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855675",
+      "token" : "2b235d984ac6079b"
+   },
+   {
+      "scaledaccelx" : "0.0423269",
+      "scaledaccely" : "0.18797",
+      "scaledaccelz" : "-0.965313",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855777",
+      "token" : "30bb332921960402"
+   },
+   {
+      "scaledaccelx" : "0.0354603",
+      "scaledaccely" : "0.197932",
+      "scaledaccelz" : "-0.979432",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153855880",
+      "token" : "f265ffd3aa9a1354"
+   },
+   {
+      "scaledaccelx" : "-0.00250239",
+      "scaledaccely" : "0.177788",
+      "scaledaccelz" : "-0.986434",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856078",
+      "token" : "30f6320539b3eb6d"
+   },
+   {
+      "scaledaccelx" : "-0.018398",
+      "scaledaccely" : "0.172514",
+      "scaledaccelz" : "-0.975308",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856179",
+      "token" : "dc2cb0f5a9fbc40f"
+   },
+   {
+      "scaledaccelx" : "-0.0315509",
+      "scaledaccely" : "0.18092",
+      "scaledaccelz" : "-0.972154",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856276",
+      "token" : "4f6716c4f88d3eb1"
+   },
+   {
+      "scaledaccelx" : "-0.0438121",
+      "scaledaccely" : "0.206959",
+      "scaledaccelz" : "-0.977996",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856377",
+      "token" : "add5ddb76a32f313"
+   },
+   {
+      "scaledaccelx" : "-0.0565934",
+      "scaledaccely" : "0.220575",
+      "scaledaccelz" : "-0.973582",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856480",
+      "token" : "27b4d78df0a3e548"
+   },
+   {
+      "scaledaccelx" : "-0.066754",
+      "scaledaccely" : "0.224214",
+      "scaledaccelz" : "-0.97609",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856576",
+      "token" : "31e0e9843b62e860"
+   },
+   {
+      "scaledaccelx" : "-0.0717247",
+      "scaledaccely" : "0.227561",
+      "scaledaccelz" : "-0.979644",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856678",
+      "token" : "f14d8da8d4bcaf4d"
+   },
+   {
+      "scaledaccelx" : "-0.071865",
+      "scaledaccely" : "0.228996",
+      "scaledaccelz" : "-0.994869",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856780",
+      "token" : "02dfb53f0a1e27f1"
+   },
+   {
+      "scaledaccelx" : "-0.0832849",
+      "scaledaccely" : "0.236036",
+      "scaledaccelz" : "-0.975359",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856876",
+      "token" : "83e1089ed4a73e43"
+   },
+   {
+      "scaledaccelx" : "-0.0844188",
+      "scaledaccely" : "0.23747",
+      "scaledaccelz" : "-0.969802",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153856978",
+      "token" : "112c76b70d62453d"
+   },
+   {
+      "scaledaccelx" : "-0.0874798",
+      "scaledaccely" : "0.250259",
+      "scaledaccelz" : "-0.972349",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857080",
+      "token" : "82e9a777b1eef210"
+   },
+   {
+      "scaledaccelx" : "-0.0848185",
+      "scaledaccely" : "0.286738",
+      "scaledaccelz" : "-0.969357",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857176",
+      "token" : "44dba82a58cadf76"
+   },
+   {
+      "scaledaccelx" : "-0.0797331",
+      "scaledaccely" : "0.311557",
+      "scaledaccelz" : "-0.966521",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857278",
+      "token" : "15fcc63772564678"
+   },
+   {
+      "scaledaccelx" : "-0.0816166",
+      "scaledaccely" : "0.303494",
+      "scaledaccelz" : "-0.968919",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857380",
+      "token" : "a434c6e2eacca32b"
+   },
+   {
+      "scaledaccelx" : "-0.0619864",
+      "scaledaccely" : "0.316353",
+      "scaledaccelz" : "-0.982534",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857476",
+      "token" : "81747bbed0416ba1"
+   },
+   {
+      "scaledaccelx" : "-0.0682086",
+      "scaledaccely" : "0.321999",
+      "scaledaccelz" : "-0.956088",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857584",
+      "token" : "fd5c34e2eae8d045"
+   },
+   {
+      "scaledaccelx" : "-0.074598",
+      "scaledaccely" : "0.320377",
+      "scaledaccelz" : "-0.944767",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857680",
+      "token" : "1b9864634a5a6fb5"
+   },
+   {
+      "scaledaccelx" : "-0.0706563",
+      "scaledaccely" : "0.349866",
+      "scaledaccelz" : "-0.959729",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857776",
+      "token" : "c1105f2390c600b1"
+   },
+   {
+      "scaledaccelx" : "-0.0705783",
+      "scaledaccely" : "0.331788",
+      "scaledaccelz" : "-0.949076",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153857878",
+      "token" : "b4928f5c9a7f9256"
+   },
+   {
+      "scaledaccelx" : "-0.0674089",
+      "scaledaccely" : "0.325774",
+      "scaledaccelz" : "-0.96177",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858076",
+      "token" : "366868cf88688193"
+   },
+   {
+      "scaledaccelx" : "-0.0624724",
+      "scaledaccely" : "0.348317",
+      "scaledaccelz" : "-0.970843",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858280",
+      "token" : "625e1bba52af4f58"
+   },
+   {
+      "scaledaccelx" : "-0.059605",
+      "scaledaccely" : "0.375951",
+      "scaledaccelz" : "-1.00418",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858478",
+      "token" : "5b0b3cbb413c2c08"
+   },
+   {
+      "scaledaccelx" : "-0.0659201",
+      "scaledaccely" : "0.36722",
+      "scaledaccelz" : "-0.975076",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858580",
+      "token" : "e57f029643582a08"
+   },
+   {
+      "scaledaccelx" : "-0.0786714",
+      "scaledaccely" : "0.394591",
+      "scaledaccelz" : "-0.966469",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858679",
+      "token" : "5138de32f6e22ea0"
+   },
+   {
+      "scaledaccelx" : "-0.0759916",
+      "scaledaccely" : "0.39484",
+      "scaledaccelz" : "-0.990001",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858778",
+      "token" : "41f438a7cf0e906e"
+   },
+   {
+      "scaledaccelx" : "-0.0745746",
+      "scaledaccely" : "0.366671",
+      "scaledaccelz" : "-1.013",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858880",
+      "token" : "1a6f8918ffa1e412"
+   },
+   {
+      "scaledaccelx" : "-0.072956",
+      "scaledaccely" : "0.374154",
+      "scaledaccelz" : "-1.00353",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153858976",
+      "token" : "60699115013a1a83"
+   },
+   {
+      "scaledaccelx" : "-0.0363576",
+      "scaledaccely" : "0.355922",
+      "scaledaccelz" : "-0.98367",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859180",
+      "token" : "4f2c83482e903b29"
+   },
+   {
+      "scaledaccelx" : "-0.0331538",
+      "scaledaccely" : "0.284853",
+      "scaledaccelz" : "-0.977663",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859378",
+      "token" : "b924a39a4d467d9b"
+   },
+   {
+      "scaledaccelx" : "-0.0316982",
+      "scaledaccely" : "0.284662",
+      "scaledaccelz" : "-0.981315",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859480",
+      "token" : "cb74ecc0a61d136c"
+   },
+   {
+      "scaledaccelx" : "-0.0335408",
+      "scaledaccely" : "0.32829",
+      "scaledaccelz" : "-0.964721",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859678",
+      "token" : "c916ca11757e209e"
+   },
+   {
+      "scaledaccelx" : "-0.0335408",
+      "scaledaccely" : "0.32829",
+      "scaledaccelz" : "-0.964721",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859678",
+      "token" : "b139df975a56eb3a"
+   },
+   {
+      "scaledaccelx" : "-0.0292136",
+      "scaledaccely" : "0.34198",
+      "scaledaccelz" : "-0.979073",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859780",
+      "token" : "4411e226794a9e84"
+   },
+   {
+      "scaledaccelx" : "-0.0292853",
+      "scaledaccely" : "0.33342",
+      "scaledaccelz" : "-0.965362",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153859876",
+      "token" : "fbdcb630187f4a98"
+   },
+   {
+      "scaledaccelx" : "-0.033598",
+      "scaledaccely" : "0.311672",
+      "scaledaccelz" : "-0.957028",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900080",
+      "token" : "ea9ccb2447ed5614"
+   },
+   {
+      "scaledaccelx" : "-0.0355016",
+      "scaledaccely" : "0.306062",
+      "scaledaccelz" : "-0.975113",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900182",
+      "token" : "2e0d53d6c450ee8c"
+   },
+   {
+      "scaledaccelx" : "-0.033469",
+      "scaledaccely" : "0.311475",
+      "scaledaccelz" : "-0.968416",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900278",
+      "token" : "9295db9227f7e1b0"
+   },
+   {
+      "scaledaccelx" : "-0.0322187",
+      "scaledaccely" : "0.326965",
+      "scaledaccelz" : "-0.955021",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900380",
+      "token" : "fbd4faabffbde3a7"
+   },
+   {
+      "scaledaccelx" : "-0.0325352",
+      "scaledaccely" : "0.326541",
+      "scaledaccelz" : "-0.949665",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900482",
+      "token" : "53c3e651d48b54b5"
+   },
+   {
+      "scaledaccelx" : "-0.0328978",
+      "scaledaccely" : "0.315204",
+      "scaledaccelz" : "-0.966529",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900578",
+      "token" : "f89e349234f1898d"
+   },
+   {
+      "scaledaccelx" : "-0.033248",
+      "scaledaccely" : "0.31491",
+      "scaledaccelz" : "-0.965319",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900680",
+      "token" : "c50bb5c8a44f8f48"
+   },
+   {
+      "scaledaccelx" : "-0.0302336",
+      "scaledaccely" : "0.308949",
+      "scaledaccelz" : "-0.953613",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900782",
+      "token" : "8e6b20d54c7c6fa2"
+   },
+   {
+      "scaledaccelx" : "-0.0324268",
+      "scaledaccely" : "0.301411",
+      "scaledaccelz" : "-0.938705",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900878",
+      "token" : "4adf098aec96bee3"
+   },
+   {
+      "scaledaccelx" : "-0.030953",
+      "scaledaccely" : "0.303723",
+      "scaledaccelz" : "-0.944662",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153900980",
+      "token" : "c5ee5b398a6ea00e"
+   },
+   {
+      "scaledaccelx" : "-0.0297644",
+      "scaledaccely" : "0.31012",
+      "scaledaccelz" : "-0.95657",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901082",
+      "token" : "aeea76452ecdca18"
+   },
+   {
+      "scaledaccelx" : "-0.0284303",
+      "scaledaccely" : "0.300009",
+      "scaledaccelz" : "-0.951058",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901178",
+      "token" : "ff64b9e3441e41ce"
+   },
+   {
+      "scaledaccelx" : "-0.0281535",
+      "scaledaccely" : "0.30845",
+      "scaledaccelz" : "-0.937925",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901280",
+      "token" : "fa970dc2b80731f2"
+   },
+   {
+      "scaledaccelx" : "-0.0248227",
+      "scaledaccely" : "0.311279",
+      "scaledaccelz" : "-0.94674",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901382",
+      "token" : "057bf5e39f1d1db0"
+   },
+   {
+      "scaledaccelx" : "-0.0140395",
+      "scaledaccely" : "0.31808",
+      "scaledaccelz" : "-0.947051",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901478",
+      "token" : "847824bdcb5fc42c"
+   },
+   {
+      "scaledaccelx" : "0.00576421",
+      "scaledaccely" : "0.332912",
+      "scaledaccelz" : "-0.930024",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901580",
+      "token" : "a989e6c76d47af72"
+   },
+   {
+      "scaledaccelx" : "0.00884706",
+      "scaledaccely" : "0.330161",
+      "scaledaccelz" : "-0.932489",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901682",
+      "token" : "4fb6363f18fdd197"
+   },
+   {
+      "scaledaccelx" : "0.0173335",
+      "scaledaccely" : "0.314096",
+      "scaledaccelz" : "-0.971825",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901778",
+      "token" : "a1088cfe93532c66"
+   },
+   {
+      "scaledaccelx" : "0.0261654",
+      "scaledaccely" : "0.300818",
+      "scaledaccelz" : "-0.966544",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901880",
+      "token" : "b1ce70e88d55eec8"
+   },
+   {
+      "scaledaccelx" : "0.0333667",
+      "scaledaccely" : "0.317502",
+      "scaledaccelz" : "-0.943406",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153901982",
+      "token" : "0c088f612b547bb3"
+   },
+   {
+      "scaledaccelx" : "0.0329205",
+      "scaledaccely" : "0.308558",
+      "scaledaccelz" : "-0.940463",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902078",
+      "token" : "c7137fb0c05ae22e"
+   },
+   {
+      "scaledaccelx" : "0.0275104",
+      "scaledaccely" : "0.312448",
+      "scaledaccelz" : "-0.952505",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902180",
+      "token" : "e2671c837d8f8324"
+   },
+   {
+      "scaledaccelx" : "0.0319",
+      "scaledaccely" : "0.323783",
+      "scaledaccelz" : "-0.95285",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902282",
+      "token" : "a372322f27a19cf8"
+   },
+   {
+      "scaledaccelx" : "0.0395987",
+      "scaledaccely" : "0.325376",
+      "scaledaccelz" : "-0.958055",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902379",
+      "token" : "f6f0274a5c9dfb29"
+   },
+   {
+      "scaledaccelx" : "0.0403333",
+      "scaledaccely" : "0.300615",
+      "scaledaccelz" : "-0.950896",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902480",
+      "token" : "e9b1cd1e5bfe7f66"
+   },
+   {
+      "scaledaccelx" : "0.0618148",
+      "scaledaccely" : "0.304938",
+      "scaledaccelz" : "-0.953866",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902582",
+      "token" : "5577db127af651f4"
+   },
+   {
+      "scaledaccelx" : "0.0567758",
+      "scaledaccely" : "0.296056",
+      "scaledaccelz" : "-0.960301",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902684",
+      "token" : "bb57865d15c942f9"
+   },
+   {
+      "scaledaccelx" : "0.0431284",
+      "scaledaccely" : "0.305987",
+      "scaledaccelz" : "-0.921228",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902780",
+      "token" : "86051278c6e28e63"
+   },
+   {
+      "scaledaccelx" : "0.0507282",
+      "scaledaccely" : "0.32551",
+      "scaledaccelz" : "-0.923856",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902882",
+      "token" : "9ba12ff34bc8dc15"
+   },
+   {
+      "scaledaccelx" : "0.0884865",
+      "scaledaccely" : "0.26847",
+      "scaledaccelz" : "-1.06903",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153902978",
+      "token" : "22a441c08b209832"
+   },
+   {
+      "scaledaccelx" : "0.078314",
+      "scaledaccely" : "0.232407",
+      "scaledaccelz" : "-1.04374",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903080",
+      "token" : "4d36c291d69b2b04"
+   },
+   {
+      "scaledaccelx" : "0.0593743",
+      "scaledaccely" : "0.305967",
+      "scaledaccelz" : "-0.981888",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903182",
+      "token" : "db81c5140449c7b0"
+   },
+   {
+      "scaledaccelx" : "0.050485",
+      "scaledaccely" : "0.34385",
+      "scaledaccelz" : "-0.91074",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903278",
+      "token" : "4e61102e6b986ac3"
+   },
+   {
+      "scaledaccelx" : "0.0596645",
+      "scaledaccely" : "0.293328",
+      "scaledaccelz" : "-0.985169",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903383",
+      "token" : "5541a66aaa362e76"
+   },
+   {
+      "scaledaccelx" : "0.0432976",
+      "scaledaccely" : "0.249879",
+      "scaledaccelz" : "-0.998762",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903482",
+      "token" : "cd7dd9c355bbf8f4"
+   },
+   {
+      "scaledaccelx" : "0.0476364",
+      "scaledaccely" : "0.277597",
+      "scaledaccelz" : "-0.967129",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903578",
+      "token" : "d3679c1364a821fe"
+   },
+   {
+      "scaledaccelx" : "0.0488595",
+      "scaledaccely" : "0.293113",
+      "scaledaccelz" : "-0.949065",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903680",
+      "token" : "e6cc08f5db0d3f10"
+   },
+   {
+      "scaledaccelx" : "0.0494659",
+      "scaledaccely" : "0.291444",
+      "scaledaccelz" : "-0.949829",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903783",
+      "token" : "377c380aca2eb1c9"
+   },
+   {
+      "scaledaccelx" : "0.0551536",
+      "scaledaccely" : "0.278967",
+      "scaledaccelz" : "-0.972701",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903878",
+      "token" : "885805de0db3dc30"
+   },
+   {
+      "scaledaccelx" : "0.0523165",
+      "scaledaccely" : "0.243177",
+      "scaledaccelz" : "-0.970496",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153903980",
+      "token" : "4ac72c1e64c158bd"
+   },
+   {
+      "scaledaccelx" : "0.0570051",
+      "scaledaccely" : "0.196675",
+      "scaledaccelz" : "-0.979429",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904082",
+      "token" : "105152f50a8d7bdb"
+   },
+   {
+      "scaledaccelx" : "0.0573866",
+      "scaledaccely" : "0.149925",
+      "scaledaccelz" : "-0.97538",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904178",
+      "token" : "5927645c81eda9bb"
+   },
+   {
+      "scaledaccelx" : "0.0554439",
+      "scaledaccely" : "0.144432",
+      "scaledaccelz" : "-0.986333",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904280",
+      "token" : "90cf3c436d0d8d8e"
+   },
+   {
+      "scaledaccelx" : "0.055791",
+      "scaledaccely" : "0.175227",
+      "scaledaccelz" : "-0.993645",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904382",
+      "token" : "6b5cfb97c7460f19"
+   },
+   {
+      "scaledaccelx" : "0.0509943",
+      "scaledaccely" : "0.210304",
+      "scaledaccelz" : "-0.983426",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904478",
+      "token" : "0e83ad60a6e23609"
+   },
+   {
+      "scaledaccelx" : "0.0489453",
+      "scaledaccely" : "0.232483",
+      "scaledaccelz" : "-0.971115",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904684",
+      "token" : "16601f7d6c46b5fb"
+   },
+   {
+      "scaledaccelx" : "0.0510051",
+      "scaledaccely" : "0.214981",
+      "scaledaccelz" : "-0.983173",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904778",
+      "token" : "38ed54efac1d2274"
+   },
+   {
+      "scaledaccelx" : "0.054105",
+      "scaledaccely" : "0.196796",
+      "scaledaccelz" : "-0.986271",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153904880",
+      "token" : "8d49cc628a8307f3"
+   },
+   {
+      "scaledaccelx" : "0.0650065",
+      "scaledaccely" : "0.193713",
+      "scaledaccelz" : "-0.982027",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905078",
+      "token" : "fd142f3cb5ad711f"
+   },
+   {
+      "scaledaccelx" : "0.0712183",
+      "scaledaccely" : "0.208311",
+      "scaledaccelz" : "-0.984913",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905378",
+      "token" : "e68a2eca94d9bccb"
+   },
+   {
+      "scaledaccelx" : "0.0712183",
+      "scaledaccely" : "0.208311",
+      "scaledaccelz" : "-0.984913",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905378",
+      "token" : "adfcc387825f36e1"
+   },
+   {
+      "scaledaccelx" : "0.0676525",
+      "scaledaccely" : "0.160044",
+      "scaledaccelz" : "-0.973128",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905582",
+      "token" : "c6be478db667232c"
+   },
+   {
+      "scaledaccelx" : "0.0714042",
+      "scaledaccely" : "0.164425",
+      "scaledaccelz" : "-0.978948",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905678",
+      "token" : "018d414c39b7098c"
+   },
+   {
+      "scaledaccelx" : "0.0759333",
+      "scaledaccely" : "0.152241",
+      "scaledaccelz" : "-0.981611",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905780",
+      "token" : "f4b4b31798ecb08b"
+   },
+   {
+      "scaledaccelx" : "0.0738287",
+      "scaledaccely" : "0.150833",
+      "scaledaccelz" : "-0.98307",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153905882",
+      "token" : "11862d256ec67537"
+   },
+   {
+      "scaledaccelx" : "0.0750456",
+      "scaledaccely" : "0.166287",
+      "scaledaccelz" : "-0.971006",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906080",
+      "token" : "9eb41cbb497f9fbb"
+   },
+   {
+      "scaledaccelx" : "0.107462",
+      "scaledaccely" : "0.162327",
+      "scaledaccelz" : "-0.979999",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906279",
+      "token" : "0312038714d99002"
+   },
+   {
+      "scaledaccelx" : "0.150095",
+      "scaledaccely" : "0.168433",
+      "scaledaccelz" : "-0.973441",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906384",
+      "token" : "eb7072bcc2b51602"
+   },
+   {
+      "scaledaccelx" : "0.177282",
+      "scaledaccely" : "0.153715",
+      "scaledaccelz" : "-0.980818",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906482",
+      "token" : "a14a5c161ffaffde"
+   },
+   {
+      "scaledaccelx" : "0.185235",
+      "scaledaccely" : "0.140861",
+      "scaledaccelz" : "-0.98067",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906578",
+      "token" : "a4e269e2b98c08ea"
+   },
+   {
+      "scaledaccelx" : "0.166322",
+      "scaledaccely" : "0.131412",
+      "scaledaccelz" : "-0.991565",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906680",
+      "token" : "a34ff65055b4482f"
+   },
+   {
+      "scaledaccelx" : "0.121799",
+      "scaledaccely" : "0.126245",
+      "scaledaccelz" : "-0.995597",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906782",
+      "token" : "c0129f548d185f2f"
+   },
+   {
+      "scaledaccelx" : "0.0777033",
+      "scaledaccely" : "0.149055",
+      "scaledaccelz" : "-0.990556",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906878",
+      "token" : "27e2d4229d6d59c1"
+   },
+   {
+      "scaledaccelx" : "0.0565073",
+      "scaledaccely" : "0.156696",
+      "scaledaccelz" : "-0.987921",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153906980",
+      "token" : "9d43c97568db80ba"
+   },
+   {
+      "scaledaccelx" : "0.0531274",
+      "scaledaccely" : "0.157481",
+      "scaledaccelz" : "-0.984307",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907082",
+      "token" : "79c4df66cc42503f"
+   },
+   {
+      "scaledaccelx" : "0.0505668",
+      "scaledaccely" : "0.143715",
+      "scaledaccelz" : "-0.979809",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907178",
+      "token" : "e72a09f62d2add44"
+   },
+   {
+      "scaledaccelx" : "0.0522322",
+      "scaledaccely" : "0.15046",
+      "scaledaccelz" : "-0.980137",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907280",
+      "token" : "61840eacaee0f2fd"
+   },
+   {
+      "scaledaccelx" : "0.0583791",
+      "scaledaccely" : "0.138526",
+      "scaledaccelz" : "-0.982665",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907382",
+      "token" : "917aa70c4261fb56"
+   },
+   {
+      "scaledaccelx" : "0.076137",
+      "scaledaccely" : "0.142733",
+      "scaledaccelz" : "-0.987755",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907478",
+      "token" : "cdacb485375294f2"
+   },
+   {
+      "scaledaccelx" : "0.0953364",
+      "scaledaccely" : "0.144629",
+      "scaledaccelz" : "-0.983325",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907581",
+      "token" : "56c0ddc1f32fe75a"
+   },
+   {
+      "scaledaccelx" : "0.105816",
+      "scaledaccely" : "0.136588",
+      "scaledaccelz" : "-0.994119",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907682",
+      "token" : "4f6f3e565a8ef714"
+   },
+   {
+      "scaledaccelx" : "0.108414",
+      "scaledaccely" : "0.154336",
+      "scaledaccelz" : "-0.990666",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907784",
+      "token" : "ed4ba1da4f927ecb"
+   },
+   {
+      "scaledaccelx" : "0.110431",
+      "scaledaccely" : "0.155711",
+      "scaledaccelz" : "-0.992551",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907880",
+      "token" : "d2b00076af4975e5"
+   },
+   {
+      "scaledaccelx" : "0.115317",
+      "scaledaccely" : "0.145442",
+      "scaledaccelz" : "-0.984319",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153907982",
+      "token" : "320d3d77d094e5fb"
+   },
+   {
+      "scaledaccelx" : "0.0999212",
+      "scaledaccely" : "0.153462",
+      "scaledaccelz" : "-0.977082",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908078",
+      "token" : "7ac8a3e522e98ceb"
+   },
+   {
+      "scaledaccelx" : "0.106161",
+      "scaledaccely" : "0.152672",
+      "scaledaccelz" : "-0.980879",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908180",
+      "token" : "ff82c0a903df9da0"
+   },
+   {
+      "scaledaccelx" : "0.10447",
+      "scaledaccely" : "0.138137",
+      "scaledaccelz" : "-0.990545",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908287",
+      "token" : "7682967c955124c1"
+   },
+   {
+      "scaledaccelx" : "0.106935",
+      "scaledaccely" : "0.140809",
+      "scaledaccelz" : "-1.0046",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908379",
+      "token" : "343f4d95164a3eab"
+   },
+   {
+      "scaledaccelx" : "0.11289",
+      "scaledaccely" : "0.136084",
+      "scaledaccelz" : "-0.99324",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908480",
+      "token" : "53de94a2903b4fc7"
+   },
+   {
+      "scaledaccelx" : "0.118312",
+      "scaledaccely" : "0.138629",
+      "scaledaccelz" : "-0.981978",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908582",
+      "token" : "4068dfde61890345"
+   },
+   {
+      "scaledaccelx" : "0.135756",
+      "scaledaccely" : "0.158794",
+      "scaledaccelz" : "-0.985546",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908678",
+      "token" : "613f5e2fe5a25799"
+   },
+   {
+      "scaledaccelx" : "0.146673",
+      "scaledaccely" : "0.140443",
+      "scaledaccelz" : "-0.984343",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908783",
+      "token" : "7f14ff350be0e354"
+   },
+   {
+      "scaledaccelx" : "0.17257",
+      "scaledaccely" : "0.146708",
+      "scaledaccelz" : "-0.988228",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908882",
+      "token" : "494a7695b370a091"
+   },
+   {
+      "scaledaccelx" : "0.176217",
+      "scaledaccely" : "0.138383",
+      "scaledaccelz" : "-0.986107",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153908978",
+      "token" : "fb6ea93a42b35079"
+   },
+   {
+      "scaledaccelx" : "0.17596",
+      "scaledaccely" : "0.136056",
+      "scaledaccelz" : "-0.984933",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909080",
+      "token" : "9b301c5d0cdac7cc"
+   },
+   {
+      "scaledaccelx" : "0.177154",
+      "scaledaccely" : "0.139294",
+      "scaledaccelz" : "-0.987038",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909182",
+      "token" : "22acbe6f01252aeb"
+   },
+   {
+      "scaledaccelx" : "0.172468",
+      "scaledaccely" : "0.139921",
+      "scaledaccelz" : "-0.989856",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909278",
+      "token" : "52c7e14ee19a856a"
+   },
+   {
+      "scaledaccelx" : "0.171095",
+      "scaledaccely" : "0.140863",
+      "scaledaccelz" : "-0.988112",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909380",
+      "token" : "7162fd1fe440e2c3"
+   },
+   {
+      "scaledaccelx" : "0.169863",
+      "scaledaccely" : "0.141772",
+      "scaledaccelz" : "-0.985619",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909483",
+      "token" : "48a39e170a28f836"
+   },
+   {
+      "scaledaccelx" : "0.173631",
+      "scaledaccely" : "0.141625",
+      "scaledaccelz" : "-0.985449",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909578",
+      "token" : "99886a75eb5ce1f2"
+   },
+   {
+      "scaledaccelx" : "0.185521",
+      "scaledaccely" : "0.144446",
+      "scaledaccelz" : "-0.994823",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909680",
+      "token" : "9a5387a81c11547e"
+   },
+   {
+      "scaledaccelx" : "0.190269",
+      "scaledaccely" : "0.145233",
+      "scaledaccelz" : "-0.988087",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909782",
+      "token" : "d074ae98ae4803a9"
+   },
+   {
+      "scaledaccelx" : "0.181932",
+      "scaledaccely" : "0.143962",
+      "scaledaccelz" : "-0.974271",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909878",
+      "token" : "d0c677e83f983171"
+   },
+   {
+      "scaledaccelx" : "0.181935",
+      "scaledaccely" : "0.139781",
+      "scaledaccelz" : "-0.979039",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153909981",
+      "token" : "1e5bce36c7eca968"
+   },
+   {
+      "scaledaccelx" : "0.18229",
+      "scaledaccely" : "0.141364",
+      "scaledaccelz" : "-0.992358",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910082",
+      "token" : "92e09c8dc25f3c04"
+   },
+   {
+      "scaledaccelx" : "0.183092",
+      "scaledaccely" : "0.142784",
+      "scaledaccelz" : "-0.989676",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910179",
+      "token" : "a5f732d09cc352be"
+   },
+   {
+      "scaledaccelx" : "0.183417",
+      "scaledaccely" : "0.147503",
+      "scaledaccelz" : "-0.985582",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910280",
+      "token" : "59ee66b2811bd2f8"
+   },
+   {
+      "scaledaccelx" : "0.163101",
+      "scaledaccely" : "0.148003",
+      "scaledaccelz" : "-0.988753",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910388",
+      "token" : "7efb0cb987dda8bf"
+   },
+   {
+      "scaledaccelx" : "0.0367998",
+      "scaledaccely" : "0.136061",
+      "scaledaccelz" : "-1.00635",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910479",
+      "token" : "29d809a8ab47d3f5"
+   },
+   {
+      "scaledaccelx" : "-0.0119323",
+      "scaledaccely" : "0.128986",
+      "scaledaccelz" : "-0.999248",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910581",
+      "token" : "2e02bbc3291c1cb3"
+   },
+   {
+      "scaledaccelx" : "0.0275663",
+      "scaledaccely" : "0.130893",
+      "scaledaccelz" : "-0.972295",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910683",
+      "token" : "69b625ec123e6338"
+   },
+   {
+      "scaledaccelx" : "0.029284",
+      "scaledaccely" : "0.131703",
+      "scaledaccelz" : "-0.972987",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910778",
+      "token" : "13ace601f1d1d943"
+   },
+   {
+      "scaledaccelx" : "0.00759189",
+      "scaledaccely" : "0.132901",
+      "scaledaccelz" : "-0.99485",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910881",
+      "token" : "20945806a3506888"
+   },
+   {
+      "scaledaccelx" : "0.0222339",
+      "scaledaccely" : "0.135292",
+      "scaledaccelz" : "-0.995894",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153910983",
+      "token" : "c34a94b959a32e64"
+   },
+   {
+      "scaledaccelx" : "0.0296246",
+      "scaledaccely" : "0.132434",
+      "scaledaccelz" : "-0.987444",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911079",
+      "token" : "e08488a2bf328ba4"
+   },
+   {
+      "scaledaccelx" : "0.0181557",
+      "scaledaccely" : "0.130806",
+      "scaledaccelz" : "-0.992776",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911181",
+      "token" : "eee83a183bb59298"
+   },
+   {
+      "scaledaccelx" : "0.0181327",
+      "scaledaccely" : "0.13398",
+      "scaledaccelz" : "-0.991546",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911283",
+      "token" : "21ca96c46f6eb029"
+   },
+   {
+      "scaledaccelx" : "0.0228201",
+      "scaledaccely" : "0.134057",
+      "scaledaccelz" : "-0.989137",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911379",
+      "token" : "f012a2add6278bfa"
+   },
+   {
+      "scaledaccelx" : "0.022177",
+      "scaledaccely" : "0.131041",
+      "scaledaccelz" : "-0.990926",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911481",
+      "token" : "cb4510a7005b1740"
+   },
+   {
+      "scaledaccelx" : "0.0187102",
+      "scaledaccely" : "0.132081",
+      "scaledaccelz" : "-0.991487",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911583",
+      "token" : "86228c0622daec4a"
+   },
+   {
+      "scaledaccelx" : "0.0218617",
+      "scaledaccely" : "0.134114",
+      "scaledaccelz" : "-0.990234",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911679",
+      "token" : "78089a09a54bd8b5"
+   },
+   {
+      "scaledaccelx" : "0.0236366",
+      "scaledaccely" : "0.132333",
+      "scaledaccelz" : "-0.990261",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911781",
+      "token" : "ed77a7dcaa786b2d"
+   },
+   {
+      "scaledaccelx" : "0.0190128",
+      "scaledaccely" : "0.133654",
+      "scaledaccelz" : "-0.991159",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911883",
+      "token" : "b485c526f9e54028"
+   },
+   {
+      "scaledaccelx" : "0.0207173",
+      "scaledaccely" : "0.134205",
+      "scaledaccelz" : "-0.990048",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153911979",
+      "token" : "375fdb6859087d92"
+   },
+   {
+      "scaledaccelx" : "0.0226778",
+      "scaledaccely" : "0.131898",
+      "scaledaccelz" : "-0.990742",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153912081",
+      "token" : "118d6a3531a72c05"
+   },
+   {
+      "scaledaccelx" : "0.0200738",
+      "scaledaccely" : "0.133432",
+      "scaledaccelz" : "-0.991698",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153912183",
+      "token" : "35401b8648eb57d7"
+   },
+   {
+      "scaledaccelx" : "0.0204502",
+      "scaledaccely" : "0.132468",
+      "scaledaccelz" : "-0.989117",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153912279",
+      "token" : "854ef8329dab9a0d"
+   },
+   {
+      "scaledaccelx" : "0.0221497",
+      "scaledaccely" : "0.133899",
+      "scaledaccelz" : "-0.991685",
+      "sensor_token" : "09e111c7e1e7acb6",
+      "timestamp" : "20210615153912381",
+      "token" : "f5d00674e5f4dcb5"
+   }
+]
