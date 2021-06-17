@@ -6,7 +6,20 @@ LogStoringThread::LogStoringThread(){}
 
 void LogStoringThread::run(){
     char * sql;
-   
+    time_t system_time;
+    struct tm* systime;
+    system_time = time(NULL);
+    systime = localtime(&system_time);
+
+    string tm_year = to_string(systime->tm_year + 1900);
+    string tm_month = to_string(systime->tm_mon+1);
+    string tm_date = to_string(systime->tm_mday);
+    if(tm_date.size() == 1){
+        tm_date = "0"+tm_date;
+    }
+
+    string timestamp;
+    timestamp = tm_year + tm_month + tm_date;
    
    try {
       connection C("dbname = diva2db user = diva2 password = 1234 \
@@ -15,11 +28,9 @@ void LogStoringThread::run(){
          cout << "Opened database successfully: " << C.dbname() << endl;
       } else {
          cout << "Can't open database" << endl;
-         //return 1;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/2021615_0/JSON/log.json";
-      //string path = "/home/ubuntu/diva2-server/build/test/storing_raw/gps.json";
-      //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
+
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/log.json";
 
       /* Create SQL statement */
       sql = "create table LOG(date_captured text,token text,vehicle text);";
@@ -42,19 +53,17 @@ void LogStoringThread::run(){
       
 
       for(int i=0; i<Logs.size(); i++){
-      // for (ValueConstIterator it = Gps_datas.begin(); it != Gps_datas.end(); ++it)
-      //   {
 	     cout<<"for start"<<endl;
 
          temp1=std::string((Logs[i]["date_captured"].asString()).c_str());
          temp2=std::string((Logs[i]["token"].asString()).c_str());
          temp3=std::string((Logs[i]["vehicle"].asString()).c_str());
          
-
          /* Create a transactional object. */
          work W(C);
 	      std::string query_string;
          query_string.append("insert into LOG values('"); 
+
 	      // *****Set table*****
          query_string.append(temp1);
          query_string.append("','");
@@ -62,21 +71,18 @@ void LogStoringThread::run(){
          query_string.append("','");
          query_string.append(temp3);
          query_string.append("');");
+
          /* Execute SQL query */
          W.exec(query_string);
          W.commit();
 	      cout<<"for end"<<endl;
       }
-      
 
       cout << "successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;
-      //return 1;
    }
-
-   //return 0;
 
 }
 

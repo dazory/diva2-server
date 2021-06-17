@@ -9,11 +9,11 @@ IndexAndTimes::IndexAndTimes(string fpath)
     cout<<"-"<<c++<<endl;
     gps_csv = rf->read_csv(rf->get_path(is_GPS));
     cout<<"-"<<c++<<endl;
-    // cam_txt = rf->read_txt(rf->get_path(is_CAM));
+
     cam_csv = rf->read_csv(rf->get_path(is_CAM));
     cout<<"-"<<c++<<endl;
     lidar_csv = rf->read_csv(rf->get_path(is_LiDAR));
-    // lidar_txt = rf->read_txt(rf->get_path(is_LiDAR));
+
     imu_csv = rf->read_csv(rf->get_path(is_IMU));
     can_csv = rf->read_csv(rf->get_path(is_CAN));
     cout<<"-"<<c++<<endl;
@@ -21,8 +21,6 @@ IndexAndTimes::IndexAndTimes(string fpath)
 
 int IndexAndTimes::get_hhmmsssss(string str){ return stoi(str.substr(8,9));}
 
-//difference_1 = 1000 / T + 10
-//difference_2 = ( 1000 / T ) / 2 + 5 
 int IndexAndTimes::find_cam_idx_by_ts(int now, string comp_timestamp){
     int cam_start_idx = now;
     for(int i=now; i<int(cam_csv.size()); i++){
@@ -283,38 +281,37 @@ return idxes;
 //     return is_key_frame;
 // }
 
+// bool IndexAndTimes::csv_sensor_is_key_frame(int isSensor, int target_idx, int gps_idx){
+//     vector<vector<string>> csvs;
+//     bool is_key_frame = true;
+//     int dev = 0;
 
-bool IndexAndTimes::csv_sensor_is_key_frame(int isSensor, int target_idx, int gps_idx){
-    vector<vector<string>> csvs;
-    bool is_key_frame = true;
-    int dev = 0;
+//     if(isSensor == is_CAM){
+//         csvs = cam_csv;
+//         dev = 30;
+//     }else if(isSensor == is_LiDAR){
+//         csvs = lidar_csv;
+//         dev = 55;
+//     }
+//     else if(isSensor == is_IMU){
+//         csvs = imu_csv;
+//         dev = 25;
+//     }else if(isSensor == is_CAN){
+//         csvs = can_csv;
+//         dev = 130;
+//     }
+//     int comp = get_hhmmsssss(gps_csv[gps_idx][0])- get_hhmmsssss(csvs[target_idx][0]);
 
-    if(isSensor == is_CAM){
-        csvs = cam_csv;
-        dev = 30;
-    }else if(isSensor == is_LiDAR){
-        csvs = lidar_csv;
-        dev = 55;
-    }
-    else if(isSensor == is_IMU){
-        csvs = imu_csv;
-        dev = 25;
-    }else if(isSensor == is_CAN){
-        csvs = can_csv;
-        dev = 130;
-    }
-    int comp = get_hhmmsssss(gps_csv[gps_idx][0])- get_hhmmsssss(csvs[target_idx][0]);
+//     if(comp <0) comp = -comp;
+//     if(comp > dev) is_key_frame = false;
 
-    if(comp <0) comp = -comp;
-    if(comp > dev) is_key_frame = false;
-
-    return is_key_frame;
-}
-
+//     return is_key_frame;
+// }
 
 string IndexAndTimes::get_gps_timestamp(int gps_idx){
     return gps_csv[gps_idx][0];
 }
+
 string IndexAndTimes::get_cam_timestamp(int cam_idx){
     return cam_csv[cam_idx][0];
 }
@@ -322,6 +319,7 @@ string IndexAndTimes::get_cam_timestamp(int cam_idx){
 string IndexAndTimes::get_lidar_timestamp(int lidar_idx){
     return lidar_csv[lidar_idx][0];
 }
+
 string IndexAndTimes::get_imu_timestamp(int imu_idx){
     return imu_csv[imu_idx][0];
 }

@@ -401,14 +401,6 @@ bool MakeJson::Lidar_Data()
 
     this_frame_data_start = Lidar_data.size();
 
-
-    // int lidar_data_start = lidar_start;
-    // int gps_data_idx = gps_start;
-    // //int lidar_data_idx = lidar_data_start;
-    // int where_frame_started = this_frame_data_start;
-    // int this_frame_count = 0;
-    // int lidar_idx_by_ts;
-
     int lidar_idx = lidar_start;
 
     string ts_of_lidar_by_idx;
@@ -418,12 +410,6 @@ bool MakeJson::Lidar_Data()
     for(int i=0; i<num_of_scene; i++){
         while(1){
 
-            // if(this_frame_count == 200){
-            //     this_frame_count = 0;
-            //     break;
-            // }else if(gps_data_idx > gps_last){
-            //     break;
-            // }
             if(lidar_data_idx > frame_start+199){
                 frame_start = lidar_data_idx;
                 break;
@@ -435,7 +421,7 @@ bool MakeJson::Lidar_Data()
 
             for(int j=0; j<cam_sensors; j++){
                 if(j==0){}//cam
-                else{
+                else{//lidar
                     lidar_idx = iat->find_lidar_idx_by_ts(lidar_idx, gps_ts);
                     if(lidar_idx > lidar_csv_size-1) continue;
                     ts_of_lidar_by_idx = iat->get_lidar_timestamp(lidar_idx);
@@ -445,26 +431,14 @@ bool MakeJson::Lidar_Data()
                     lidar["filename"] = "LiDAR_"+ts_of_lidar_by_idx+".pcd";
                     lidar["fileformat"] = "pcd";
                     lidar["timestamp"] = ts_of_lidar_by_idx;
-                            // if (lidar["timestamp"] == Frames[i]["timestamp"])
-                            //     lidar["is_key_frame"] = true;
-                            // else
-                            //     lidar["is_key_frame"] = false;
 
                     Lidar_data.append(lidar);
                     lidar.clear();
                 }
             }
             
-
-            //imu_data_idx++;
             lidar_data_idx++;
-            
-            // this_frame_count++;
-            // where_frame_started+=2;
-            // this_frame_start+=2;
             this_frame_start++;
-
-
         }
         
     }
@@ -480,52 +454,28 @@ bool MakeJson::Lidar_Data()
 Json::Value Cam_data;
 bool MakeJson:: Cam_Data()
 {
-    int c=0;
     cout<<"this frame start : "<<this_frame_start<<endl;
     this_frame_start =0;
     cout<<"this frame start : "<<this_frame_start<<endl;
     string path = dir+"/JSON/cam_data.json";
-    cout<<">"<<c++<<endl;
 
     ifstream in(path.c_str());
-    // cout<<">"<<c++<<endl;
     if(in.is_open()) in >> Cam_data;
-    // cout<<">"<<c++<<endl;
     Json::Value cam;
-    // cout<<">"<<c++<<endl;
 
     int frame_start = gps_start;
-    // cout<<">"<<c++<<endl;
     int frame_idx = frame_start;
-        // cout<<">"<<c++<<endl;
     int cam_data_idx = frame_start;
-    // cout<<">"<<c++<<endl;
     this_frame_data_start = Cam_data.size();
-    //cout<<">"<<c++<<endl;
-    // int cam_data_start = cam_start;
-    // int gps_data_idx = gps_start;
-    // int cam_data_idx = cam_data_start;
-    // int where_frame_started = this_frame_data_start;
-    // int this_frame_count = 0;
-    // int cam_idx_by_ts;
 
     int cam_idx = cam_start;
 
     string ts_of_cam_by_idx;
 
     string cam_path =  dir+"/CAM/JPG/CAM_";
-    //cout<<">"<<c++<<endl;
-    for(int i=0; i<num_of_scene; i++){
-            //cout<<">"<<c++<<endl;
-        while(1){
-                // cout<<">"<<c++<<endl;
 
-            // if(this_frame_count == 200){
-            //     this_frame_count = 0;
-            //     break;
-            // }else if(gps_data_idx > gps_last){
-            //     break;
-            // }
+    for(int i=0; i<num_of_scene; i++){
+        while(1){
             if(cam_data_idx > frame_start+199){
                 frame_start = cam_data_idx;
                 break;
@@ -540,35 +490,25 @@ bool MakeJson:: Cam_Data()
                     cam_idx = iat->find_cam_idx_by_ts(cam_idx, gps_ts);
                     if(cam_idx > cam_csv_size-1) continue;
                     ts_of_cam_by_idx = iat->get_cam_timestamp(cam_idx);
-                    // cout<<">"<<c++<<endl;
+
                     cam["token"] = Frames[this_frame_start]["frame_token"];
                     cam["sensor_token"] = Sensors[2]["sensor_token"];
                     cam["filename"] = "CAM_"+ts_of_cam_by_idx+".jpg";
                     cam["fileformat"] = "jpg";
                     cam["timestamp"] = ts_of_cam_by_idx;
-                    //cam["is_key_frame"] = iat->txt_sensor_is_key_frame(2,cam_idx,frame_data_idx);
-                            // if (cam["timestamp"] == Frames[i]["timestamp"])
-                            //     cam["is_key_frame"] = true;
-                            // else
-                            //     cam["is_key_frame"] = false;
+ 
                     Cam_data.append(cam);
                     cam.clear();
                 }
                 else{}
             }
-            //     }
-            // }
 
-            //imu_data_idx++;
             cam_data_idx++;
-            // this_frame_count++;
-            // where_frame_started+=2;
             this_frame_start++;
 
 
         }
     }
-        cout<<">"<<c++<<endl;
 
     Json::StyledWriter writer;
     ofstream out(path.c_str());
@@ -593,14 +533,13 @@ bool MakeJson::Gps_Data()
 
     for(int i=0; i<num_of_scene; i++){
         while(1){
-
             if(gps_data_idx > gps_data_start+199){
                 gps_data_start = gps_data_idx;
                 break;
             }else if(gps_data_idx > gps_last){
                 break;
             }
-            //gpses["token"] = Frame_data[where_frame_started]["frame_data_token"];
+
             gpses["token"] = Frames[this_frame_start]["frame_token"];
             gpses["sensor_token"] = Sensors[1]["sensor_token"];
             gpses["timestamp"] = iat->get_gps_timestamp(gps_data_idx);
@@ -609,12 +548,10 @@ bool MakeJson::Gps_Data()
             gpses["longitude"] = longitude;//고도
             gpses["HorizontalDilutionOfPrecision"] = HorizontalDilutionOfPrecision;//수평위치오차
 
-
             Gps_data.append(gpses);
             gpses.clear();
 
             gps_data_idx++;
-            //where_frame_started += 2;
             this_frame_start++;
             
         }
@@ -624,7 +561,6 @@ bool MakeJson::Gps_Data()
     Json::StyledWriter writer;
     ofstream out(path.c_str());
     out<<writer.write(Gps_data);
-    //cout<<"gps write success"<<endl;
     out.close();
     return true;
 }
@@ -658,8 +594,6 @@ bool MakeJson::Imu_Data()
                 break;
             }
             imu_data_idx = iat->find_imu_idx_by_ts(imu_data_idx, iat->get_gps_timestamp(gps_data_idx));
-             //cout<<"["<<i<<"]"<<imu_data_idx<<"["<<this_frame_count<<"]"<<endl;
-            //imus["token"] = Frame_data[where_frame_started]["frame_data_token"];
             imus["token"] = Frames[this_frame_start]["frame_token"];
             imus["sensor_token"] = Sensors[4]["sensor_token"];
             imus["timestamp"] = iat->get_imu_timestamp(imu_data_idx);
@@ -675,10 +609,8 @@ bool MakeJson::Imu_Data()
             magnetic.clear();
             imus.clear();
 
-            //imu_data_idx++;
             gps_data_idx++;
             this_frame_count++;
-            //where_frame_started+=2;
             this_frame_start++;
         }
 
@@ -718,8 +650,6 @@ bool MakeJson::Can_Data()
                 break;
             }
             can_data_idx = iat->find_can_idx_by_ts(can_data_idx, iat->get_gps_timestamp(gps_data_idx));
-            //cout<<"["<<i<<"]"<<can_data_idx<<"["<<this_frame_count<<"]"<<endl;
-            //cans["token"] = Frame_data[where_frame_started]["frame_data_token"];
             cans["token"] = Frames[this_frame_start]["frame_token"];
             cans["sensor_token"] = Sensors[5]["sensor_token"];
             cans["timestamp"] = iat->get_can_timestamp(can_data_idx);
@@ -733,14 +663,11 @@ bool MakeJson::Can_Data()
 
             this_frame_count++;
             gps_data_idx++; 
-            //can_data_idx++;
-            //where_frame_started += 2;
             this_frame_start++;
             
         }
         
     }
-    //this_frame_start++;
 
     Json::StyledWriter writer;
     ofstream out(path.c_str());
@@ -762,20 +689,10 @@ void MakeJson::Get_LLA(int gps_idx){
     long double raw_latitude = stold(iat->gps_csv[gps_idx][1]); // latitude
     latitude = to_string(Convert_to_dd(raw_latitude));
 
-    // isNorth = iat->gps_csv[gps_idx][2];//isNorth
-    // //altitude = iat->gps_csv[gps_idx][5];//altitude
-
     long double raw_longitude = stold(iat->gps_csv[gps_idx][2]); // longitude
     longitude = to_string(Convert_to_dd(raw_longitude));
 
-    // isEast = iat->gps_csv[gps_idx][4];//isEast
-    // gpsQuality = iat->gps_csv[gps_idx][5];//gpsQuality
-    // NumberOfSatellitesInUse = iat->gps_csv[gps_idx][6];//NumberOfSatellitesInUse
     HorizontalDilutionOfPrecision = iat->gps_csv[gps_idx][3];//HorizontalDilutionOfPrecision
-    // AntennaAltitudeMeters = iat->gps_csv[gps_idx][8];//AntennaAltitudeMeters
-    // GeoidalSeparationMeters = iat->gps_csv[gps_idx][9];//GeoidalSeparationMeters
-
-
 }
 
 long double MakeJson::Convert_to_dd(long double raw){
@@ -787,19 +704,13 @@ long double MakeJson::Convert_to_dd(long double raw){
     return (long double)dd+ddddd;
 }
 
-void MakeJson::Get_GAM(int imu_idx){ //get Zyro, Acceleration, Magnetic by index
+void MakeJson::Get_GAM(int imu_idx){ 
 
     scaledaccelx, scaledaccely, scaledaccelz = "";
 
     scaledaccelx = iat->imu_csv[imu_idx][1];
     scaledaccely = iat->imu_csv[imu_idx][2];
     scaledaccelz = iat->imu_csv[imu_idx][3];
-    // accel_x = iat->imu_csv[imu_idx][4];
-    // accel_y = iat->imu_csv[imu_idx][5];
-    // accel_z = iat->imu_csv[imu_idx][6];
-    // mag_x = iat->imu_csv[imu_idx][7];
-    // mag_y = iat->imu_csv[imu_idx][8];
-    // mag_z = iat->imu_csv[imu_idx][9];
 
 }
 

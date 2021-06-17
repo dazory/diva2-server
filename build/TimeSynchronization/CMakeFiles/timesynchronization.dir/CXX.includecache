@@ -10,10 +10,6 @@
 readfiles.h
 /home/cvlab2/DIVA2/diva2-server/TimeSynchronization/readfiles.h
 
-/home/cvlab2/DIVA2/diva2-server/TimeSynchronization/makejson.cpp
-makejson.h
-/home/cvlab2/DIVA2/diva2-server/TimeSynchronization/makejson.h
-
 /home/cvlab2/DIVA2/diva2-server/TimeSynchronization/makejson.h
 iostream
 -
@@ -57,10 +53,6 @@ readfiles.h
 /home/cvlab2/DIVA2/diva2-server/TimeSynchronization/readfiles.h
 indexandtimes.h
 /home/cvlab2/DIVA2/diva2-server/TimeSynchronization/indexandtimes.h
-
-/home/cvlab2/DIVA2/diva2-server/TimeSynchronization/readfiles.cpp
-readfiles.h
-/home/cvlab2/DIVA2/diva2-server/TimeSynchronization/readfiles.h
 
 /home/cvlab2/DIVA2/diva2-server/TimeSynchronization/readfiles.h
 stdio.h

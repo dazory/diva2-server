@@ -19,7 +19,7 @@ using namespace std;
 class ReadFiles
 {
 public:
-    string dir = "/home/kayeon/Downloads/DIVA_DATA";
+    string dir;
 
     ReadFiles(string fpath);
     string get_path(int i);

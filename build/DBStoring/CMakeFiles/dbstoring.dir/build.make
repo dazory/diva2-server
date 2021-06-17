@@ -199,7 +199,6 @@ DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/GpsStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/ImuStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/CanStoringThread.cpp.o
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/build.make
-DBStoring/dbstoring: /usr/local/lib/libzmq.so
 DBStoring/dbstoring: /usr/lib/x86_64-linux-gnu/libpqxx.so
 DBStoring/dbstoring: /usr/lib/x86_64-linux-gnu/libpq.so
 DBStoring/dbstoring: DBStoring/CMakeFiles/dbstoring.dir/link.txt
