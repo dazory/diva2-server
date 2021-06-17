@@ -26,8 +26,6 @@ public:
     vector<vector<string>> gps_csv;
     vector<vector<string>> cam_csv;
     vector<vector<string>> lidar_csv;
-    // vector<string> cam_txt;
-    // vector<string> lidar_txt;
     vector<vector<string>> imu_csv;
     vector<vector<string>> can_csv;
 
@@ -49,9 +47,7 @@ public:
 
     int number_of_frames();
 
-
     int* get_start_indexes();
-
 
     bool txt_sensor_is_key_frame(int isSensor, int target_idx, int gps_idx);
     bool csv_sensor_is_key_frame(int isSensor, int target_idx, int gps_idx);

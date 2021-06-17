@@ -17,18 +17,18 @@ int main(int argc, char *argv[]){
 
     // LOG
     LogStoringThread mLogStoringThread;
-    thread logSenderThread(&LogStoringThread::run, &mLogStoringThread);
-    logSenderThread.join();
+    thread logThread(&LogStoringThread::run, &mLogStoringThread);
+    logThread.join();
 
     // FRAME
     FrameStoringThread mFrameRawStoringThread;
-    thread frameSenderThread(&FrameStoringThread::run, &mFrameRawStoringThread);
-    frameSenderThread.join();
+    thread frameThread(&FrameStoringThread::run, &mFrameRawStoringThread);
+    frameThread.join();
 
     // SCENE
     SceneStoringThread mSceneStoringThread;
-    thread SceneSenderThread(&SceneStoringThread::run, &mSceneStoringThread);
-    SceneSenderThread.join();
+    thread SceneThread(&SceneStoringThread::run, &mSceneStoringThread);
+    SceneThread.join();
 
     // // FRAMEdata
     // FramedataStoringThread mFramedataStoringThread;
@@ -37,27 +37,27 @@ int main(int argc, char *argv[]){
 
     // Lidar
     LidarStoringThread mLidarStoringThread;
-    thread lidarSenderThread(&LidarStoringThread::run, &mLidarStoringThread);
-    lidarSenderThread.join();
+    thread lidarThread(&LidarStoringThread::run, &mLidarStoringThread);
+    lidarThread.join();
 
     // CAM
     CamStoringThread mCamStoringThread;
-    thread camSenderThread(&CamStoringThread::run, &mCamStoringThread);
-    camSenderThread.join();
+    thread camThread(&CamStoringThread::run, &mCamStoringThread);
+    camThread.join();
 
     // GPS
     GpsStoringThread mGpsStoringThread;
-    thread gpsSenderThread(&GpsStoringThread::run, &mGpsStoringThread);
-    gpsSenderThread.join();
+    thread gpsThread(&GpsStoringThread::run, &mGpsStoringThread);
+    gpsThread.join();
 
     // IMU
     ImuStoringThread mImuStoringThread;
-    thread imuSenderThread(&ImuStoringThread::run, &mImuStoringThread);
-    imuSenderThread.join();
+    thread imuThread(&ImuStoringThread::run, &mImuStoringThread);
+    imuThread.join();
 
     // CAN
     CanStoringThread mCanStoringThread;
-    thread canSenderThread(&CanStoringThread::run, &mCanStoringThread);
-    canSenderThread.join();
+    thread canThread(&CanStoringThread::run, &mCanStoringThread);
+    canThread.join();
         
 }

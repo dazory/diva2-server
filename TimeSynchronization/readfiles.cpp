@@ -68,17 +68,3 @@ vector<vector<string>> ReadFiles::read_csv(string csv_file){
     return arr;
 
 }
-
-// vector<string> ReadFiles::read_txt(string txt_file)
-// {
-//     ifstream in(txt_file.c_str());
-
-//     string line, field;
-//     vector<string> v;  // the 2D array
-
-//     while (getline(in, line)){
-//         v.push_back(line);  // add the 1D array to the 2D array
-//     }
-
-//     return v;
-// }

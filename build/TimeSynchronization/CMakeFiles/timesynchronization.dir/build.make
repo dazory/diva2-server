@@ -139,9 +139,6 @@ TimeSynchronization/timesynchronization: TimeSynchronization/CMakeFiles/timesync
 TimeSynchronization/timesynchronization: TimeSynchronization/CMakeFiles/timesynchronization.dir/makejson.cpp.o
 TimeSynchronization/timesynchronization: TimeSynchronization/CMakeFiles/timesynchronization.dir/makejsonThread.cpp.o
 TimeSynchronization/timesynchronization: TimeSynchronization/CMakeFiles/timesynchronization.dir/build.make
-TimeSynchronization/timesynchronization: /usr/local/lib/libzmq.so
-TimeSynchronization/timesynchronization: /usr/lib/x86_64-linux-gnu/libpqxx.so
-TimeSynchronization/timesynchronization: /usr/lib/x86_64-linux-gnu/libpq.so
 TimeSynchronization/timesynchronization: TimeSynchronization/CMakeFiles/timesynchronization.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable timesynchronization"
 	cd /home/cvlab2/DIVA2/diva2-server/build/TimeSynchronization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/timesynchronization.dir/link.txt --verbose=$(VERBOSE)
