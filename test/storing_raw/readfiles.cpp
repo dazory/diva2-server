@@ -12,10 +12,10 @@ string ReadFiles::get_path(int i){
         sensor = "GPS";
     }else if(i==is_CAM){
         sensor = "CAM";
-        size=33;
+        // size=33;
     }else if(i==is_LiDAR){
         sensor = "LiDAR";
-        size = 35;
+        size = 32;
     }else if(i == is_IMU){
         sensor = "IMU";
     }else{
@@ -27,6 +27,7 @@ string ReadFiles::get_path(int i){
 
     string path = dir+"/"+sensor;
     string sys_cmd = "cd "+path+" && ls -tr | grep i30 | tail -1 ";
+    printf("sys_cmd:%s\n",sys_cmd.c_str());
     const char * path_c = sys_cmd.c_str();
     fp = popen(path_c, "r");
 

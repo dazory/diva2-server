@@ -29,10 +29,11 @@ void CamStoringThread::run(){
       } else {
          cout << "Can't open database" << endl;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/cam_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/cam_data.json";
 
       /* Create SQL statement */
-      sql = "create table CAM_DATA(token text, fileformat text, filename text);";
+      sql = "create table CAM_DATA(token text primary key references frame (frame_token), fileformat text, filename text);";
+      // foreign key (token) references frame (frame_token)
       
       /* Create a transactional object. */
       work W(C);
@@ -76,7 +77,7 @@ void CamStoringThread::run(){
 	      cout<<"for end"<<endl;
       }
       
-      cout << "successfully" << endl;
+      cout << "[DBStoring] cam successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

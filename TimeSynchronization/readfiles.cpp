@@ -12,10 +12,11 @@ string ReadFiles::get_path(int i){
         sensor = "GPS";
     }else if(i==is_CAM){
         sensor = "CAM";
-        size=33;
+        // size=33;
     }else if(i==is_LiDAR){
         sensor = "LiDAR";
-        size = 35;
+        // size = 35;
+        size = 32;
     }else if(i == is_IMU){
         sensor = "IMU";
     }else{

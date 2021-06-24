@@ -30,10 +30,10 @@ void LogStoringThread::run(){
          cout << "Can't open database" << endl;
       }
 
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/log.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/log.json";
 
       /* Create SQL statement */
-      sql = "create table LOG(date_captured text,token text,vehicle text);";
+      sql = "create table LOG(date_captured text,token text primary key,vehicle text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -78,7 +78,7 @@ void LogStoringThread::run(){
 	      cout<<"for end"<<endl;
       }
 
-      cout << "successfully" << endl;
+      cout << "[DBStoring] log successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

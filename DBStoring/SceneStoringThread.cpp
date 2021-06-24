@@ -30,10 +30,10 @@ void SceneStoringThread::run(){
          cout << "Can't open database" << endl;
       }
 
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/scene.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/scene.json";
 
       /* Create SQL statement */
-      sql = "create table SCENE(first_frame_token text,log_token text, nbr_frames text);";
+      sql = "create table SCENE(first_frame_token text primary key,log_token text, nbr_frames text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -77,7 +77,7 @@ void SceneStoringThread::run(){
 	      cout<<"for end"<<endl;
       }
       
-      cout << "successfully" << endl;
+      cout << "[DBStoring] scene successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

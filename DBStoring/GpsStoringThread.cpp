@@ -31,13 +31,13 @@ void GpsStoringThread::run(){
          //return 1;
       }
 
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/gps_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/gps_data.json";
       // string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"/JSON/cam_data.json";
       //string path = "/home/ubuntu/diva2-server/build/test/storing_raw/gps.json";
       //string path = "/home/ubuntu/diva2-server/build/test/receiver_fromMobile_proto/gps.json";
 
       /* Create SQL statement */
-      sql = "create table GPS_DATA(token text,latitude text,longitude text, HorizontalDilutionOfPrecision text);";
+      sql = "create table GPS_DATA(token text primary key references frame (frame_token),latitude text,longitude text, HorizontalDilutionOfPrecision text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -91,7 +91,7 @@ void GpsStoringThread::run(){
       /* Execute SQL query */
       //W.exec( sql );
       //W.commit();
-      cout << "successfully" << endl;
+      cout << "[DBStoring] gps successfully" << endl;
       C.disconnect ();
    
    } catch (const std::exception &e) {
