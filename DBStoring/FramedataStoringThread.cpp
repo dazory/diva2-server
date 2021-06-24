@@ -29,10 +29,10 @@ void FramedataStoringThread::run(){
       } else {
          cout << "Can't open database" << endl;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/frame_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/frame_data.json";
 
       /* Create SQL statement */
-      sql = "create table FRAME_DATA(frame_token text,frame_data_token text,fileformat text, filename text);";
+      sql = "create table FRAME_DATA(frame_token text,frame_data_token text primary key,fileformat text, filename text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -82,7 +82,7 @@ void FramedataStoringThread::run(){
       }
       
 
-      cout << "successfully" << endl;
+      cout << "[DBStoring] framedata successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

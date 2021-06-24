@@ -21,7 +21,7 @@ void MakeJsonThread::run(){
     string timestamp;
     timestamp = tm_year + tm_month + tm_date;
 
-    MakeJson* j = new MakeJson("/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0");
+    MakeJson* j = new MakeJson("/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0");
     j->Sensor(5);
     j->Log(0);
     j->Frame();

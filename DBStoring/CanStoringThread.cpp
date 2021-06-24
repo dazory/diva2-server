@@ -30,10 +30,10 @@ void CanStoringThread::run(){
       } else {
          cout << "Can't open database" << endl;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/can_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/can_data.json";
 
       /* Create SQL statement */
-      sql = "create table CAN_DATA(token text,handleAngle text,turnLight text,vehicleSpeed text, gear text);";
+      sql = "create table CAN_DATA(token text primary key references frame (frame_token),handleAngle text,turnLight text,vehicleSpeed text, gear text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -87,7 +87,7 @@ void CanStoringThread::run(){
 	      cout<<"for end"<<endl;
       }
       
-      cout << "successfully" << endl;
+      cout << "[DBStoring] can successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

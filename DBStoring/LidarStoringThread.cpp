@@ -30,10 +30,10 @@ void LidarStoringThread::run(){
          cout << "Can't open database" << endl;
       }
 
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/lidar_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/lidar_data.json";
 
       /* Create SQL statement */
-      sql = "create table LIDAR_DATA(token text, fileformat text, filename text);";
+      sql = "create table LIDAR_DATA(token text primary key references frame (frame_token), fileformat text, filename text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -78,7 +78,7 @@ void LidarStoringThread::run(){
       }
       
 
-      cout << "successfully" << endl;
+      cout << "[DBStoring] lidar successfully" << endl;
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

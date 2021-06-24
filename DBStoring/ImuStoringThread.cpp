@@ -29,10 +29,10 @@ void ImuStoringThread::run(){
       } else {
          cout << "Can't open database" << endl;
       }
-      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2data/"+timestamp+"_0/JSON/imu_data.json";
+      string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/imu_data.json";
 
       /* Create SQL statement */
-      sql = "create table IMU_DATA(token text,scaledaccelx text, scaledaccely text, scaledaccelz text);";
+      sql = "create table IMU_DATA(token text primary key references frame (frame_token),scaledaccelx text, scaledaccely text, scaledaccelz text);";
       
       /* Create a transactional object. */
       work W(C);
@@ -82,7 +82,7 @@ void ImuStoringThread::run(){
 	      cout<<"for end"<<endl;
       }
       
-      cout << "successfully" << endl;
+      cout << "[DBStoring] imu successfully" << endl;
       C.disconnect ();
    
    } catch (const std::exception &e) {
