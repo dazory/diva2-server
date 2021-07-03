@@ -1,3 +1,5 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #pragma once
 #include "readfiles.h"
 #define is_GPS 1

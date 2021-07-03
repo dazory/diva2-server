@@ -2,7 +2,6 @@
 #include "LogStoringThread.h"
 #include "FrameStoringThread.h"
 #include "SceneStoringThread.h"
-#include "FramedataStoringThread.h"
 #include "LidarStoringThread.h"
 #include "CamStoringThread.h"
 #include "GpsStoringThread.h"
@@ -29,11 +28,6 @@ int main(int argc, char *argv[]){
     SceneStoringThread mSceneStoringThread;
     thread SceneThread(&SceneStoringThread::run, &mSceneStoringThread);
     SceneThread.join();
-
-    // // FRAMEdata
-    // FramedataStoringThread mFramedataStoringThread;
-    // thread framedataSenderThread(&FramedataStoringThread::run, &mFramedataStoringThread);
-    // framedataSenderThread.join();
 
     // Lidar
     LidarStoringThread mLidarStoringThread;

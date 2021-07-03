@@ -1,3 +1,6 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+// 참고: https://www.tutorialspoint.com/postgresql/postgresql_c_cpp.htm
+
 #include "CamStoringThread.h"
 
 using namespace std;
@@ -22,6 +25,7 @@ void CamStoringThread::run(){
     timestamp = tm_year + tm_month + tm_date;
    
    try {
+      //Connect Database
       connection C("dbname = diva2db user = diva2 password = 1234 \
       hostaddr = 127.0.0.1 port = 5432");
       if (C.is_open()) {
@@ -31,11 +35,10 @@ void CamStoringThread::run(){
       }
       string path = "/home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON/cam_data.json";
 
-      /* Create SQL statement */
+      //Create SQL statement
       sql = "create table CAM_DATA(token text primary key references frame (frame_token), fileformat text, filename text);";
-      // foreign key (token) references frame (frame_token)
       
-      /* Create a transactional object. */
+      //Create a transactional object.
       work W(C);
 
       /* Execute SQL query */
@@ -51,7 +54,7 @@ void CamStoringThread::run(){
       std::string temp3;
       cout <<"string"<<endl;
       
-
+      //JSON parsing & DB Storing
       for(int i=0; i<Cam_datas.size(); i++){
 	     cout<<"for start"<<endl;
          temp1=std::string((Cam_datas[i]["token"].asString()).c_str());
@@ -78,6 +81,8 @@ void CamStoringThread::run(){
       }
       
       cout << "[DBStoring] cam successfully" << endl;
+
+      //Disconnect Database
       C.disconnect ();
    } catch (const std::exception &e) {
       cerr << e.what() << std::endl;

@@ -1,3 +1,5 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #pragma once
 #include <stdio.h>
 #include <iostream>

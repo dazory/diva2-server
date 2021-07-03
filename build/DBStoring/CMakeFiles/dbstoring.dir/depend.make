@@ -28,7 +28,6 @@ DBStoring/CMakeFiles/dbstoring.dir/SceneStoringThread.cpp.o: ../DBStoring/SceneS
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/CamStoringThread.h
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/CanStoringThread.h
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/FrameStoringThread.h
-DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/FramedataStoringThread.h
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/GpsStoringThread.h
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/ImuStoringThread.h
 DBStoring/CMakeFiles/dbstoring.dir/main.cpp.o: ../DBStoring/LidarStoringThread.h

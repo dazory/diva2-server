@@ -1,3 +1,4 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
 #pragma once
 #include "makejsonThread.h"
 #include <thread> 
@@ -21,6 +22,7 @@ int main(int argc, char *argv[]){
     string timestamp;
     timestamp = tm_year + tm_month + tm_date;
 
+    // make JSON folder
     string command = "mkdir -p /home/cvlab2/DIVA2/diva2-server/DIVA2_DATA/"+timestamp+"_0/JSON";
     
     const char *c = command.c_str();

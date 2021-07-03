@@ -1,41 +1,32 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #include "makejson.h"
 
 MakeJson::MakeJson(string fpath)
 {
-    int c=0;
-    cout<<"--"<<c++<<endl;
     dir = fpath;
     iat = new IndexAndTimes(dir);
-    cout<<"--"<<c++<<endl;
 
     gps_csv_size = iat->gps_csv.size();
     cam_csv_size = iat->cam_csv.size();
     lidar_csv_size = iat->lidar_csv.size();
     imu_csv_size = iat->imu_csv.size();
     can_csv_size = iat->can_csv.size();
-    cout<<"--"<<c++<<endl;
 
     gps_start = iat->get_start_indexes()[1];
-    cout<<"--"<<c++<<endl;
     cam_start = iat->get_start_indexes()[2];
     lidar_start = iat->get_start_indexes()[3];
     imu_start = iat->get_start_indexes()[4];
     can_start = iat->get_start_indexes()[5];
-    cout<<"--"<<c++<<endl;
 
     cam_sensors = 2; // if 2 -> cam, lidar
     scene_count = iat->number_of_frames() / 200;
     if(iat->number_of_frames() % 200 > 0)
         scene_count++;
     gps_last = iat->gps_last;
-    cout<<"--"<<c++<<endl;
-
     this_frame_start = 0;
     this_log_start = 0;
-    cout<<"--"<<c++<<endl;
 }
-
-
 
 string MakeJson::generate_token(){
     srand((unsigned int)time(NULL));
@@ -86,6 +77,8 @@ string MakeJson::generate_timestamp()
 
     return timestamp;
 }
+
+//make Log json
 Json::Value Logs;
 bool MakeJson::Log(int car_id)
 {
@@ -116,6 +109,7 @@ bool MakeJson::Log(int car_id)
     return true;
 }
 
+//make Sensor json
 Json::Value Sensors;
 bool MakeJson::Sensor(int sensors_num)
 {
@@ -153,6 +147,7 @@ bool MakeJson::Sensor(int sensors_num)
     return true;
 }
 
+//make Frame json
 Json::Value Frames;
 bool MakeJson::Frame()
 {
@@ -218,6 +213,7 @@ bool MakeJson::Frame()
     return true;
 }
 
+//make Scene json
 Json::Value Scenes;
 bool MakeJson::Scene()
 {
@@ -257,134 +253,7 @@ bool MakeJson::Scene()
     return true;
 }
 
-// Json::Value Frame_data;
-// bool MakeJson::Frame_Data()
-// {
-//     string path =dir+"/JSON/frame_data.json";
-//     ifstream in(path.c_str());
-//     if(in.is_open()) in >> Frame_data;
-//     Json::Value frame_datum;
-
-//     int frame_start = gps_start;
-//     int frame_idx = frame_start;
-//     int frame_data_idx = frame_start;
-
-//     this_frame_data_start = Frame_data.size();
-
-//     int cam_idx = cam_start;
-//     int lidar_idx = lidar_start;
-
-
-//     string ts_of_cam_by_idx;
-//     string ts_of_lidar_by_idx;
-
-//     string cam_path =  dir+"/CAM/JPG/CAM_";
-//     string lidar_path = dir+"/LiDAR/PCD/LiDAR_";
-
-
-//     for(int i=0; i<num_of_scene; i++){
-//         string token_prev1 = "";
-//         // string token_prev2 = "";
-//         string token_curr1 = generate_token_2();
-//         // string token_curr2 = generate_token_2();
-
-
-//         while(1){
-//             if(frame_data_idx > frame_start+199){
-//                 frame_start = frame_data_idx;
-//                 break;
-//             }else if(frame_data_idx > gps_last){
-//                 break;
-//             }
-
-//             string gps_ts = iat->get_gps_timestamp(frame_data_idx);
-
-//             string token_next;
-
-//             for(int j=0; j<cam_sensors; j++){
-//                 if(j==0){//cam
-//                     cam_idx = iat->find_cam_idx_by_ts(cam_idx, gps_ts);
-//                     if(cam_idx > cam_csv_size-1) continue;
-//                     ts_of_cam_by_idx = iat->get_cam_timestamp(cam_idx);
-//                     token_next = generate_token_2();
-//                     frame_datum["frame_data_idx"] =frame_data_idx;
-//                     frame_datum["frame_data_token"] = token_curr1;
-//                     frame_datum["frame_token"] = Frames[this_frame_start]["frame_token"];
-//                     frame_datum["gps_token"] = token_curr1;
-//                     frame_datum["imu_token"] = token_curr1;
-//                     frame_datum["can_token"] = token_curr1;
-//                     frame_datum["sensor_token"] = Sensors[2]["sensor_token"];
-//                     ts_of_cam_by_idx = iat->get_cam_timestamp(cam_idx);
-//                     frame_datum["filename"] = "CAM_"+ts_of_cam_by_idx+".jpg";
-//                     frame_datum["fileformat"] = "jpeg";
-//                     frame_datum["timestamp"] = ts_of_cam_by_idx;
-//                     //frame_datum["is_key_frame"] = iat->txt_sensor_is_key_frame(2,cam_idx,frame_data_idx);
-//                     frame_datum["prev"] = token_prev1;
-//                     if(frame_data_idx < gps_csv_size &&frame_data_idx ==frame_start+199)
-//                         frame_datum["next"] = "";
-//                     else if(frame_data_idx < gps_csv_size && frame_data_idx == gps_csv_size-1)
-//                         frame_datum["next"] = "";
-//                     else
-//                         frame_datum["next"] = token_next;
-
-//                     Frame_data.append(frame_datum);
-//                     frame_datum.clear();
-//                     //token_prev1 = token_curr1;
-//                     //token_curr1 = token_next;
-//                 }
-
-
-//                 else{//lidar
-//                     lidar_idx = iat->find_lidar_idx_by_ts(lidar_idx, gps_ts);
-//                     if(lidar_idx > lidar_csv_size-1) continue;
-//                     ts_of_lidar_by_idx = iat->get_lidar_timestamp(lidar_idx);
-//                     //token_next = generate_token_2();
-//                     frame_datum["frame_data_token"] = token_curr1;
-//                     frame_datum["frame_token"] = Frames[this_frame_start]["frame_token"];
-//                     frame_datum["gps_token"] = token_curr1;
-//                     frame_datum["imu_token"] = token_curr1;
-//                     frame_datum["can_token"] = token_curr1;
-//                     frame_datum["sensor_token"] = Sensors[3]["sensor_token"];
-//                     ts_of_lidar_by_idx = iat->get_lidar_timestamp(lidar_idx);
-//                     frame_datum["filename"] = "LiDAR_"+ts_of_lidar_by_idx+".pcd";
-//                     frame_datum["fileformat"] = "pcd";
-
-//                     frame_datum["timestamp"] = ts_of_lidar_by_idx;
-//                     // if (frame_datum["timestamp"] == Frames[i]["timestamp"])
-//                     //     frame_datum["is_key_frame"] = true;
-//                     // else
-//                     //     frame_datum["is_key_frame"] = false;
-
-//                     frame_datum["prev"] = token_prev1;
-//                     if(frame_data_idx < gps_csv_size && frame_data_idx == frame_start+199)
-//                         frame_datum["next"] = "";
-//                     else if(frame_data_idx < gps_csv_size && frame_data_idx == gps_csv_size-1)
-//                         frame_datum["next"] = "";
-//                     else
-//                         frame_datum["next"] = token_next;
-
-//                     Frame_data.append(frame_datum);
-//                     frame_datum.clear();
-//                     token_prev1 = token_curr1;
-//                     token_curr1 = token_next;
-//                 }
-
-//             }
-
-//             frame_data_idx++;
-//             this_frame_start++;
-
-//         }
-
-//     }
-
-//     Json::StyledWriter writer;
-//     ofstream out(path.c_str());
-//     out << writer.write(Frame_data);
-//     out.close();
-//     return true;
-// }
-
+//make Lidar json
 Json::Value Lidar_data;
 bool MakeJson::Lidar_Data()
 {
@@ -451,6 +320,7 @@ bool MakeJson::Lidar_Data()
 
 }
 
+//make Cam json
 Json::Value Cam_data;
 bool MakeJson:: Cam_Data()
 {
@@ -518,6 +388,7 @@ bool MakeJson:: Cam_Data()
 
 }
 
+//make Gps json
 Json::Value Gps_data;
 bool MakeJson::Gps_Data()
 {
@@ -565,6 +436,7 @@ bool MakeJson::Gps_Data()
     return true;
 }
 
+//make Imu json
 Json::Value Imu_data;
 bool MakeJson::Imu_Data()
 {
@@ -623,6 +495,7 @@ bool MakeJson::Imu_Data()
     return true;
 }
 
+//make Can json
 Json::Value Can_data;
 bool MakeJson::Can_Data()
 {
@@ -684,7 +557,7 @@ bool MakeJson::Can_Data()
 // }
 
 void MakeJson::Get_LLA(int gps_idx){
-    latitude, isNorth, longitude, isEast, gpsQuality, NumberOfSatellitesInUse, HorizontalDilutionOfPrecision, AntennaAltitudeMeters, GeoidalSeparationMeters = "";
+    latitude, longitude, HorizontalDilutionOfPrecision= "";
 
     long double raw_latitude = stold(iat->gps_csv[gps_idx][1]); // latitude
     latitude = to_string(Convert_to_dd(raw_latitude));
@@ -708,9 +581,9 @@ void MakeJson::Get_GAM(int imu_idx){
 
     scaledaccelx, scaledaccely, scaledaccelz = "";
 
-    scaledaccelx = iat->imu_csv[imu_idx][1];
-    scaledaccely = iat->imu_csv[imu_idx][2];
-    scaledaccelz = iat->imu_csv[imu_idx][3];
+    scaledaccelx = iat->imu_csv[imu_idx][1]; //scaledaccelx
+    scaledaccely = iat->imu_csv[imu_idx][2]; //scaledaccely
+    scaledaccelz = iat->imu_csv[imu_idx][3]; //scaledaccelz
 
 }
 
@@ -718,8 +591,8 @@ void MakeJson::Get_HSGT(int can_idx){
 
     handleAngle, turnLight, vehicleSpeed, gear = "";
 
-    handleAngle = iat->can_csv[can_idx][1];
-    turnLight = iat->can_csv[can_idx][2];
-    vehicleSpeed = iat->can_csv[can_idx][3];
-    gear = iat->can_csv[can_idx][4];
+    handleAngle = iat->can_csv[can_idx][1]; //handleangle
+    turnLight = iat->can_csv[can_idx][2]; //turnlight
+    vehicleSpeed = iat->can_csv[can_idx][3]; //speed
+    gear = iat->can_csv[can_idx][4]; //gear
 }

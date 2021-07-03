@@ -1,3 +1,5 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #include "readfiles.h"
 
 ReadFiles::ReadFiles(string fpath)
@@ -6,16 +8,15 @@ ReadFiles::ReadFiles(string fpath)
 }
 
 string ReadFiles::get_path(int i){
+    //size는 파일 이름의 길이와 관련
     int size = 30;
     string sensor;
     if(i == is_GPS){
         sensor = "GPS";
     }else if(i==is_CAM){
         sensor = "CAM";
-        // size=33;
     }else if(i==is_LiDAR){
         sensor = "LiDAR";
-        // size = 35;
         size = 32;
     }else if(i == is_IMU){
         sensor = "IMU";

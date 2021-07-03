@@ -1,24 +1,24 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d29b2/fast && /usr/bin/make -f CMakeFiles/cmTC_d29b2.dir/build.make CMakeFiles/cmTC_d29b2.dir/build
+Run Build Command(s):/usr/bin/make cmTC_aee57/fast && /usr/bin/make -f CMakeFiles/cmTC_aee57.dir/build.make CMakeFiles/cmTC_aee57.dir/build
 make[1]: Entering directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d29b2.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d29b2.dir/src.c.o   -c /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_d29b2
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d29b2.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_d29b2.dir/src.c.o  -o cmTC_d29b2 
-CMakeFiles/cmTC_d29b2.dir/src.c.o: In function `main':
+Building C object CMakeFiles/cmTC_aee57.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aee57.dir/src.c.o   -c /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_aee57
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aee57.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_aee57.dir/src.c.o  -o cmTC_aee57 
+CMakeFiles/cmTC_aee57.dir/src.c.o: In function `main':
 src.c:(.text+0x3e): undefined reference to `pthread_create'
 src.c:(.text+0x4a): undefined reference to `pthread_detach'
 src.c:(.text+0x5b): undefined reference to `pthread_join'
 src.c:(.text+0x6f): undefined reference to `pthread_atfork'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_d29b2.dir/build.make:86: recipe for target 'cmTC_d29b2' failed
-make[1]: *** [cmTC_d29b2] Error 1
+CMakeFiles/cmTC_aee57.dir/build.make:86: recipe for target 'cmTC_aee57' failed
+make[1]: *** [cmTC_aee57] Error 1
 make[1]: Leaving directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_d29b2/fast' failed
-make: *** [cmTC_d29b2/fast] Error 2
+Makefile:121: recipe for target 'cmTC_aee57/fast' failed
+make: *** [cmTC_aee57/fast] Error 2
 
 
 Source file was:
@@ -44,20 +44,20 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_48ce7/fast && /usr/bin/make -f CMakeFiles/cmTC_48ce7.dir/build.make CMakeFiles/cmTC_48ce7.dir/build
+Run Build Command(s):/usr/bin/make cmTC_61d09/fast && /usr/bin/make -f CMakeFiles/cmTC_61d09.dir/build.make CMakeFiles/cmTC_61d09.dir/build
 make[1]: Entering directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_48ce7.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_48ce7.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.15/Modules/CheckFunctionExists.c
-Linking C executable cmTC_48ce7
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48ce7.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_48ce7.dir/CheckFunctionExists.c.o  -o cmTC_48ce7 -lpthreads 
+Building C object CMakeFiles/cmTC_61d09.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_61d09.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_61d09
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61d09.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_61d09.dir/CheckFunctionExists.c.o  -o cmTC_61d09 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_48ce7.dir/build.make:86: recipe for target 'cmTC_48ce7' failed
-make[1]: *** [cmTC_48ce7] Error 1
+CMakeFiles/cmTC_61d09.dir/build.make:86: recipe for target 'cmTC_61d09' failed
+make[1]: *** [cmTC_61d09] Error 1
 make[1]: Leaving directory '/home/cvlab2/DIVA2/diva2-server/build/CMakeFiles/CMakeTmp'
-Makefile:121: recipe for target 'cmTC_48ce7/fast' failed
-make: *** [cmTC_48ce7/fast] Error 2
+Makefile:121: recipe for target 'cmTC_61d09/fast' failed
+make: *** [cmTC_61d09/fast] Error 2
 
 
 

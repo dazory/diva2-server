@@ -1,3 +1,5 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #pragma once
 
 #include <iostream>
@@ -72,8 +74,6 @@ public:
     string scaledaccelx;
     string scaledaccely; 
     string scaledaccelz;
-    // string accel_x;string accel_y;string accel_z;
-    // string mag_x; string mag_y; string mag_z;
     //~CAN Datum~
     string handleAngle;
     string turnLight;

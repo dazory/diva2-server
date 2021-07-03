@@ -1,3 +1,6 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+// 참고: https://www.tutorialspoint.com/postgresql/postgresql_c_cpp.htm
+
 #include "FrameStoringThread.h"
 
 using namespace std;

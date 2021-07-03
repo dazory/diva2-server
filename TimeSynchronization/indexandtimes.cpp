@@ -1,22 +1,16 @@
+// 참고: https://github.com/kka-na/DIVA_Qt
+
 #include "indexandtimes.h"
 
 IndexAndTimes::IndexAndTimes(string fpath)
 {
-    int c=0;
-    cout<<"-"<<c++<<endl;
     dir = fpath;
     rf = new ReadFiles(fpath);
-    cout<<"-"<<c++<<endl;
     gps_csv = rf->read_csv(rf->get_path(is_GPS));
-    cout<<"-"<<c++<<endl;
-
     cam_csv = rf->read_csv(rf->get_path(is_CAM));
-    cout<<"-"<<c++<<endl;
     lidar_csv = rf->read_csv(rf->get_path(is_LiDAR));
-
     imu_csv = rf->read_csv(rf->get_path(is_IMU));
     can_csv = rf->read_csv(rf->get_path(is_CAN));
-    cout<<"-"<<c++<<endl;
 }
 
 int IndexAndTimes::get_hhmmsssss(string str){ return stoi(str.substr(8,9));}
@@ -150,21 +144,14 @@ int IndexAndTimes::find_can_start_idx(){
 
 
 string IndexAndTimes::find_latest_started(){
-    int c =0;
     int first_timestamps[number_of_sensors+1];
-    cout<<">"<<c++<<endl;
     latest_sensor = is_GPS;
-    cout<<">"<<c++<<endl;
 
     first_timestamps[is_GPS] =get_hhmmsssss(gps_csv[0][0]);
-    cout<<">"<<c++<<endl;
     first_timestamps[is_CAM] = get_hhmmsssss(cam_csv[0][0]);
-    cout<<">"<<c++<<endl;
     first_timestamps[is_LiDAR] = get_hhmmsssss(lidar_csv[0][0]);
-    cout<<">"<<c++<<endl;
     first_timestamps[is_IMU] =get_hhmmsssss(imu_csv[0][0]);
     first_timestamps[is_CAN] =get_hhmmsssss(can_csv[0][0]);
-    cout<<">"<<c++<<endl;
 
     int max = first_timestamps[latest_sensor];
 
